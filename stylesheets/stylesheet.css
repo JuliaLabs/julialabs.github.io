@@ -246,6 +246,22 @@ a {
     font-size: 0.9rem; } }
 
 /*------------------------------------
+Custom
+-------------------------------------*/
+
+h1.topic {
+    padding-bottom: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    border-bottom: 1px solid rgba(163, 204, 183, 0.7);
+}
+
+h4.subtopic {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*------------------------------------
 Navigation Bar
 -------------------------------------*/
 /* This implementation is a tweaked version of http://www.w3schools.com/howto/howto_js_topnav.asp */
@@ -256,6 +272,7 @@ a.anchor {
     position: relative;
     top: -4rem;
     visibility: hidden;
+    border-top: 1px solid #ddd;
 }
 
 ul.topnav {
@@ -285,7 +302,7 @@ ul.topnav li a {
 ul.topnav li a:hover {color: #b2ffaa;}
 ul.topnav li.icon {display: none;}
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 42em) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
     float: right;

@@ -14,9 +14,8 @@
 <body>
   <ul class="topnav">
     <li><a href="#" onclick="closeMenu()">JuliaLabs</a></li>
-    <li><a href="#current-members" onclick="closeMenu()">Current Members</a></li>
-    <li><a href="#alumni" onclick="closeMenu()">Alumni</a></li>
-    <li><a href="#collaborators" onclick="closeMenu()">Collaborators</a></li>
+    <li><a href="#research" onclick="closeMenu()">Research</a></li>
+    <li><a href="#people" onclick="closeMenu()">People</a></li>
     <li><a href="#sponsorship" onclick="closeMenu()">Sponsorship</a></li>
     <li class="icon">
        <a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a>
@@ -34,9 +33,9 @@
       <a href="https://github.com/JeffBezanson">Jeff Bezanson</a>,
       <a href="http://www-math.mit.edu/%7Eedelman">Alan Edelman</a>,
       <a href="http://karpinski.org/">Stefan Karpinski</a>, and
-      <a href="https://github.com/viralbshah">Viral B. Shah</a> in 2009. First released to
-      the public in 2012, Julia has since become the product of hundreds of developers
-      across the globe.
+      <a href="https://github.com/viralbshah">Viral B. Shah</a> in 2009. Since its public
+      release in 2012, Julia has received code contributions from hundreds of scientists,
+      programmers, and engineers across the world.
     </p>
     <p>
       Today, a small group of researchers reside at MIT and focus on theoretical and
@@ -45,7 +44,79 @@
       linear algebra, parallel computing, and type theory.
     </p>
 
-    <h2><a id="current-members" href="#current-members" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current Members</h2>
+    <h1 class="topic"><a id="research" href="#research" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Research</h1>
+    <p>
+      JuliaLabs specializes in collaborating with other groups to solve messy real-world computational problems.
+    </p>
+
+    <h4 class="subtopic">Statistical Genomics</h4>
+    <p>
+      Existing bioinformatics tools aren't performant enough to handle the exabytes of data
+      produced by modern genomics research each year, and general purpose linear algebra
+      libraries are not optimized to take advantage of this data's inherent structure. To
+      address this problem, JuliaLabs is developing specialized algorithms for principal
+      component analysis and statistical fitting that will enable genomics researchers to
+      analyze data at the same rapid pace that it is produced.
+    </p>
+    <p>
+      This project is an exciting interdisciplinary collaboration with
+      <a href="http://people.csail.mit.edu/stavrosp/">Dr. Stavros Papadopoulos</a> (Senior
+      Research Scientist at <a href="http://pcl.intel-research.net/">Intel Labs</a>) and
+      <a href="http://connects.catalyst.harvard.edu/Profiles/display/Person/45505">Prof.
+      Nikolaos Patsopoulos</a> (Assistant Professor at
+      <a href="http://www.brighamandwomens.org/">Brigham and Women's Hospital</a>,
+      <a href="https://www.broadinstitute.org/">the Broad Institute</a> and
+      <a href="http://hms.harvard.edu/">Harvard Medical School</a>).
+    </p>
+
+    <h4 class="subtopic">Financial Fraud Detection</h4>
+    <p>
+      A single stock exchange generates high-frequency trading data at a rate of ~2.2
+      terabytes per month. JuliaLabs is designing out-of-core analytics for streaming
+      anomaly detection, with the goal of automatically identifying suspicious financial
+      transactions that indicate potential fraud.
+    </p>
+
+    <h4 class="subtopic">Medical Data Analytics</h4>
+    <p>
+      Hospitals, like many large organizations, collect much more data than can be usefully
+      processed and analyzed by human experts using today's available software. Oftentimes,
+      these small-scale analyses can overlook statistical clues that might have rendered
+      substantial improvements to patient care.
+    </p>
+    <p>
+      In collaboration with
+      <a href="http://hms.harvard.edu/">Harvard Medical School</a>, JuliaLabs has worked
+      on tools for rapidly identifying potential indicators of irregularities in medical
+      data, equipping doctors and healthcare providers with the analytics they need to
+      make informed medical decisions.
+    </p>
+
+    <h4 class="subtopic">Numerical Linear Algebra and Parallel Computing</h4>
+    <p>
+      JuliaLabs leads the <a href="https://github.com/JuliaParallel">JuliaParallel</a>
+      organization, which maintains the following projects:
+    </p>
+    <ul>
+      <li><a href="https://github.com/JuliaParallel/DistributedArrays.jl">DistributedArrays.jl</a>: a native Julia distributed array implementation</li>
+      <li><a href="https://github.com/JuliaParallel/MPI.jl">MPI.jl</a>: a wrapper for <a href="https://en.wikipedia.org/wiki/Message_Passing_Interface">Message Passing Interface (MPI)</a></li>
+      <li><a href="https://github.com/JuliaParallel/ClusterManagers.jl">ClusterManagers.jl</a>: Julia support for different job queue systems commonly used on compute clusters
+      <li><a href="https://github.com/JuliaParallel/Dagger.jl">Dagger.jl</a>: a <a href="https://github.com/dask/dask">Dask</a>-like framework for out-of-core and parallel computation
+      <li><a href="https://github.com/JuliaParallel/Elemental.jl">Elemental.jl</a>: a wrapper for <a href="http://libelemental.org/">Elemental</a>, a distributed linear algebra/optimization library developed by Prof. <a href="http://web.stanford.edu/~poulson/">Jack Poulson</a></li>
+      <li><a href="https://github.com/JuliaParallel/ScaLAPACK.jl">ScaLAPACK.jl</a>: a wrapper for the <a href="http://www.netlib.org/scalapack/">Scalable Linear Algebra Package</a>
+      <li><a href="https://github.com/JuliaParallel/HDFS.jl">HDFS.jl</a>: a wrapper for the <a href="https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html">Hadoop Distributed FileSystem</a></li>
+      <li><a href="https://github.com/JuliaParallel/Elly.jl">Elly.jl</a>: a client for <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html">Apache YARN</a></li>
+    </ul>
+    <p>
+      JuliaLabs also collaborates with <a href="http://math.mit.edu/%7Estevenj/">Prof.
+      Steven G. Johnson</a> and <a href="https://github.com/JaredCrean2">Jared Crean</a> in
+      the development of <a href="https://github.com/JaredCrean2/PETSc.jl">PETSc.jl</a>, a
+      wrapper for the <a href="http://www.mcs.anl.gov/petsc">Portable, Extensible Toolkit
+      for Scientific Computation</a>.
+    </p>
+
+    <h1 class="topic"><a id="people" href="#people" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>People</h1>
+    <h4 class="subtopic">Current Members</h4>
     <ul>
       <li><a href="http://www-math.mit.edu/%7Eedelman">Prof. Alan Edelman</a> (Principal Investigator)</li>
       <li><a href="http://sistemas.fciencias.unam.mx/%7Edsanders/">Prof. David P. Sanders</a> (Visiting Professor)</li>
@@ -65,7 +136,7 @@
       <li>Mark Wang (Undergraduate)</li>
     </ul>
 
-    <h2><a id="alumni" href="#alumni" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alumni</h2>
+    <h4 class="subtopic">Alumni</h4>
     <ul>
       <li><a href="http://marjan.fesb.hr/%7Eslap/index1.html">Prof. Ivan Slapničar</a> (Visiting Professor, Fall 2014)</li>
       <li><a href="https://github.com/JeffBezanson">Dr. Jeff Bezanson</a> (PhD Student, Fall 2009-Spring2015)</li>
@@ -79,7 +150,7 @@
       <li><a href="http://runpeng.mit.edu">Runpeng Liu</a> (Undergraduate Student, Fall 2015)</li>
     </ul>
 
-    <h2><a id="collaborators" href="#collaborators" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collaborators</h2>
+    <h4 class="subtopic">Collaborators</h4>
     <p>The Julia group is grateful for numerous collaborations at MIT and around the world:</p>
     <ul>
       <li><a href="http://math.mit.edu/%7Estevenj/">Prof. Steven G. Johnson</a> (Mathematics)</li>
@@ -97,9 +168,10 @@
       <li><a href="http://ssfrr.com/">Spencer Russell</a> (Media Lab)</li>
       <li><a href="http://pluskid.org">Chiyuan Zhang</a> (CSAIL), author of the popular <a href="https://github.com/pluskid/Mocha.jl">Mocha.jl</a> framework for deep learning</li>
       <li><a href="http://zenna.org">Zenna Tavares</a> (CSAIL) author of the <a href="https://github.com/zenna/Sigma.jl">Sigma.jl</a> probabilistic programming environment</li>
+      <li><a href="https://github.com/JaredCrean2">Jared Crean</a> (<a href="http://rpi.edu/">Rensselaer Polytechnic Institute</a>)</li>
     </ul>
 
-    <h2><a id="sponsorship" href="#sponsorship" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sponsorship</h2>
+    <h1 class="topic"><a id="sponsorship" href="#sponsorship" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sponsorship</h1>
     <p>
       We'd like to thank <a href="http://www.darpa.mil/program/xdata">DARPA XDATA</a>, the
       <a href="http://istc-bigdata.org">Intel Science and Technology Center for Big Data</a>,
