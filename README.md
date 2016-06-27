@@ -1,4 +1,4 @@
-# JuliaLab
+# JuliaLabs
 
 [Julia](http://julialang.org/) is a programming language created by [Jeff Bezanson](https://github.com/JeffBezanson), [Alan Edelman](http://www-math.mit.edu/~edelman), [Stefan Karpinski](http://karpinski.org/), and [Viral B. Shah](https://github.com/viralbshah) in 2009. First released to the public in 2012, Julia has since become the product of hundreds of developers across the globe.
 
@@ -17,11 +17,11 @@ Today, a small group of researchers reside at MIT and focus on theoretical and n
 - [Valentin Churavy](https://github.com/vchuravy) (Visiting PhD Student)
 - [David A. Gold](https://github.com/davidagold) (Visiting PhD Student)
 - [Katharine Hyatt](https://github.com/kshyatt) (Visiting PhD Student)
-- [Jacob Higgins]() (Undergraduate)
-- [Lin Pease]() (Undergraduate)
-- [Kelly Shen]() (Undergraduate)
-- [Cooper Sloan]() (Undergraduate)
-- [Mark Wang]() (Undergraduate)
+- Jacob Higgins (Undergraduate)
+- Lin Pease (Undergraduate)
+- Kelly Shen (Undergraduate)
+- Cooper Sloan (Undergraduate)
+- Mark Wang (Undergraduate)
 
 ## Alumni
 
