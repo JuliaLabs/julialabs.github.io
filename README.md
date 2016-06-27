@@ -55,3 +55,7 @@ The Julia group is grateful for numerous collaborations at MIT and around the wo
 - [Spencer Russell](http://ssfrr.com/) (Media Lab)
 - [Chiyuan Zhang](http://pluskid.org) (CSAIL), author of the popular [Mocha.jl](https://github.com/pluskid/Mocha.jl) framework for deep learning
 - [Zenna Tavares](http://zenna.org) (CSAIL) author of the [Sigma.jl](https://github.com/zenna/Sigma.jl) probabilistic programming environment
+
+## Sponsorship
+
+We'd like to thank [XDATA](http://www.darpa.mil/program/xdata) and the [Intel Science and Technology Center for Big Data](http://istc-bigdata.org/#&panel1-3) for their generous financial support.
