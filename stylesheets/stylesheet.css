@@ -61,15 +61,15 @@ a {
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 5rem 6rem; } }
+    padding: 7.5rem 6rem 4rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
-    padding: 3rem 4rem; } }
+    padding: 7rem 4rem 3rem; } }
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 2rem 1rem; } }
+    padding: 6rem 1rem 2rem; } }
 
 .project-name {
   margin-top: 0;
@@ -267,10 +267,10 @@ ul.topnav li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 10px 16px;
     text-decoration: none;
     transition: 0.1s;
-    font-size: 17px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
 }
 
 ul.topnav li a:hover {color: #90fff7;}
