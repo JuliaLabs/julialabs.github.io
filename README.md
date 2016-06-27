@@ -26,7 +26,7 @@ Today, a small group of researchers reside at MIT and focus on theoretical and n
 ## Alumni
 
 - [Prof. Ivan Slapničar](http://marjan.fesb.hr/~slap/index1.html) (Visiting Professor, Fall 2014)
-- [Dr. Jeff Bezanson](https://github.com/JeffBezanson) (PhD Student, Fall 2009-Spring2015)
+- [Dr. Jeff Bezanson](https://github.com/JeffBezanson) (PhD Student, Fall 2009-Spring 2015)
 - [Dr. Matt Bauman](https://github.com/mbauman) (Visiting PhD Student, Fall 2015)
 - [Stefan Karpinski](http://karpinski.org) (Data Scientist, Summer 2013-Fall 2014)
 - [Jameson Nash](https://github.com/vtjnash) (Undergraduate Student, Summer 2013)
@@ -58,4 +58,17 @@ The Julia group is grateful for numerous collaborations at MIT and around the wo
 
 ## Sponsorship
 
-We'd like to thank [XDATA](http://www.darpa.mil/program/xdata) and the [Intel Science and Technology Center for Big Data](http://istc-bigdata.org/#&panel1-3) for their generous financial support.
+We'd like to thank
+[DARPA XDATA](http://www.darpa.mil/program/xdata),
+the [Intel Science and Technology Center for Big Data](http://istc-bigdata.org),
+[Saudi Aramco](http://www.saudiaramco.com/en/home.html),
+the MIT [Institute for Solider Nanosystems](http://isnweb.mit.edu),
+and [NIH BD2K](https://datascience.nih.gov/bd2k)
+for their generous financial support.
+
+Julia Labs is a member of
+the [bigdata@CSAIL MIT Big Data Initiative](http://bigdata.csail.mit.edu)
+and gratefully acknowledges sponsorship from the
+[MIT EECS SuperUROP Program](https://superurop.eecs.mit.edu)
+and the [MIT UROP Office](http://web.mit.edu/urop)
+for our talented undergraduate researchers.
