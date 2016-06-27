@@ -7,7 +7,8 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #606c71;
+}
 
 a {
   color: #1e6bb8;
@@ -249,6 +250,14 @@ Navigation Bar
 -------------------------------------*/
 /* This implementation is a tweaked version of http://www.w3schools.com/howto/howto_js_topnav.asp */
 
+/* offsets anchor element so that it's not covered when linked to from the navbar */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -4rem;
+    visibility: hidden;
+}
+
 ul.topnav {
     list-style-type: none;
     position: fixed;
@@ -273,7 +282,7 @@ ul.topnav li a {
     font-size: 1rem;
 }
 
-ul.topnav li a:hover {color: #90fff7;}
+ul.topnav li a:hover {color: #b2ffaa;}
 ul.topnav li.icon {display: none;}
 
 @media screen and (max-width:1000px) {
