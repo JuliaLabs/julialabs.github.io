@@ -18,8 +18,8 @@ $btn-hover-background-color: rgba(255, 255, 255, 0.2);
 $btn-hover-border-color: rgba(255, 255, 255, 0.3);
 
 $page-header-color: #fff;
-$page-header-background-color: #159957;
-$page-header-gradient-color: #155799;
+$page-header-background-color: $julia-purple;
+$page-header-gradient-color: $julia-red;
 
 $main-content-header-color: $page-header-background-color;
 $main-content-code-color: #383e41;
@@ -33,7 +33,7 @@ $main-content-blockquote-color: #819198;
 $site-footer-border-color: $main-content-hr-background-color;
 $site-footer-credits-color: #819198;
 
-$ul-topnav-background-color: #102f3e;
+$ul-topnav-background-color: #5f394a;
 $ul-topnav-hover-color: #b2ffaa;
 
 $h1-topic-border-bottom-color: rgba(163, 204, 183, 0.7);
@@ -324,7 +324,11 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: $ul-topnav-background-color;
+    // background: transparent;
+    box-shadow: inset 0 0 0 1000rem rgba(0,0,0,.5);
+    opacity: 0.90;
+    background-color: $page-header-background-color;
+    background-image: linear-gradient(120deg, $page-header-gradient-color, $page-header-background-color);
 }
 
 ul.topnav li {float: left;}
