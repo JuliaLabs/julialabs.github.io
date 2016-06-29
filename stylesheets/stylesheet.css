@@ -1,3 +1,5 @@
+/* Cool Color Scheme */
+/* Warm Color Scheme */
 * {
   box-sizing: border-box; }
 
@@ -56,8 +58,8 @@ a:hover {
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #aa7dc0;
-  background-image: linear-gradient(120deg, #d66661, #aa7dc0); }
+  background-color: #3fa673;
+  background-image: linear-gradient(120deg, #3f73a6, #3fa673); }
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -105,7 +107,7 @@ a:hover {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #aa7dc0; }
+  color: #3fa673; }
 
 .main-content p {
   margin-bottom: 1em; }
@@ -285,7 +287,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: linear-gradient(120deg, rgba(92, 38, 35, 0.85), rgba(74, 35, 92, 0.85)); }
+  background-image: linear-gradient(120deg, rgba(35, 64, 92, 0.85), rgba(35, 92, 64, 0.85)); }
 
 ul.topnav li {
   float: left; }

@@ -4,7 +4,9 @@ $julia-purple: #aa7dc0;
 $julia-red: #d66661;
 $julia-blue: #6b85dd;
 
-// Original Color Scheme
+///////////////////////
+/* Cool Color Scheme */
+///////////////////////
 $body-color: #606c71;
 
 $a-anchor-color: #ddd;
@@ -18,8 +20,8 @@ $btn-hover-background-color: rgba(255, 255, 255, 0.2);
 $btn-hover-border-color: rgba(255, 255, 255, 0.3);
 
 $page-header-color: #fff;
-$page-header-background-color: $julia-purple;
-$page-header-gradient-color: $julia-red;
+$page-header-gradient-color: change-color(#155799, $saturation: 45%, $lightness: 45%);   // left side of gradient
+$page-header-background-color: change-color(#159957, $saturation: 45%, $lightness: 45%); // right side of gradient
 
 $main-content-header-color: $page-header-background-color;
 $main-content-code-color: #383e41;
@@ -33,10 +35,47 @@ $main-content-blockquote-color: #819198;
 $site-footer-border-color: $main-content-hr-background-color;
 $site-footer-credits-color: #819198;
 
-$ul-topnav-background-color: #5f394a;
+$ul-topnav-background-color: #102f3e;
 $ul-topnav-hover-color: #b2ffaa;
 
 $h1-topic-border-bottom-color: rgba(163, 204, 183, 0.7);
+
+///////////////////////
+/* Warm Color Scheme */
+///////////////////////
+// $body-color: #606c71;
+//
+// $a-anchor-color: #ddd;
+// $a-color: #1e6bb8;
+//
+// $btn-color: rgba(255, 255, 255, 0.7);
+// $btn-background-color: rgba(255, 255, 255, 0.08);
+// $btn-border-color: rgba(255, 255, 255, 0.2);
+// $btn-hover-color: rgba(255, 255, 255, 0.8);
+// $btn-hover-background-color: rgba(255, 255, 255, 0.2);
+// $btn-hover-border-color: rgba(255, 255, 255, 0.3);
+//
+// $page-header-color: #fff;
+// $page-header-gradient-color: $julia-red;      // left side of gradient
+// $page-header-background-color: $julia-purple; // right side of gradient
+
+//
+// $main-content-header-color: $page-header-background-color;
+// $main-content-code-color: #383e41;
+// $main-content-code-background-color: #f3f6fa;
+// $main-content-pre-color: #567482;
+// $main-content-pre-border-color: #dce6f0;
+// $main-content-border-color: #e9ebec;
+// $main-content-hr-background-color: #eff0f1;
+// $main-content-blockquote-color: #819198;
+//
+// $site-footer-border-color: $main-content-hr-background-color;
+// $site-footer-credits-color: #819198;
+//
+// $ul-topnav-background-color: #5f394a;
+// $ul-topnav-hover-color: #b2ffaa;
+//
+// $h1-topic-border-bottom-color: rgba(163, 204, 183, 0.7);
 
 * {
   box-sizing: border-box; }
