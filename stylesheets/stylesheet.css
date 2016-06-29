@@ -285,10 +285,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  box-shadow: inset 0 0 0 1000rem rgba(0, 0, 0, 0.5);
-  opacity: 0.90;
-  background-color: #aa7dc0;
-  background-image: linear-gradient(120deg, #d66661, #aa7dc0); }
+  background-image: linear-gradient(120deg, rgba(92, 38, 35, 0.85), rgba(74, 35, 92, 0.85)); }
 
 ul.topnav li {
   float: left; }
