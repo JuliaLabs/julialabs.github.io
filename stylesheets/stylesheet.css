@@ -74,6 +74,19 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0.1rem; }
 
+.project-name img {
+  width: 12em;
+  height: auto; }
+
+.project-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.project-name h1 {
+  font-size: 1.25em; }
+
 @media screen and (min-width: 64em) {
   .project-name {
     font-size: 3.25rem; } }
