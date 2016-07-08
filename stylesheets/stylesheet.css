@@ -274,10 +274,14 @@ h1.topic {
   margin-top: 1rem;
   margin-bottom: 0rem;
   border-bottom: 1px solid rgba(163, 204, 183, 0.7); }
+  h1.topic a {
+    color: #3fa673; }
 
 h4.subtopic {
   margin-top: 2rem;
   margin-bottom: 1rem; }
+  h4.subtopic a {
+    color: #3fa673; }
 
 /*------------------------------------
 Navigation Bar

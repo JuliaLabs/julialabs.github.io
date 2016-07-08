@@ -349,11 +349,17 @@ h1.topic {
     margin-top: 1rem;
     margin-bottom: 0rem;
     border-bottom: 1px solid $h1-topic-border-bottom-color;
+    a {
+        color: $main-content-header-color
+    }
 }
 
 h4.subtopic {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    a {
+        color: $main-content-header-color
+    }
 }
 
 /*------------------------------------
