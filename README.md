@@ -42,7 +42,7 @@ The Julia group is grateful for numerous collaborations at MIT and around the wo
 
 - [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj/) (Mathematics)
 - [Prof. Juan Pablo Vielma](http://www.mit.edu/~jvielma/)
-- [Dr. Jeremy Kepner](http://www.mit.edu/~kepner/) (Lincoln Laboratories)
+- [Dr. Jeremy Kepner - Founding Sponsor](http://www.mit.edu/~kepner/) (Lincoln Laboratories)
 - [Dr. Homer Reid](http://homerreid.dyndns.org) (Mathematics)
 - [Dr. Alex Townsend](http://math.mit.edu/~ajt/) (Mathematics)
 - [Dr. Jean Yang](http://jeanyang.com) (CSAIL alum, Harvard Medical School)
