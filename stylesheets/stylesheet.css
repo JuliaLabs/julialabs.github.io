@@ -38,6 +38,13 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
+.emergency-box {
+    padding: 1em;
+    background: lightblue;
+    color: #111;
+    border-radius: 0.33em;
+}
+
 @media screen and (min-width: 68em) {
   .btn {
     padding: 0.75rem 1rem; } }
