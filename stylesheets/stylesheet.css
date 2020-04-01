@@ -313,6 +313,20 @@ ul.topnav {
   overflow: hidden;
   background-image: linear-gradient(120deg, rgba(35, 64, 92, 0.85), rgba(35, 92, 64, 0.85)); }
 
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
 ul.topnav li {
   float: left; }
 
