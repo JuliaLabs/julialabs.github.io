@@ -7,20 +7,25 @@
 
 * Drug Development Life Cycle
     * [Julia Lab speeds up the drug approval process](http://news.mit.edu/2019/julia-lab-joins-team-speed-drug-approval-process-0125)
-    * [PUMAS: Pharmaceutical Modelling and Simulation](https://tutorials.pumas.ai/)r
+    * [PUMAS: Pharmaceutical Modelling and Simulation](https://tutorials.pumas.ai/)
+    
 * Epidemiological Models
+    * [COVID-19 ML](https://covid19ml.org/): Machine Learning aided Epidemiology ([MIT News](http://news.mit.edu/2020/new-model-quantifies-impact-quarantine-measures-covid-19-spread-0416), [Zdnet](https://www.zdnet.com/article/could-a-neural-network-have-predicted-this-pandemics-impact/))
+    * [SafeBlues](https://safeblues.org): A Method for Estimation and Control in the Fight Against COVID-19. 
+    * [COVID-19 in Denmark: A model](https://doktormike.gitlab.io/post/covid-19/)
     * [Pathogen.jl: Simulation, visualization, and inference tools for modelling the spread of infectious diseases](https://github.com/jangevaare/Pathogen.jl)
     * [Infectious Disease Transmission Network Modelling with Julia](https://arxiv.org/abs/2002.05850)
-    * [COVID-19 in Denmark: A model](https://doktormike.gitlab.io/post/covid-19/)
-    * [Gillespie.jl](https://github.com/sdwfrost/Gillespie.jl). For a reference on Gillespie methods check out this excellent review by Des Higham.
     * [SEIR model](https://github.com/ChrisRackauckas/universal_differential_equations/tree/master/SEIR_exposure) by Dr. Chris Rackauckas from the lab
+    * [Gillespie.jl](https://github.com/sdwfrost/Gillespie.jl). For a reference on Gillespie methods check out this excellent review by Des Higham.
+
 * Scientific Machine Learning
     * See some results on COVID-19 data in [this presentation](https://drive.google.com/file/d/1NxFOtpNHl7oXpdSLM06TEN_oO8QylPYx/view) on Physics-informed machine learning with language-wide automatic differentiation.
     * [SciML: An Open Source Software Organization for Scientific Machine Learning](https://sciml.ai/2020/03/29/SciML.html)
+    
 * Timely MIT Class (Spring 2020) (6s083/18s190) Computational Thinking with Applications to Covid-19
-    * [Class Front Page](https://github.com/mitmath/6S083)
+    * [Class Website](https://github.com/mitmath/6S083)
     * [Class Syllabus and Materials](https://github.com/mitmath/6S083/blob/master/syllabus.md)
-    * With thanks to MIT's [Schwarzman College of Computing](https://computing.mit.edu/), [Dept of EECS](https://www.eecs.mit.edu/), and [Dept of Mathematics](https://math.mit.edu/).
+    * With thanks to MIT's [Schwarzman College of Computing](https://computing.mit.edu/), [Dept of EECS](https://www.eecs.mit.edu/), and [Dept of Mathematics](https://math.mit.edu/). Covered in [MIT News](http://news.mit.edu/2020/computational-thinking-class-enables-students-engage-covid-19-response-0407).
 @@
 
 [Julia](http://julialang.org/) is a programming language created by [Jeff Bezanson](https://github.com/JeffBezanson), [Alan Edelman](http://www-math.mit.edu/%7Eedelman), [Stefan Karpinski](http://karpinski.org/), and [Viral B. Shah](https://github.com/viralbshah) in 2009, released publicly in 2012, Julia now  has over ten million downloads.
