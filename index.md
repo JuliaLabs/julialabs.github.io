@@ -150,7 +150,7 @@ The Julia Lab also collaborates with [Prof. Steven G. Johnson](http://math.mit.e
 * [Raj Dandekar](https://scholar.google.com/citations?user=xTLUWMIAAAAJ&hl=en) (PhD Student)
 * [Alex LeNail](https://alexlenail.me/) (PhD Student)
 * Dan Girshovich (Research Software Engineer)
-* Chris de Graaf (Research Software Engineer)
+* [Chris de Graaf](https://cdg.dev) (Research Software Engineer)
 * James Schloss (Research Software Engineer)
 * Julian Samaroo (Research Software Engineer)
 * Diogo Netto (Undergraduate)
