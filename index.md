@@ -143,7 +143,7 @@ The Julia Lab also collaborates with [Prof. Steven G. Johnson](http://math.mit.e
 * [Prof. David P. Sanders](http://sistemas.fciencias.unam.mx/%7Edsanders/) (Visiting Professor)
 * [Emmanuel Lujan](https://scholar.google.com/citations?user=V9w6CAoAAAAJ&hl=en) (Postdoc)
 * [Sung Woo Jeong](https://math.mit.edu/directory/profile.php?pid=1782) (PhD Student)
-* [Albert Gnadt](https://www.linkedin.com/in/albert-gnadt-8a195138/) (PhD Student)
+* [Albert Gnadt](https://gnadt.github.io/) (PhD Student)
 * [Valentin Churavy](https://github.com/vchuravy) (PhD Student)
 * [Ranjan Anantharaman](https://github.com/ranjanan) (PhD Student)
 * [Shashi Gowda](http://shashi.biz) (PhD Student)
