@@ -3,7 +3,7 @@
 @def hascode = true
 
 @@emergency-box
-**Covid-19 RELATED EFFORTS:** The Julia Lab at MIT's Computer Science and AI Laboratory ([CSAIL](https://www.csail.mit.edu/)) and the Julia Community at large are hard at work building the best tools for scientists worldwide from the low level compilers to parallel, GPU computation of the alphabet soup of models.
+**Covid-19 RELATED EFFORTS:** The Julia Lab at MIT's Computer Science and Artificial Intelligence Laboratory ([CSAIL](https://www.csail.mit.edu/)) and the Julia Community at large are hard at work building the best tools for scientists worldwide from the low level compilers to parallel, GPU computation of the alphabet soup of models.
 
 * Drug Development Life Cycle
     * [Julia Lab speeds up the drug approval process](http://news.mit.edu/2019/julia-lab-joins-team-speed-drug-approval-process-0125)
@@ -35,7 +35,7 @@ News flash: Wilkinson Prize for Julia! ([MIT News December 26, 2018 ](http://new
 News flash from Google's Jeff Dean: Julia + TPUs = fast and easily
 expressible Machine Learning Computations. ([tweet October 23, 2018](https://twitter.com/JeffDean/status/1054951415339192321))
 
-The Julia lab embraces openness and the solving of human problems.
+The Julia Lab embraces openness and the solving of human problems.
 Today, the Julia Lab collaborates with a variety of researchers on real-world problems and applications, while simultaneously working on the core language and its ecosystem.
 
 # Publications
@@ -202,7 +202,7 @@ The Julia group is grateful for numerous collaborations at MIT and around the wo
 * [Dr. Homer Reid](http://homerreid.dyndns.org) (MIT Mathematics)
 * [Dr. Alex Townsend](http://math.mit.edu/%7Eajt/) (Cornell  )
 * [Dr. Jean Yang](http://jeanyang.com) (MIT CSAIL alum, Harvard Medical School)
-* [The JuliaOpt team](http://www.juliaopt.org) team at the [Operations Research Center](http://web.mit.edu/orc/www/)
+* [The JuliaOpt team](http://www.juliaopt.org) team at the [Operations Research Center](https://orc.mit.edu)
 * [Joey Huchette](http://www.mit.edu/%7Ehuchette)
 * [Yee Sian Ng](http://orc.scripts.mit.edu/people/student.php?name=yeesian)
 * [Miles Lubin](http://www.mit.edu/%7Emlubin/)
@@ -216,9 +216,9 @@ The Julia group is grateful for numerous collaborations at MIT and around the wo
 # Sponsorship
 
 
-We thank NSF, Amazon,  [DARPA XDATA](http://www.darpa.mil/program/xdata), the [Intel Science and Technology Center for Big Data](http://istc-bigdata.org), [Saudi Aramco](http://www.saudiaramco.com/en/home.html), the MIT [Institute for Soldier Nanosystems](http://isnweb.mit.edu), and [NIH BD2K](https://datascience.nih.gov/bd2k) for their generous financial support.
+We thank NSF, Amazon,  [DARPA XDATA](http://www.darpa.mil/program/xdata), the [Intel Science and Technology Center for Big Data](http://istc-bigdata.org), [Saudi Aramco](http://www.saudiaramco.com/en/home.html), the MIT [Institute for Soldier Nanosystems](https://isn.mit.edu), and [NIH BD2K](https://datascience.nih.gov/bd2k) for their generous financial support.
 
-The Julia Lab is a member of the [bigdata@CSAIL MIT Big Data Initiative](http://bigdata.csail.mit.edu) and gratefully acknowledges sponsorship from the [MIT EECS SuperUROP Program](https://superurop.eecs.mit.edu) and the [MIT UROP Office](http://web.mit.edu/urop) for our talented undergraduate researchers.
+The Julia Lab is a member of the [bigdata@CSAIL MIT Big Data Initiative](http://bigdata.csail.mit.edu) and gratefully acknowledges sponsorship from the [MIT EECS SuperUROP Program](https://superurop.eecs.mit.edu) and the [MIT UROP Office](https://urop.mit.edu/) for our talented undergraduate researchers.
 
 ~~~
 <div style="text-align:center;">

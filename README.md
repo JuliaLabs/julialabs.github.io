@@ -1,4 +1,4 @@
-# JuliaLabs
+# Julia Lab
 
 [Julia](http://julialang.org/) is a programming language created by [Jeff Bezanson](https://github.com/JeffBezanson), [Alan Edelman](http://www-math.mit.edu/~edelman), [Stefan Karpinski](http://karpinski.org/), and [Viral B. Shah](https://github.com/viralbshah) in 2009. First released to the public in 2012, Julia has since become the product of hundreds of developers across the globe.
 
@@ -46,7 +46,7 @@ The Julia group is grateful for numerous collaborations at MIT and around the wo
 - [Dr. Homer Reid](http://homerreid.dyndns.org) (Mathematics)
 - [Dr. Alex Townsend](http://math.mit.edu/~ajt/) (Mathematics)
 - [Dr. Jean Yang](http://jeanyang.com) (CSAIL alum, Harvard Medical School)
-- [The JuliaOpt team](http://www.juliaopt.org) team at the [Operations Research Center](http://web.mit.edu/orc/www/)
+- [The JuliaOpt team](http://www.juliaopt.org) team at the [Operations Research Center](https://orc.mit.edu/)
 - [Joey Huchette](http://www.mit.edu/~huchette)
 - [Yee Sian Ng](http://orc.scripts.mit.edu/people/student.php?name=yeesian)
 - [Miles Lubin](http://www.mit.edu/~mlubin/)
@@ -62,13 +62,13 @@ We'd like to thank
 [DARPA XDATA](http://www.darpa.mil/program/xdata),
 the [Intel Science and Technology Center for Big Data](http://istc-bigdata.org),
 [Saudi Aramco](http://www.saudiaramco.com/en/home.html),
-the MIT [Institute for Solider Nanosystems](http://isnweb.mit.edu),
+the MIT [Institute for Solider Nanosystems](https://isn.mit.edu),
 and [NIH BD2K](https://datascience.nih.gov/bd2k)
 for their generous financial support.
 
-Julia Labs is a member of
+The Julia Lab is a member of
 the [bigdata@CSAIL MIT Big Data Initiative](http://bigdata.csail.mit.edu)
 and gratefully acknowledges sponsorship from the
 [MIT EECS SuperUROP Program](https://superurop.eecs.mit.edu)
-and the [MIT UROP Office](http://web.mit.edu/urop)
+and the [MIT UROP Office](https://urop.mit.edu)
 for our talented undergraduate researchers.
