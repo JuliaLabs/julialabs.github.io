@@ -42,12 +42,5 @@
 </center>
 ~~~
 
-~~~
-<center>
-<img  width="200" src="/assets/images/mit-logo.svg" />
-<img  width="200" src="/assets/images/csail-logo.png" />
-<img  width="200" src="/assets/images/mit-math-logo.png" />
-</center>
-~~~
 
 
