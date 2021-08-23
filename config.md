@@ -1,6 +1,7 @@
 <!--
 Add here global page variables to use throughout your website.
 -->
+
 +++
 using DelimitedFiles, Random
 
@@ -18,6 +19,7 @@ generate_rss = true
 website_title = "Julia Lab"
 website_descr = "Julia Lab Website"
 website_url   = "https://julia.mit.edu/"
+prepath = "julialab-website-test"
 
 # People
 people = readdlm("_assets/people.csv", ',', skipstart=1)
