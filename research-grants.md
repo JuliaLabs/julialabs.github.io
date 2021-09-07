@@ -62,7 +62,7 @@ This project involves software development efforts for accelerated solution of d
 <center> <em> <b>Julia to be the backbone of a new software framework for space weather forcasting </b> </em></center>
 
 ```
-<img style="padding-right:10px" align="left" width="150" src="/assets/images/swqu.png"\>
+<img style="padding-right:10px" align="left" width="150" src="/assets/images/swqu.jpg"\>
 ```
 
 The forecasting and reanalysis of space weather events poses a major challenge for many activities in space and beyond. For example, solar storms can damage the power supply infrastructure and computer networks on earth but also impact crucially space exploration and satellite traffic management. As a consequence, improved space weather prediction capabilities can unlock to tremendous societal and economic opportunities such as improved internet coverage via satellite mega-constellations. 
@@ -97,7 +97,7 @@ For dynamical systems involving decision making, the success of the system great
 ## **Digital Wells for Optimal Production and Drainage (NORWAY)**
 
 ```
-<img style="padding-right:10px" align="left" width="150" src="/assets/images/norway.png"\>
+<img style="padding-right:10px" align="left" width="150" src="/assets/images/norway.jpg"\>
 ```
 
 Affordable and clean energy for everyone, and actions for an improved climate, are two of United Nations Sustainable Development Goals. Any realistic energy solution must combine the entire portfolio of possible energy sources with a gradual transition from the current fossil based economy to a fully sustainable energy economy. To improve the climate in this transition, energy efficiency in oil production must be maximized together with profit.
