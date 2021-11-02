@@ -16,6 +16,7 @@
 ~~~
 
 # Alumni
+
 ~~~
 <div class="people-container">
         {{for (name, position, website, photo_path) in alumni}}

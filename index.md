@@ -6,8 +6,8 @@
 <div id="ri-grid" class="ri-grid ri-grid-size-1 ri-shadow">
     <img class="ri-loading-image" src="/assets/images/loading.gif"/>
     <ul>
-        {{for name in people_photos}}
-          <li><a href="#"><img src="/assets/people/{{name}}"/></a></li>
+        {{for (name, website, photo_path) in index_photos}}
+          <li><a href="{{fill website}}" alt="{{fill name}}"><img src="/assets/{{fill photo_path}}"/></a></li>
         {{end}}
     </ul>
 </div>

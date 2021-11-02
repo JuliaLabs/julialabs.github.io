@@ -23,13 +23,13 @@ prepath = "julialab-website-test"
 
 # People
 people = readdlm("_assets/people.csv", ',', skipstart=1)
+grants = readdlm("_assets/research-grants.csv", ',', skipstart=1)
 
-# Current members and collaborators
+# Current members, alumni, and collaborators
 current_members = []
 alumni = []
 collaborators = []
 for (name,position,website,role,notes,photo) in eachrow(people)
-
         photo_path = replace(name, r" " => s"_")
         data = [name, position, website, photo_path]
         if role == "Current Member"
@@ -39,17 +39,27 @@ for (name,position,website,role,notes,photo) in eachrow(people)
         else
             push!(collaborators, data)
         end
-
 end
 
 # Photo paths
-people_photos = []
-for (Name,Position,Website,Role,Notes,Photo) in eachrow(people[shuffle(1:end), :])
-    if Photo == "Yes"
-        path = replace(Name, r" " => s"_")
-        push!(people_photos, path)
+index_photos = []
+for (name, position, website, role, notes, photo) in eachrow(people)
+    if photo == "Yes" && role == "Current Member"
+        photo_path = "people/" * replace(name, r" " => s"_")
+        data = [name, website, photo_path]
+        push!(index_photos, data)
     end
 end
+for (name, full_name, description, full_description, website, photo,links) in eachrow(grants)
+    if photo == "Yes"
+        photo_path = "research-grants/" * replace(name, r" " => s"_")
+        data = [name, website, photo_path]
+        push!(index_photos, data)
+    end
+end
+index_photos = index_photos[shuffle(1:end)]
+
+
 
 +++
 

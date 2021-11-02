@@ -1,66 +1,77 @@
 Name,Position,Website,Role,Notes,Photo
 Alan Edelman,Principal Investigator,http://www-math.mit.edu/~edelman,Current Member,,Yes
 Philip,Julia Expert,https://news.mit.edu/2020/computational-thinking-class-enables-students-engage-covid-19-response-0407,Current Member,,Yes
-Jeremy Kepner,Founding Sponsor (Lincoln Laboratories),http://www.mit.edu/~kepner/,Current Member,,Yes
 Chris Rackauckas,Applied Math Instructor,http://chrisrackauckas.com/,Current Member,,Yes
 David P. Sanders,Visiting Professor,http://sistemas.fciencias.unam.mx/~dsanders/,Current Member,,Yes
 Emmanuel Lujan,Postdoctoral Associate,http://www.emmanuellujan.com,Current Member,,Yes
-Takafumi Arakaki,Postdoctoral Associate,,Current Member,,Yes
+Takafumi Arakaki,Postdoctoral Associate,https://github.com/tkf,Current Member,,Yes
 Albert Gnadt,PhD Student,https://gnadt.github.io/,Current Member,,Yes
 Alexander Lenail,PhD Student,https://alexlenail.me/,Current Member,,Yes
-Raj Abhijit Dandekar,PhD Student,https://scholar.google.com/citationsuser=xTLUWMIAAAAJ&hl=en,Current Member,,Yes
+Avik Pal,PhD Student,https://www.linkedin.com/in/avikpal1410/,Current Member,,Yes
+Flemming Holtorf,PhD Student,https://github.com/FHoltorf,Current Member,,No
+Matt Bauman,PhD Student,https://github.com/mbauman,Current Member,,Yes
 Ranjan Anantharaman,PhD Student,https://github.com/ranjanan,Current Member,,Yes
+Raj Abhijit Dandekar,PhD Student,https://scholar.google.com/citationsuser=xTLUWMIAAAAJ&hl=en,Current Member,,Yes
 Shashi Gowda,PhD Student,http://shashi.biz/,Current Member,,Yes
 Sung Woo Jeong,PhD Student,https://math.mit.edu/directory/profile.phppid=1782,Current Member,,Yes
 Theo Diamandis,PhD Student,https://github.com/tjdiamandis,Current Member,,Yes
 Valentin Churavy,PhD Student,https://github.com/vchuravy,Current Member,,Yes
+Raymond Hoffman,Master's Student,https://www.csail.mit.edu/person/raymond-huffman,Current Member,Meng,No
+Simeon Schaub,Master's Student,https://github.com/simeonschaub,Current Member,CSE Masters,Yes
+Song Chen,Master's Student,,Current Member,CSE Masters,No
+Steven Otremba,Master's Student,https://www.linkedin.com/in/sotremba/,Current Member,Meng,Yes
+Akash Garg,Research Software Engineer,https://github.com/akashkgarg,Current Member,US Contractor,No
+Fons van der Plas,Research Software Engineer,https://github.com/fonsp,Current Member,Foreign Contractors,Yes
 Julian Samaroo,Research Software Engineer,https://github.com/jpsamaroo,Current Member,,Yes
-William Kimmerer,Research Software Engineer, https://github.com/Wimmerer, Current Member,,No
-Jacob Higgins,Undergraduate,,Current Member,,Yes
-Kirill Zubov,,,Current Member,,Yes
-Zoe McCarthy,,https://github.com/zoemcc,Current Member,,Yes
-Adelaide Chambers,Undergraduate,,Alumni,,No
+Kirill Zubov,Research Software Engineer,https://github.com/KirillZubov,Current Member,Foreign Contractors,Yes
+Shuhei Kadowaki,Research Software Engineer,https://github.com/aviatesk,Current Member,Foreign Contractors,Yes
+William Kimmerer,Research Software Engineer,https://github.com/Wimmerer,Current Member,RSM,Yes
+Zoe McCarthy,Research Software Engineer,https://github.com/zoemcc,Current Member,RSM,Yes
+Diogo Netto,Undergraduate,https://github.com/d-netto,Current Member,UROP,Yes
+Jeremiah DeGreeff,Undergraduate,https://github.com/jrdegreeff,Current Member,UROP,Yes
+Prem Chintalapudi,Undergraduate,https://www.csail.mit.edu/person/prem-chintalapudi,Current Member,UROP,No
+Ivan Slapničar,Visiting Professor,http://marjan.fesb.hr/~slap/index1.html,Alumni,Fall 2014,Yes
+Jiahao Chen,Research Scientist,https://jiahao.github.io/,Alumni,,Yes
 Andreas Noack,Postdoctoral Associate,https://github.com/andreasnoack,Alumni,,Yes
-Benjamin Urquhart,Undergraduate,,Alumni,,Yes
-Collin Warner,Undergraduate,,Alumni,,Yes
-Cooper Sloan,Undergraduate,,Alumni,,No
+Xianyi Zhang,Postdoctoral Associate,https://github.com/xianyi,Alumni,,No
+Eden Bensaid,Master's Student,,Alumni,,
+Meredith Julian,Master's Student,,Alumni,MEng,
+David A. Gold,Visiting PhD Student,https://github.com/davidagold,Alumni,,Yes
+Jeff Bezanson,PhD Student,https://github.com/JeffBezanson,Alumni,Fall 2009-Spring 2015,Yes
+Eka Palamadai,PhD Student,http://people.csail.mit.edu/epn/epn.html,Alumni,,Yes
+Katharine Hyatt,Visiting PhD Student,https://github.com/kshyatt,Alumni,,No
+Peter Ahrens,PhD Student,https://github.com/peterahrens,Alumni,,Yes
+Tim Besard,Visiting PhD Student,https://github.com/maleadt,Alumni,,Yes
+Oscar Blumberg,Visiting Masters Student,https://github.com/carnaval,Alumni,Spring-Summer 2015,No
 Chris de Graaf,Research Software Engineer,https://cdg.dev/,Alumni,,Yes
 Dan Girshovich,Research Software Engineer,https://dangirsh.org/,Alumni,,Yes
-David A. Gold,Visiting PhD Student,https://github.com/davidagold,Alumni,,Yes
-David Kaplow,Undergraduate,,Alumni,,No
-Diogo Netto,Undergraduate,https://github.com/d-netto,Alumni,,Yes
-Deniz Yuret,,,Alumni,,Yes
-Eka Palamadai,PhD Student,http://people.csail.mit.edu/epn/epn.html,Alumni,,Yes
-Felix Tran,Undergraduate,,Alumni,,Yes
-Ivan Slapničar,Visiting Professor,http://marjan.fesb.hr/~slap/index1.html,Alumni,Fall 2014,Yes
 Jake Bolewski,Research Engineer,https://github.com/jakebolewski,Alumni,Summer 2014-Spring 2016,Yes
 James Schloss,Research Software Engineer,https://github.com/leios,Alumni,,Yes
-Jameson Nash,Undergraduate Student,https://github.com/vtjnash,Alumni,Summer 2013,Yes
 Jarrett Revels,Research Engineer,https://github.com/jrevels,Alumni,,Yes
-Jeff Bezanson,PhD Student,https://github.com/JeffBezanson,Alumni,Fall 2009-Spring 2015,Yes
-Jerry Lingjie Mei,,,Alumni,,Yes
-Jiahao Chen,Research Scientist,https://jiahao.github.io/,Alumni,,Yes
-Katharine Hyatt,Visiting PhD Student,https://github.com/kshyatt,Alumni,,No
-Kelly Shen,Undergraduate,,Alumni,,Yes
-Keno Fischer,Undergraduate Student,https://github.com/keno,Alumni,Summer 2013 and Summer 2014,Yes
 Leon Shen,Research Software Engineer,,Alumni,,No
+Stefan Karpinski,Data Scientist,http://karpinski.org,Alumni,Summer 2013-Fall 2014,Yes
+Adelaide Chambers,Undergraduate,,Alumni,,No
+Alenta Demissew,Undergraduate,,Alumni,UROP,
+Benjamin Urquhart,Undergraduate,,Alumni,,Yes
+Bola Malek,,,Alumni,MEng,No
+Brendan Ashworth,Undergraduate,,Alumni,UROP,
+Collin Warner,Undergraduate,,Alumni,,Yes
+Cooper Sloan,Undergraduate,,Alumni,,No
+David Kaplow,Undergraduate,,Alumni,,No
+Deniz Yuret,,,Alumni,,Yes
+Felix Tran,Undergraduate,,Alumni,UROP,Yes
+Jacob Higgins,Undergraduate,,Alumni,,Yes
+Jameson Nash,Undergraduate,https://github.com/vtjnash,Alumni,Summer 2013,Yes
+Jerry Lingjie Mei,,,Alumni,,Yes
+Kelly Shen,Undergraduate,,Alumni,,Yes
+Keno Fischer,Undergraduate,https://github.com/keno,Alumni,Summer 2013 and Summer 2014,Yes
 Lin Pease,Undergraduate,,Alumni,,No
 Luana Lara,Undergraduate,,Alumni,,Yes
 Mark Wang,Undergraduate,,Alumni,,Yes
-Matt Bauman,Visiting PhD Student,https://github.com/mbauman,Alumni,Fall 2015,Yes
-Oscar Blumberg,Visiting Masters Student,https://github.com/carnaval,Alumni,Spring-Summer 2015,No
-Peter Ahrens,PhD Student,https://github.com/peterahrens,Alumni,,Yes
-Runpeng Liu,Undergraduate Student,http://runpeng.mit.edu,Alumni,Fall 2015,No
-Shawn Im,Undergraduate,,Alumni,,Yes
-Stefan Karpinski,Data Scientist,http://karpinski.org,Alumni,Summer 2013-Fall 2014,Yes
-Tim Besard,Visiting PhD Student,https://github.com/maleadt,Alumni,,Yes
+Runpeng Liu,Undergraduate,http://runpeng.mit.edu,Alumni,Fall 2015,No
+Shawn Im,Undergraduate,,Alumni,UROP,Yes
 Weijian Zhang,Visiting Student,https://github.com/weijianzhang,Alumni,Spring 2016,Yes
-Xianyi Zhang,Postdoctoral Associate,https://github.com/xianyi,Alumni,,No
-Ali Ramadhan,,https://www.linkedin.com/in/ali-ramadhan/,,,Yes
-Karen Chung,,,,,Yes
-Matt Johnson,,,,,Yes
-Vijay Ivaturi,,,,,Yes
-Wiktor Phillips,,,,,Yes
+Jeremy Kepner,Founding Sponsor (Lincoln Laboratories),http://www.mit.edu/~kepner/,Current Member,,Yes
 Alex Townsend,,http://math.mit.edu/~ajt/,Collaborators,Mathematics,Yes
 Chiyuan Zhang,,http://pluskid.org,Collaborators,CSAIL,Yes
 Homer Reid,,http://homerreid.dyndns.org,Collaborators,Mathematics,Yes
@@ -78,3 +89,8 @@ The JuliaOpt team,,http://www.juliaopt.org,Collaborators,,No
 Valentin Sulzer,,https://github.com/tinosulzer,Collaborators,,Yes
 Yee Sian Ng,,http://orc.scripts.mit.edu/people/student.phpname=yeesian,Collaborators,,Yes
 Zenna Tavares,,http://zenna.org,Collaborators,CSAIL,Yes
+Ali Ramadhan,,https://www.linkedin.com/in/ali-ramadhan/,,,Yes
+Karen Chung,,,,,Yes
+Matt Johnson,,,,,Yes
+Vijay Ivaturi,,,,,Yes
+Wiktor Phillips,,,,,Yes
