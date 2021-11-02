@@ -21,7 +21,7 @@ website_descr = "Julia Lab Website"
 website_url   = "https://julia.mit.edu/"
 prepath = "julialab-website-test"
 
-# People
+# People & grants
 people = readdlm("_assets/people.csv", ',', skipstart=1)
 grants = readdlm("_assets/research-grants.csv", ',', skipstart=1)
 
@@ -41,7 +41,7 @@ for (name,position,website,role,notes,photo) in eachrow(people)
         end
 end
 
-# Photo paths
+# Index photos and data
 index_photos = []
 for (name, position, website, role, notes, photo) in eachrow(people)
     if photo == "Yes" && role == "Current Member"
@@ -50,7 +50,7 @@ for (name, position, website, role, notes, photo) in eachrow(people)
         push!(index_photos, data)
     end
 end
-for (name, full_name, description, full_description, website, photo,links) in eachrow(grants)
+for (name, full_name, description, full_description, website, photo, links) in eachrow(grants)
     if photo == "Yes"
         photo_path = "research-grants/" * replace(name, r" " => s"_")
         data = [name, website, photo_path]
@@ -58,6 +58,18 @@ for (name, full_name, description, full_description, website, photo,links) in ea
     end
 end
 index_photos = index_photos[shuffle(1:end)]
+
+
+# Adding photo paths to grants 
+aux = []
+for (name, full_name, description, full_description, website, photo, links) in eachrow(grants)
+    if photo == "Yes"
+        photo_path = "research-grants/" * replace(name, r" " => s"_")
+        data = [name, full_name, description, full_description, website, photo_path, links]
+        push!(aux, data)
+    end
+end
+grants = aux[shuffle(1:end)]
 
 
 
