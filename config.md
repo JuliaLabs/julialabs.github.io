@@ -19,7 +19,7 @@ generate_rss = true
 website_title = "Julia Lab"
 website_descr = "Julia Lab Website"
 website_url   = "https://julia.mit.edu/"
-prepath = "julialab-website-test"
+prepath = ""
 
 # People & grants
 people = readdlm("_assets/people.csv", ',', skipstart=1)

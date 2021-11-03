@@ -114,9 +114,9 @@
 	// the options
 	$.GridRotator.defaults = {
 		// number of rows
-		rows : 3,
+		rows : 4,
 		// number of columns 
-		columns : 11,
+		columns : 10,
 		w1024 : { rows : 3, columns : 8 },
 		w768 : {rows : 3,columns : 7 },
 		w480 : {rows : 3,columns : 5 },
@@ -151,7 +151,7 @@
 		// use false if onhover is true for example
 		slideshow : true,
 		// if true the items will switch when hovered
-		onhover : false,
+		onhover : true,
 		// ids of elements that shouldn't change
 		nochange : []
 	};
