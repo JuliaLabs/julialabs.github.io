@@ -93,8 +93,10 @@ header li a:hover {
 
 @media (min-width: 481px) {
   header {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
+    /*padding-left: 12.5%;
+    padding-right: 12.5%;*/
+    padding-left: 19.5%;
+    padding-right: 13.5%;
   }
 }
 
@@ -104,13 +106,13 @@ header li a:hover {
     /*width: 705px;*/
     /*width: 1300px;*/
     width: 100%;
-
     height: 93px;
     /*height: 75px;*/
     margin-left: auto;
     margin-right: auto;
     background: #252525;
-    background-image: url("/julialab-website-test/assets/images/banner.png");
+    /*background-image: url("/julialab-website-test/assets/images/banner.png");*/
+    background-image: url("/assets/images/banner.png");
   }
   
 }
@@ -234,6 +236,23 @@ table tbody tr td {
   color: #283834;
 }
 
+.grants-container{
+    width: 100%;
+    overflow: hidden; /* add this to contain floated children */
+}
+
+.grants {
+  height:300px;
+  width:270px;
+  margin-bottom: 40px;
+  color: #283834;
+  float:left;
+}
+
+.grants a{
+  color: #283834;
+}
+
 .circle {
     border-radius: 50%;
     -moz-border-radius: 50%;
@@ -245,8 +264,9 @@ table tbody tr td {
 /*----------------------------------*/
 
 .footer {
-    background-image: url('/julialab-website-test/assets/images/footer.png');
+    /* background-image: url('/julialab-website-test/assets/images/footer.png'); */
+    background-image: url('/assets/images/footer.png');
     margin-top: 25px;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
     
 }
