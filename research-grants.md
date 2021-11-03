@@ -19,11 +19,17 @@
 
 ## {{fill full_name}}
 ~~~
-<img style="padding-right:10px" align="left" width="150" src="/assets/{{fill photo_path}}"\>
+<div>
+<img style="margin-right:10px;margin-top:-10px" align="left" class="circle" width="120" height="120" src="/assets/{{fill photo_path}}"/>
+<div/>
 ~~~
 {{fill full_description}}
 [Website]({{fill website}})
-
+~~~
+<br><br>
+~~~
 {{end}}
 
-
+~~~
+<br><br>
+~~~

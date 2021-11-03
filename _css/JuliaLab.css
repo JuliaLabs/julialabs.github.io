@@ -45,7 +45,7 @@ nav li a {
 header {
   text-align: right;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
   display: flex;
   align-items: center;
   /*background: black;*/
@@ -95,8 +95,8 @@ header li a:hover {
   header {
     /*padding-left: 12.5%;
     padding-right: 12.5%;*/
-    padding-left: 19.5%;
-    padding-right: 13.5%;
+    padding-left: 10.0%;
+    padding-right: 7.5%;
   }
 }
 
@@ -225,8 +225,8 @@ table tbody tr td {
 }
 
 .people {
-  height:150px;
-  width:150px;
+  height:160px;
+  width:160px;
   margin-bottom: 40px;
   color: #283834;
   float:left;
@@ -242,8 +242,8 @@ table tbody tr td {
 }
 
 .grants {
-  height:300px;
-  width:270px;
+  height:320px;
+  width:257px;
   margin-bottom: 40px;
   color: #283834;
   float:left;
@@ -267,6 +267,6 @@ table tbody tr td {
     /* background-image: url('/julialab-website-test/assets/images/footer.png'); */
     background-image: url('/assets/images/footer.png');
     margin-top: 25px;
-    padding-bottom: 75px;
+    padding-bottom: 85px;
     
 }
