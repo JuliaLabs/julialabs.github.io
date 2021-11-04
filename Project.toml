@@ -1,3 +1,8 @@
+name = "JuliaLab"
+uuid = "dfc042e8-09de-4ad3-b3f6-a51b8d1a73c3"
+authors = ["Julia Lab"]
+version = "0.1.0"
+
 [deps]
 Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
 ImageMagick = "6218d12a-5da1-5696-b52f-db25d2ecc6d1"
