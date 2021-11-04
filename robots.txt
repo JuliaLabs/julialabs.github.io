@@ -1,0 +1,4 @@
+Sitemap: https://julia.mit.edu/sitemap.xml
+
+User-agent: *
+Disallow:
