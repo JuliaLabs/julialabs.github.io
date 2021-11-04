@@ -116,7 +116,7 @@
 		// number of rows
 		rows : 4,
 		// number of columns 
-		columns : 10,
+		columns : 9,
 		w1024 : { rows : 3, columns : 8 },
 		w768 : {rows : 3,columns : 7 },
 		w480 : {rows : 3,columns : 5 },
