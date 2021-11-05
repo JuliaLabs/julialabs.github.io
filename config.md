@@ -30,7 +30,11 @@ current_members = []
 alumni = []
 collaborators = []
 for (name,position,website,role,notes,photo) in eachrow(people)
-        photo_path = replace(name, r" " => s"_")
+        if photo == "Yes"
+            photo_path = replace(name, r" " => s"_")
+        else
+            photo_path = "Default"
+        end
         data = [name, position, website, photo_path]
         if role == "Current Member"
             push!(current_members, data)
@@ -69,7 +73,7 @@ for (name, full_name, description, full_description, website, photo, links) in e
         push!(aux, data)
     end
 end
-grants = aux[shuffle(1:end)]
+grants = aux
 
 
 
