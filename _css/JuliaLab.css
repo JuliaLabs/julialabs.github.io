@@ -2,6 +2,11 @@
     Header and Nav
 ================================================================== */
 
+#menu-icon {
+  display: none;
+}
+
+
 nav {
   width: 56.5%;
   display: inline-block;
@@ -18,14 +23,8 @@ nav li {
 }
 
 nav li a {
-  /*color: #004de6;*/
-    /*color: #6682df;*/
-   color: white;
-  /*color: #d5635c;*/
- /*color: #aa79c1;*/
-  /*color: #252525;*/
+  color: white;
   text-decoration: none;
-  /*font-size: 18px;*/
   font-size: 15px;
   font-weight: bold;
   display: inline-block;
@@ -36,101 +35,45 @@ nav li a {
   padding-bottom: 5px;
   margin-left: 7px;
   margin-right: 7px;
-  /*border-bottom: 2px solid #4c9cf1;*/
-  /*border-bottom: 2px solid #aa79c1;*/
-  /*border-bottom: 2px solid #252525;*/
   transition: color 0.3s ease;
 }
 
 header {
   text-align: right;
   margin-top: 5px;
-  margin-bottom: -10px;
+  margin-bottom: -5px;
   display: flex;
   align-items: center;
-  /*background: black;*/
   background: black;
-  /*background: #2a2e48;*/
-}
-
-header .blog-name {
-  /*width: 35%;*/
-  width: 33%;
-  display: inline-block;
-  text-align: right;
-  /*font-size: 15px;*/
-  font-size: 12px;
-  font-family: "Lucida Console", Monaco, monospace;
-  /*padding-top: 10px;*/
-
-}
-
-header .blog-name a {
-  /*color: #a6a2a0;*/
-  /*color: #d5635c;*/
-  /*color: #6682df;*/
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
 }
 
 header li a:hover {
   color: #dddddd;
-  /*border-bottom: 2px solid #aa79c1;*/
-  /*border-bottom: 2px solid white;*/
 }
 
-#menu-icon {
-  display: none;
+header .julia-logo-header {
+    width: 110px;
+    margin-left: 20%;
 }
 
-@media (max-width: 480px) {
-  header {
-    padding-left: 6%;
-    padding-right: 6%;
-  }
-}
-
-@media (min-width: 481px) {
-  header {
-    /*padding-left: 12.5%;
-    padding-right: 12.5%;*/
-    padding-left: 20.0%;
-    padding-right: 13.5%;
-  }
+header .julia-slogan-header {
+    text-align: left;
+    width: 350px;
+    color: white;
+    margin-left: 15px;
+    float: left;
 }
 
 /* wide display: enforce maximum width of header to match content */
-@media (min-width: 940px) {
+@media (min-width: 900px) {
   header {
-    /*width: 705px;*/
-    /*width: 1300px;*/
     width: 100%;
-    height: 93px;
-    /*height: 75px;*/
-    margin-left: auto;
-    margin-right: auto;
-    background: #252525;
-    /*background-image: url("/julialab-website-test/assets/images/banner.png");*/
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 6%;
+    padding-right: 21%;
+    background: black;
     background-image: url("/assets/images/banner.png");
-  }
-  
-}
-
-/*
-medium display: nav goes under name
-*/
-@media (max-width: 760px) {
-  header { display: block; }
-
-  header .blog-name {
-    display: block;
-    width: 100%;
-    padding-bottom: 10px;
-  }
-
-  nav {
-    width: 100%;
   }
 }
 
@@ -140,19 +83,23 @@ instead, display a burger menu.
 */
 @media (max-width: 500px) {
   header {
-    height: 45px;
     display: flex;
     align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5.0%;
+    padding-right: 13.5%;
+    background: #252525;
+    background-image: url("/assets/images/banner.png");
   }
 
-  header .blog-name {
-    display: inline-block;
-    width: 70%;
+  header .julia-logo-header {
+      margin-left: 0%;
   }
 
   nav {
     display: inline-block;
-    width: 27%;
+    width: 0%;
   }
 
   nav ul,
@@ -176,8 +123,8 @@ instead, display a burger menu.
     padding: 0;
     margin: 0;
   }
-  header li a { border-bottom: none; }
-  header li a:hover { border-bottom: none; }
+  header li a { border-bottom: none; color: black;}
+  header li a:hover { border-bottom: none;}
 
   nav:hover ul {
     display: block;
@@ -217,7 +164,6 @@ td {
 table tbody tr td {
   border: 1px solid lightgray;
 }
-
 
 .people-container{
     width: 100%;
@@ -261,10 +207,7 @@ table tbody tr td {
 }
 
 
-/*----------------------------------*/
-
 .footer {
-    /*background-image: url('/julialab-website-test/assets/images/footer.png');*/
     background-image: url('/assets/images/footer.png');
     margin-top: 25px;
     padding-bottom: 12px;
