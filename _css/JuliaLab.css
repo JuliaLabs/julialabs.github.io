@@ -44,7 +44,8 @@ header {
   margin-bottom: -5px;
   display: flex;
   align-items: center;
-  background: black;
+  background: #2e5454;
+  background-image: url("/assets/images/banner.png");
 }
 
 header li a:hover {
@@ -72,8 +73,6 @@ header .julia-slogan-header {
     padding-bottom: 1%;
     padding-left: 6%;
     padding-right: 21%;
-    background: black;
-    background-image: url("/assets/images/banner.png");
   }
 }
 
@@ -89,8 +88,6 @@ instead, display a burger menu.
     padding-bottom: 5%;
     padding-left: 5.0%;
     padding-right: 13.5%;
-    background: #252525;
-    background-image: url("/assets/images/banner.png");
   }
 
   header .julia-logo-header {
