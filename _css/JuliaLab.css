@@ -8,11 +8,13 @@
 
 
 nav {
-  width: 56.5%;
-  display: inline-block;
+  flex: 0 1 auto;
+  margin-left: auto;
+  display: inline-flex;
 }
 
 nav ul {
+  display: flex;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -39,40 +41,35 @@ nav li a {
 }
 
 header {
-  text-align: right;
-  margin-top: 5px;
-  margin-bottom: -5px;
+  padding: 7px 4%;
   display: flex;
   align-items: center;
   background: #2e5454;
   background-image: url("/assets/images/banner.png");
 }
 
+header > .container {
+    width: 957px;
+    margin: 0 auto;
+    display: flex;
+    align-content: space-between;
+}
+
 header li a:hover {
   color: #dddddd;
 }
 
-header .julia-logo-header {
-    width: 110px;
-    margin-left: 20%;
-}
-
 header .julia-slogan-header {
     text-align: left;
-    width: 350px;
     color: white;
-    margin-left: 15px;
-    float: left;
+    margin: 0px 15px;
+    flex: 1 1 350px;
 }
 
 /* wide display: enforce maximum width of header to match content */
 @media (min-width: 900px) {
   header {
     width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 6%;
-    padding-right: 21%;
   }
 }
 
@@ -80,14 +77,10 @@ header .julia-slogan-header {
 narrow display: collapse the header (don't show the menu items)
 instead, display a burger menu.
 */
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   header {
     display: flex;
     align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5.0%;
-    padding-right: 13.5%;
   }
 
   header .julia-logo-header {
@@ -95,8 +88,7 @@ instead, display a burger menu.
   }
 
   nav {
-    display: inline-block;
-    width: 0%;
+    margin-left: auto;
   }
 
   nav ul,
