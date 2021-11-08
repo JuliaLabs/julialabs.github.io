@@ -29,7 +29,7 @@ grants = readdlm("_assets/research-grants.csv", ',', skipstart=1)
 current_members = []
 alumni = []
 collaborators = []
-for (name,position,website,role,notes,photo) in eachrow(people)
+for (name,position,website,role,photo) in eachrow(people)
         if photo == "Yes"
             photo_path = replace(name, r" " => s"_")
         else
@@ -47,7 +47,7 @@ end
 
 # Index photos and data
 index_photos = []
-for (name, position, website, role, notes, photo) in eachrow(people)
+for (name, position, website, role, photo) in eachrow(people)
     if photo == "Yes" && role == "Current Member"
         photo_path = "people/" * replace(name, r" " => s"_")
         data = [name, website, photo_path]
