@@ -2,12 +2,33 @@ using BibTeX
 
 function ref_item(ref, infos)
     io = IOBuffer()
-
-    author = infos["author"]
-    author_last, author_first = strip.(split(author, ","))
-
+    authors_aux = strip.(split(infos["author"], " and "))
+    m = size(authors_aux)[1]
+    authors = ""
+    for j in 1:m
+        a = authors_aux[j]
+        fullname = reverse(strip.(split(a, ",")))
+        n = size(fullname)[1]
+        for i in 1:n-1
+            authors *= fullname[i]*" "
+        end
+        authors *= fullname[n]
+        if j == m
+            authors *= ". "
+        else
+            authors *= ", "
+        end
+    end
+    url = replace(infos["url"], " " => "")
     write(io, "<li id=\"#$ref\">")
-    write(io, """$author_first $author_last, <span style="font-style:italic;">$(infos["title"])</span>, $(infos["year"]).""")
+    write(io, """<a href="$url">""")
+    write(io, """<span style="font-style:italic;">$(infos["title"])</span>. """)
+    write(io, """$authors""")
+    write(io, """$(infos["journal"]) ($(infos["year"])). """)
+    if haskey(infos, "doi")
+        write(io, """DOI:$(infos["doi"]). """)
+    end
+    write(io, "</a>")
     write(io, "</li>")
     return String(take!(io))
 end
