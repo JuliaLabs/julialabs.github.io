@@ -1,11 +1,11 @@
 # Publications
 
 Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many universities worldwide.
-If you use **Julia** in your research, we request citing the following paper:
+If you use **Julia** in your research we request citing the following paper:
 
 [*Julia: A Fresh Approach to Numerical Computing*.
-Jeff Bezanson, Alan Edelman, Stefan Karpinski, Viral B. Shah.
-(2017) SIAM Review, 59: 65–98. DOI: 10.1137/141000671.]
+Jeff Bezanson Alan Edelman Stefan Karpinski Viral B. Shah.
+(2017) SIAM Review 59: 65–98. DOI: 10.1137/141000671.]
 (https://julialang.org/assets/research/julia-fresh-approach-BEKS.pdf)
 
 
@@ -21,6 +21,13 @@ Jeff Bezanson, Alan Edelman, Stefan Karpinski, Viral B. Shah.
     Roesch202137
     Dandekar2021
     Anantharaman2021
+    Dandekar2021Bayesian
+    Pal2021Opening
+    Rackauckas2021Hybrid
+    Gowda2021Highperformance
+    Rackauckas2021Composing
+    Schafer2021AbstractDifferentiation
+    Dandekar2021Implications
 
     Hall2021
     Anantharaman2021
@@ -29,14 +36,19 @@ Jeff Bezanson, Alan Edelman, Stefan Karpinski, Viral B. Shah.
     Dandekar2020
     Irurzun-Arana2020882
     Rackauckas2020
+    Kurchin2020Aced
+    Rackauckas2020Stability
     Moses2020
-    
+    Sykora2020StochasticDelayDiffEq
+    Shankar2020Learning
+
     Chan2019127
     Besard201929
     Rackauckas20191
     Dickson2019239
     Yang20191
     Besard201929
+    Gowda2019Sparsity
     
     Rackauckas2018267
     Rackauckas201811
@@ -45,6 +57,10 @@ Jeff Bezanson, Alan Edelman, Stefan Karpinski, Viral B. Shah.
     Leonard2017519
 
 }}
+
+
+
+
 
 
 
