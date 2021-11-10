@@ -162,11 +162,15 @@ table tbody tr td {
 }
 
 .people {
-  height:122px;
-  width:122px;
-  margin-bottom: 40px;
+  height:110px;
+  width:110px;
+  margin-bottom: 80px;
   color: #283834;
-  float:left;
+}
+
+.people img{
+  height:100px;
+  width:100px;
 }
 
 .people a{
@@ -180,11 +184,16 @@ table tbody tr td {
 }
 
 .grants {
-  height:250px;
-  width:250px;
-  margin-bottom: 40px;
+  width:150px;
+  margin-left:15px;
+  margin-right:15px;
+  margin-bottom: 45px;
   color: #283834;
-  float:left;
+}
+
+.grants img{
+  height:130px;
+  width:130px;
 }
 
 .grants a{
@@ -206,13 +215,12 @@ table tbody tr td {
 }
 
 .news {
-    width: 40%;
+    width: 30%;
     background: #8cbfab;
     background-image:  url("/assets/images/footer.png");
     color: #fff;
     counter-increment: myCounter;
     margin: 10px 10px 10px 10px;
-    /*padding: 10px;*/
     padding-top:35px;
     padding-left:10px;
     padding-right:10px;

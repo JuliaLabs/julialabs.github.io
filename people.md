@@ -5,7 +5,7 @@
         {{for (name, position, website, photo_path) in current_members}}
             <div class="people">
                 <center>
-                <img class="circle" width="100" height="100" src="/assets/people/{{fill photo_path}}"/><br>
+                <img class="circle" src="/assets/people/{{fill photo_path}}"/><br>
                 <a href="{{fill website}}">
                     {{fill name}}<br>
                     {{fill position}}<br>
