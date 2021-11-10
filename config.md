@@ -21,15 +21,25 @@ website_descr = "Julia Lab Website"
 website_url   = "https://julia.mit.edu/"
 prepath = ""
 
-# People & grants
+# News, people, and grants
+news = readdlm("_assets/news.csv", ',', skipstart=1)
 people = readdlm("_assets/people.csv", ',', skipstart=1)
 grants = readdlm("_assets/research-grants.csv", ',', skipstart=1)
+
+
+# News
+aux = []
+for (date, title, link) in eachrow(news)
+    data = [date, title, link]
+    push!(aux, data)
+end
+news = aux
 
 # Current members, alumni, and collaborators
 current_members = []
 alumni = []
 collaborators = []
-for (name,position,website,role,photo) in eachrow(people)
+for (name, position, website, role, photo) in eachrow(people)
         if photo == "Yes"
             photo_path = replace(name, r" " => s"_")
         else

@@ -124,6 +124,7 @@ instead, display a burger menu.
     margin-right: 10px;
     margin-top: 5px;
   }
+  
 }
 
 table {
@@ -195,6 +196,45 @@ table tbody tr td {
     -o-border-radius: 50%;
 }
 
+
+.news-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news {
+    width: 40%;
+    min-height:100px;
+    background: #8cbfab;
+    background-image:  url("/assets/images/footer.png");
+    color: #fff;
+    counter-increment: myCounter;
+    margin: 10px 10px 10px 10px;
+    /*padding: 10px;*/
+    padding-top:35px;
+    padding-left:10px;
+    padding-right:10px;
+    position: relative;
+    top: 1em;
+    border-radius:  0em 1px 1em 1em;
+    /*padding-left: 9em;*/
+    font-weight: bold;
+}
+.news a{
+    color: #fff;
+}
+.news .item{
+    content: counter(myCounter, decimal-leading-zero);
+    display: inline-block;
+    text-align: center;
+    background-color:  #8cbfab;
+    padding: 10px;
+    position: absolute; 
+    top: -10px;
+    left: 10px;
+    border-radius: 50%;
+}
 
 .footer {
     background-image: url('/assets/images/footer.png');
