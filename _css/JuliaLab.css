@@ -156,8 +156,9 @@ table tbody tr td {
 }
 
 .people-container{
-    width: 100%;
-    overflow: hidden; /* add this to contain floated children */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 .people {
@@ -173,13 +174,14 @@ table tbody tr td {
 }
 
 .grants-container{
-    width: 100%;
-    overflow: hidden; /* add this to contain floated children */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .grants {
-  height:320px;
-  width:275px;
+  height:250px;
+  width:250px;
   margin-bottom: 40px;
   color: #283834;
   float:left;
@@ -205,7 +207,6 @@ table tbody tr td {
 
 .news {
     width: 40%;
-    min-height:100px;
     background: #8cbfab;
     background-image:  url("/assets/images/footer.png");
     color: #fff;
@@ -215,6 +216,7 @@ table tbody tr td {
     padding-top:35px;
     padding-left:10px;
     padding-right:10px;
+    padding-bottom:20px;
     position: relative;
     top: 1em;
     border-radius:  0em 1px 1em 1em;
