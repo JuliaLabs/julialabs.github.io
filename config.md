@@ -29,8 +29,12 @@ grants = readdlm("_assets/research-grants.csv", ',', skipstart=1)
 current_members = []
 alumni = []
 collaborators = []
-for (name,position,website,role,notes,photo) in eachrow(people)
-        photo_path = replace(name, r" " => s"_")
+for (name,position,website,role,photo) in eachrow(people)
+        if photo == "Yes"
+            photo_path = replace(name, r" " => s"_")
+        else
+            photo_path = "Default"
+        end
         data = [name, position, website, photo_path]
         if role == "Current Member"
             push!(current_members, data)
@@ -43,7 +47,7 @@ end
 
 # Index photos and data
 index_photos = []
-for (name, position, website, role, notes, photo) in eachrow(people)
+for (name, position, website, role, photo) in eachrow(people)
     if photo == "Yes" && role == "Current Member"
         photo_path = "people/" * replace(name, r" " => s"_")
         data = [name, website, photo_path]
@@ -69,7 +73,7 @@ for (name, full_name, description, full_description, website, photo, links) in e
         push!(aux, data)
     end
 end
-grants = aux[shuffle(1:end)]
+grants = aux
 
 
 
