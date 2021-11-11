@@ -252,3 +252,9 @@ table tbody tr td {
     padding-bottom: 12px;
     
 }
+
+.publicationlink{
+    color:#6897b2;
+    font-weight:bold;
+    font-style:italic;
+}

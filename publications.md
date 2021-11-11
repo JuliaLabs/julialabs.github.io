@@ -2,16 +2,23 @@
 
 Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many universities worldwide.
 If you use **Julia** in your research we request citing the following paper:
+~~~
+<br><br>
+<a class="publicationlink" href="https://julialang.org/assets/research/julia-fresh-approach-BEKS.pdf">
+   Julia: A Fresh Approach to Numerical Computing
+</a>
+~~~
 
-[*Julia: A Fresh Approach to Numerical Computing*.
 Jeff Bezanson Alan Edelman Stefan Karpinski Viral B. Shah.
-(2017) SIAM Review 59: 65–98. DOI: 10.1137/141000671.]
-(https://julialang.org/assets/research/julia-fresh-approach-BEKS.pdf)
+
+SIAM Review 59: 65–98 (2017). DOI: 10.1137/141000671.
+
 
 
 ## Selected publications from the last five years
 
-{{show_refs 
+{{show_refs
+
     Drake2021
     Hall2021
     EDELMAN20211826

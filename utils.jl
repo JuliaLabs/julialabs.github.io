@@ -21,15 +21,16 @@ function ref_item(ref, infos)
     end
     url = replace(infos["url"], " " => "")
     write(io, "<li id=\"#$ref\">")
-    write(io, """<a href="$url">""")
-    write(io, """<span style="font-style:italic;">$(infos["title"])</span>. """)
-    write(io, """$authors""")
+    write(io, """<a href="$url" class="publicationlink">""")
+    write(io, """$(infos["title"])""")
+    write(io, "  </a><br>")
+    write(io, """$authors<br>""")
     write(io, """$(infos["journal"]) ($(infos["year"])). """)
     if haskey(infos, "doi")
         write(io, """DOI:$(infos["doi"]). """)
     end
-    write(io, "</a>")
     write(io, "</li>")
+    write(io, "<br>")
     return String(take!(io))
 end
 
