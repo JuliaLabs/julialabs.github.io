@@ -1,46 +1,47 @@
 date,title,link
-"2021-08-31","SciML Receives Chan Zuckerberg Institute Funding: Spatial SSAs, Identifiability, and Compile Times",https://sciml.ai/news/2021/08/31/czi
-"2021-08-26","SciML Common Interface Expansion",https://sciml.ai/news/2021/08/26/expansion
-"2021-08-16","SciML at JuliaCon 2021",https://sciml.ai/news/2021/08/16/juliacon2021
-"2021-05-24","SciML Ecosystem Update: Improved QNDF Outperforms CVODE On SciMLBenchmarks",https://sciml.ai/news/2021/05/24/QNDF
-"2021-02-05","SciML Ecosystem Update: GalacticOptim, GlobalSensitivity, Tutorials, and Documentation",https://sciml.ai/news/2021/02/05/galacticoptim
-"2021-01-19","SciML Ecosystem Update: Bayesian Neural ODEs, Virtual Brownian Trees, Parallel Batching and More",https://sciml.ai/news/2021/01/19/bayesian_neural_ode
-"2020-09-05","SciML Ecosystem Update: Koopman Optimization Under Uncertainty, Non-Commutative SDEs, GPUs in R, and More",https://sciml.ai/news/2020/09/05/Koopman
-"2020-08-17","SciML Ecosystem Update: Neural PDEs, Lie Groups, and Stochastic Delay Differential Equations",https://sciml.ai/news/2020/08/17/NeuralPDE
-"2020-08-10","SciML Ecosystem Update: SDE Adjoints, FFORD Layers, and Jump Diffusion",https://sciml.ai/news/2020/08/10/StochasticBonanza
-"2020-06-01","SciML Ecosystem Update: Auto-Parallelism and Component-Based Modeling",https://sciml.ai/news/2020/06/01/ModellingToolkit
-"2020-05-09","SciML Ecosystem Update: Automated Model Discovery with DataDrivenDiffEq.jl and ReservoirComputing.jl",https://sciml.ai/news/2020/05/09/ModelDiscovery
-"2020-03-29","SciML: An Open Source Software Organization for Scientific Machine Learning",https://sciml.ai/news/2020/03/29/SciML
-"2020-03-23","DifferentialEquations.jl v6.12.0: DAE Extravaganza",https://sciml.ai/news/2020/03/23/DAE
-"2020-02-18","DifferentialEquations.jl v6.11.0: Universal Differential Equation Overhaul",https://sciml.ai/news/2020/02/18/Universal
-"2019-07-05","DifferentialEquations.jl v6.7.0: GPU-based Ensembles and Automatic Sparsity",https://sciml.ai/news/2019/07/05/AutomaticSparsity
-"2019-06-24","DifferentialEquations.jl v6.6.0: Sparse Jacobian Coloring, Quantum Computer ODE Solvers, and Stiff SDEs",https://sciml.ai/news/2019/06/24/coloring
-"2019-06-06","DifferentialEquations.jl v6.5.0: Stiff SDEs, VectorContinuousCallback, Multithreaded Extrapolation",https://sciml.ai/news/2019/06/06/StiffSDEs
-"2019-05-09","DifferentialEquations.jl v6.4.0: Full GPU ODE, Performance, ModelingToolkit",https://sciml.ai/news/2019/05/09/GPU
-"2019-02-02","DifferentialEquations.jl 6.0: Radau5,Hyperbolic PDEs, Dependency Reductions",https://sciml.ai/news/2019/02/02/RadauAnderson
-"2018-08-20","DifferentialEquations.jl 5.0: v1.0,Jacobian Types, EPIRK",https://sciml.ai/news/2018/08/20/FunctionInputEPIRK
-"2018-07-05","DifferentialEquations.jl 4.6: Global Sensitivity Analysis, Variable Order Adams",https://sciml.ai/news/2018/07/05/GSAVariableOrder
-"2018-05-26","DifferentialEquations.jl 4.5: ABC, Adaptive Multistep, Maximum A Posteriori",https://sciml.ai/news/2018/05/26/ABCMore
-"2018-04-30","A ''Jupyter'' of DiffEq: Introducing Python and R Bindings for DifferentialEquations.jl",https://sciml.ai/news/2018/04/30/Jupyter
-"2018-04-13","DifferentialEquations.jl 4.4: Enhanced Stability and IMEX SDE Integrators",https://sciml.ai/news/2018/04/13/StableSDE
-"2018-04-09","DifferentialEquations.jl 4.3: Automatic Stiffness Detection and Switching",https://sciml.ai/news/2018/04/09/AutoSwitch
-"2018-03-31","DifferentialEquations.jl 4.2: Krylov Exponential Integrators, Non-Diagonal Adaptive SDEs, Tau-Leaping",https://sciml.ai/news/2018/03/31/AdaptiveLowSDE
-"2018-02-17","DifferentialEquations.jl 4.1: New ReactionDSL and KLU Sundials",https://sciml.ai/news/2018/02/17/Reactions
-"2018-01-24","DifferentialEquations.jl 4.0: Breaking Syntax Changes, Adjoint Sensitivity, Bayesian Estimation, and ETDRK4",https://sciml.ai/news/2018/01/24/Parameters
-"2018-01-15","DifferentialEquations.jl 3.4: Sundials 3.1, ARKODE, Static Arrays",https://sciml.ai/news/2018/01/15/Sundials
-"2017-12-11","DifferentialEquations.jl 3.2: Expansion of Event Compatibility",https://sciml.ai/news/2017/12/11/Events
-"2017-11-24","DifferentialEquations.jl 3.1: Jacobian Passing",https://sciml.ai/news/2017/11/24/Jacobians
-"2017-08-25","Stiff SDE and DDE Solvers",https://sciml.ai/news/2017/08/25/StiffDDESDE
-"2017-08-13","SDIRK Methods",https://sciml.ai/news/2017/08/13/SDIRK
-"2017-07-06","SDIRK Methods",https://sciml.ai/news/2017/07/06/SymplecticRosenbrock
-"2017-05-17","Filling In The Interop Packages and Rosenbrock",https://sciml.ai/news/2017/05/17/Filling_in
-"2017-04-30","DifferentialEquations.jl 2.0",https://sciml.ai/news/2017/04/30/API_changes
-"2017-04-07","DifferentialEquations.jl v1.9.1",https://sciml.ai/news/2017/04/07/features
-"2017-04-04","DifferentialEquations.jl Workshop at JuliaCon 2017",https://sciml.ai/news/2017/04/04/juliacon
-"2017-02-02","DifferentialEquations.jl v1.8.0",https://sciml.ai/news/2017/02/02/interps
-"2017-01-14","DifferentialEquations.jl v1.6.0",https://sciml.ai/news/2017/01/14/stable
-"2017-01-08","base",https://sciml.ai/news/2017/01/08/base
-"2017-01-05","PDEs Update",https://sciml.ai/news/2017/01/05/fem
-"2017-01-01","DifferentialEquations.jl 3.3: IMEX Solvers",https://sciml.ai/news/2017/01/01/IMEX
-"2016-11-26","Hello World!!",https://sciml.ai/news/2016/11/26/hello
-"2016-01-21","OrdinaryDiffEq v0.5",https://sciml.ai/news/2016/01/21/saveat
+11/11/2021,"MIT + Pumas-AI + Roche team wins International Society of Pharmacology (ISoP) Mathematics and Computing Special Interest Group Award for ""Automatic identification of non-obvious prognostic factors in big data with DeepNLME""",https://twitter.com/ChrisRackauckas/status/1458394446991708165
+8/31/2021,"SciML Receives Chan Zuckerberg Institute Funding: Spatial SSAs, Identifiability, and Compile Times",https://sciml.ai/news/2021/08/31/czi
+8/26/2021,SciML Common Interface Expansion,https://sciml.ai/news/2021/08/26/expansion
+8/16/2021,SciML at JuliaCon 2021,https://sciml.ai/news/2021/08/16/juliacon2021
+5/24/2021,SciML Ecosystem Update: Improved QNDF Outperforms CVODE On SciMLBenchmarks,https://sciml.ai/news/2021/05/24/QNDF
+2/5/2021,"SciML Ecosystem Update: GalacticOptim, GlobalSensitivity, Tutorials, and Documentation",https://sciml.ai/news/2021/02/05/galacticoptim
+1/19/2021,"SciML Ecosystem Update: Bayesian Neural ODEs, Virtual Brownian Trees, Parallel Batching and More",https://sciml.ai/news/2021/01/19/bayesian_neural_ode
+9/5/2020,"SciML Ecosystem Update: Koopman Optimization Under Uncertainty, Non-Commutative SDEs, GPUs in R, and More",https://sciml.ai/news/2020/09/05/Koopman
+8/17/2020,"SciML Ecosystem Update: Neural PDEs, Lie Groups, and Stochastic Delay Differential Equations",https://sciml.ai/news/2020/08/17/NeuralPDE
+8/10/2020,"SciML Ecosystem Update: SDE Adjoints, FFORD Layers, and Jump Diffusion",https://sciml.ai/news/2020/08/10/StochasticBonanza
+6/1/2020,SciML Ecosystem Update: Auto-Parallelism and Component-Based Modeling,https://sciml.ai/news/2020/06/01/ModellingToolkit
+5/9/2020,SciML Ecosystem Update: Automated Model Discovery with DataDrivenDiffEq.jl and ReservoirComputing.jl,https://sciml.ai/news/2020/05/09/ModelDiscovery
+3/29/2020,SciML: An Open Source Software Organization for Scientific Machine Learning,https://sciml.ai/news/2020/03/29/SciML
+3/23/2020,DifferentialEquations.jl v6.12.0: DAE Extravaganza,https://sciml.ai/news/2020/03/23/DAE
+2/18/2020,DifferentialEquations.jl v6.11.0: Universal Differential Equation Overhaul,https://sciml.ai/news/2020/02/18/Universal
+7/5/2019,DifferentialEquations.jl v6.7.0: GPU-based Ensembles and Automatic Sparsity,https://sciml.ai/news/2019/07/05/AutomaticSparsity
+6/24/2019,"DifferentialEquations.jl v6.6.0: Sparse Jacobian Coloring, Quantum Computer ODE Solvers, and Stiff SDEs",https://sciml.ai/news/2019/06/24/coloring
+6/6/2019,"DifferentialEquations.jl v6.5.0: Stiff SDEs, VectorContinuousCallback, Multithreaded Extrapolation",https://sciml.ai/news/2019/06/06/StiffSDEs
+5/9/2019,"DifferentialEquations.jl v6.4.0: Full GPU ODE, Performance, ModelingToolkit",https://sciml.ai/news/2019/05/09/GPU
+2/2/2019,"DifferentialEquations.jl 6.0: Radau5,Hyperbolic PDEs, Dependency Reductions",https://sciml.ai/news/2019/02/02/RadauAnderson
+8/20/2018,"DifferentialEquations.jl 5.0: v1.0,Jacobian Types, EPIRK",https://sciml.ai/news/2018/08/20/FunctionInputEPIRK
+7/5/2018,"DifferentialEquations.jl 4.6: Global Sensitivity Analysis, Variable Order Adams",https://sciml.ai/news/2018/07/05/GSAVariableOrder
+5/26/2018,"DifferentialEquations.jl 4.5: ABC, Adaptive Multistep, Maximum A Posteriori",https://sciml.ai/news/2018/05/26/ABCMore
+4/30/2018,A ''Jupyter'' of DiffEq: Introducing Python and R Bindings for DifferentialEquations.jl,https://sciml.ai/news/2018/04/30/Jupyter
+4/13/2018,DifferentialEquations.jl 4.4: Enhanced Stability and IMEX SDE Integrators,https://sciml.ai/news/2018/04/13/StableSDE
+4/9/2018,DifferentialEquations.jl 4.3: Automatic Stiffness Detection and Switching,https://sciml.ai/news/2018/04/09/AutoSwitch
+3/31/2018,"DifferentialEquations.jl 4.2: Krylov Exponential Integrators, Non-Diagonal Adaptive SDEs, Tau-Leaping",https://sciml.ai/news/2018/03/31/AdaptiveLowSDE
+2/17/2018,DifferentialEquations.jl 4.1: New ReactionDSL and KLU Sundials,https://sciml.ai/news/2018/02/17/Reactions
+1/24/2018,"DifferentialEquations.jl 4.0: Breaking Syntax Changes, Adjoint Sensitivity, Bayesian Estimation, and ETDRK4",https://sciml.ai/news/2018/01/24/Parameters
+1/15/2018,"DifferentialEquations.jl 3.4: Sundials 3.1, ARKODE, Static Arrays",https://sciml.ai/news/2018/01/15/Sundials
+12/11/2017,DifferentialEquations.jl 3.2: Expansion of Event Compatibility,https://sciml.ai/news/2017/12/11/Events
+11/24/2017,DifferentialEquations.jl 3.1: Jacobian Passing,https://sciml.ai/news/2017/11/24/Jacobians
+8/25/2017,Stiff SDE and DDE Solvers,https://sciml.ai/news/2017/08/25/StiffDDESDE
+8/13/2017,SDIRK Methods,https://sciml.ai/news/2017/08/13/SDIRK
+7/6/2017,SDIRK Methods,https://sciml.ai/news/2017/07/06/SymplecticRosenbrock
+5/17/2017,Filling In The Interop Packages and Rosenbrock,https://sciml.ai/news/2017/05/17/Filling_in
+4/30/2017,DifferentialEquations.jl 2.0,https://sciml.ai/news/2017/04/30/API_changes
+4/7/2017,DifferentialEquations.jl v1.9.1,https://sciml.ai/news/2017/04/07/features
+4/4/2017,DifferentialEquations.jl Workshop at JuliaCon 2017,https://sciml.ai/news/2017/04/04/juliacon
+2/2/2017,DifferentialEquations.jl v1.8.0,https://sciml.ai/news/2017/02/02/interps
+1/14/2017,DifferentialEquations.jl v1.6.0,https://sciml.ai/news/2017/01/14/stable
+1/8/2017,base,https://sciml.ai/news/2017/01/08/base
+1/5/2017,PDEs Update,https://sciml.ai/news/2017/01/05/fem
+1/1/2017,DifferentialEquations.jl 3.3: IMEX Solvers,https://sciml.ai/news/2017/01/01/IMEX
+11/26/2016,Hello World!!,https://sciml.ai/news/2016/11/26/hello
+1/21/2016,OrdinaryDiffEq v0.5,https://sciml.ai/news/2016/01/21/saveat
