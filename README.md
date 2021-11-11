@@ -4,9 +4,13 @@
 
 JuliaLab Website. Edit this to edit the website.
 
-## How to update content
-- "News" section: update `_assets/news.csv`
-- "Research/Grants" section: update `_assets/research-grants.csv` and `_assets/research-grants` (pay attention to the name format)
-- "Publications" section: update `_assets/julialab.bib` (pay attention to the bibtex format)
-- "People" section: update `_assets/people.csv` and `_assets/people` (pay attention to the name format)
+### Which files must be modified to update basic content
+- "News" section: `_assets/news.csv`
+- "Research/Grants" section: `_assets/research-grants.csv` and `_assets/research-grants` (pay attention to the name format)
+- "Publications" section: `_assets/julialab.bib` (pay attention to the bibtex format) and `publications.md`
+- "People" section: `_assets/people.csv` and `_assets/people` (pay attention to the name format)
+
+### Notes about deploy
+- Changes applied to the master branch will be automatically deployed to the gh-pages branch.
+- If you add a new dependency, remember to add it also in `.github/workflows/deploy.yml`.
 
