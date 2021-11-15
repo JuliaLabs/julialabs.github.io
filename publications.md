@@ -35,6 +35,7 @@ SIAM Review 59: 65–98 (2017). DOI: 10.1137/141000671.
     Rackauckas2021Composing
     Schafer2021AbstractDifferentiation
     Dandekar2021Implications
+    Gnadt2020Signal
 
     Hall2021
     Anantharaman2021
