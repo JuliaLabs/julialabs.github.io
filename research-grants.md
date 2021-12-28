@@ -1,4 +1,4 @@
-# Research/Grants: High-Performance / Parallel Computing, Scientific Machine Learning (SciML), Physics-Informed Learning
+# Research/Grants: Differentiable Programming and Scaling Scientific Machine Learning (SciML)
 
 ~~~
 <div class="grants-container">
