@@ -1,4 +1,4 @@
-# Research/Grants
+# Research/Grants: High-Performance / Parallel Computing, Scientific Machine Learning (SciML), Physics-Informed Learning
 
 ~~~
 <div class="grants-container">
