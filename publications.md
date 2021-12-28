@@ -1,4 +1,4 @@
-# Publications
+# Publications: Automating High-Performance Computing and Physics-Informed Learning 
 
 Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many universities worldwide.
 If you use **Julia** in your research we request citing the following paper:
