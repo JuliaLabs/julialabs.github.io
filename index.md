@@ -1,4 +1,4 @@
-@def title = "Julia Lab"
+@def title = "Julia Lab: Language, Composability, and Scientific Machine Learning (SciML)"
 @def tags = ["syntax", "code"]
 
 
