@@ -36,6 +36,7 @@ SIAM Review 59: 65–98 (2017). DOI: 10.1137/141000671.
     Schafer2021AbstractDifferentiation
     Dandekar2021Implications
     Gnadt2020Signal
+    Gnadt2022
 
     Hall2021
     Anantharaman2021
