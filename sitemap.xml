@@ -8,6 +8,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://julia.mit.edu/publications/index.html</loc>
+    <lastmod>2022-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://julia.mit.edu/news/index.html</loc>
     <lastmod>2022-01-21</lastmod>
     <changefreq>monthly</changefreq>
