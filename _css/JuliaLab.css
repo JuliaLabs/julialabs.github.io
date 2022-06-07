@@ -49,7 +49,7 @@ header {
 }
 
 header > .container {
-    width: 957px;
+    width: 1010px;
     margin: 0 auto;
     display: flex;
     align-content: space-between;
@@ -192,7 +192,8 @@ instead, display a burger menu.
   }
 
   nav {
-    margin-left: auto;
+
+    margin-top: 20px;
   }
 
   nav ul,

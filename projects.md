@@ -5,7 +5,7 @@ to the mentor listed next to project.
 
 ## Methods in Scientific Machine Learning
 
-A large list of projects in scientific machine learning can be found at https://sciml.ai/dev/#projects_lists. Take that
+A large list of projects in scientific machine learning can be found [here](https://sciml.ai/dev/#projects_lists). Take that
 list as a set of ideas from which larger projects cna be chosen.
 
 ## Julia Compiler/Runtime for HPC
