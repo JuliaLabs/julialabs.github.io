@@ -41,7 +41,7 @@ nav li a {
 }
 
 header {
-  padding: 7px 4%;
+  padding: 1px 4%;
   display: flex;
   align-items: center;
   background: #2e5454;
@@ -62,7 +62,7 @@ header li a:hover {
 header .julia-slogan-header {
     text-align: left;
     color: white;
-    margin: 0px 15px;
+    margin: 15px 15px 15px 15px;
     flex: 1 1 350px;
 }
 
