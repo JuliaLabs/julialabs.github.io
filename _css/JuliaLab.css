@@ -160,8 +160,7 @@ header .julia-slogan-header {
 .footer {
     background-image: url('/assets/images/footer.png');
     margin-top: 25px;
-    padding-bottom: 12px;
-    
+    padding-bottom: 40px;
 }
 
 .publicationlink{
@@ -223,8 +222,9 @@ instead, display a burger menu.
 
   #menu-icon {
     display: inline-block;
-    margin-right: 10px;
-    margin-top: 5px;
+    width: 90%;
+    /*margin-right: 10px;*/
+    /*margin-top: 5px;*/
   }
   
   .news {
