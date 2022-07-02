@@ -11,6 +11,12 @@ JuliaLab Website. Edit this to edit the website.
 - "People" section: `_assets/people.csv` and `_assets/people` (pay attention to the name format)
 
 ### Notes about deploy
-- Changes applied to the master branch will be automatically deployed to the gh-pages branch.
-- If you add a new dependency, remember to add it also in `.github/workflows/deploy.yml`.
+- You can serve the webpage locally by:
+  > `$ julia --project=@.`
+  ```julia
+  julia> using Pkg; Pkg.instantiate()
 
+  julia> using Franklin; Franklin.serve()
+  ```
+- Changes applied to the `master` branch will be automatically deployed to the `gh-pages` branch.
+- If you add a new dependency, remember to add it also in `Project.toml`.
