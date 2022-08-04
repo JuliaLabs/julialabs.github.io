@@ -1,26 +1,22 @@
 # Projects (MEng/UROP)
 
-If you are interested in any of these projects and are a current MIT student looking for a UROP or MEng please reach out
-to the mentor listed next to project.
+If you are interested in any of these projects and are a current MIT student looking for a UROP or MEng please reach out to the mentor listed next to project.
 
 ## Methods in Scientific Machine Learning
 
-A large list of projects in scientific machine learning can be found [here](https://sciml.ai/dev/#projects_lists). Take that
-list as a set of ideas from which larger projects can be chosen.
+A large list of projects in scientific machine learning can be found [here](https://sciml.ai/dev/#projects_lists). Take that list as a set of ideas from which larger projects can be chosen.
 
 ## Julia Compiler/Runtime for HPC
 Mentor: Valentin Churavy
 
-We have many projects for working on compiler or runtimes in the context of scientific computing, the topics below can
-serve as inspiration.
+We have many projects for working on compiler or runtimes in the context of scientific computing, the topics below can serve as inspiration.
 
 
 ### Accelerated computing
 - Caching for GPU kernel compilation
 
 #### KernelAbstractions.jl
-[KernelAbstractions.jl](https://github.com/JuliaGPU/KernelAbstractions.jl) provides a common interface for writing
-GPU kernels in Julia and executing them on multiple platforms.
+[KernelAbstractions.jl](https://github.com/JuliaGPU/KernelAbstractions.jl) provides a common interface for writing GPU kernels in Julia and executing them on multiple platforms.
 
 
 #### AMDGPU.jl
@@ -54,3 +50,11 @@ Mentor: Julian Samaroo
 Feasibility study on reducing the size of an a-HfO2 dataset using a parallel method based on HDBSCAN and ACE. A parallel Julia implementation of a state of the art method will be required as well as the proposal of an improved version aligned to [CESMIX](https://computing.mit.edu/cesmix/) objectives.
 Description [here](https://docs.google.com/document/d/1SWAanEWQkpsbr2lqetMO3uvdX_QK-Z7dwrgPaM1Dl0o/edit?usp=sharing). 
 Contact: Emmanuel Lujan (eljn AT mit DOT edu)
+
+### Accelerate interatomic force calculations by composing novel machine learning potentials in Julia.
+
+One of the main challenges of atomistic simulations is the acceleration of force calculations. Machine learning potentials promise the accuracy of first-principles methods at a lower computational cost.  Simplifying the creation of these potentials (composed of data, descriptors and learning methods) enables systematizing the search for those combinations that exceed the accuracy and performance of the state of the art. This requires the development of new software abstractions and parallel tools. 
+A more detailed description of the project can be found [here](https://docs.google.com/document/d/1mcZlfOULcqglCNqnCJ-ya1E39CLUircjMhfBtQhXP0k/edit?usp=sharing). 
+Contact: Emmanuel Lujan (eljn AT mit DOT edu).
+
+
