@@ -66,3 +66,11 @@ complete pivoting: [paper link](https://people.maths.ox.ac.uk/trefethen/publicat
 suggest (with a clear caveat)  that the growth is n^(2/3) and n^(1/2).  Some years later I histogrammed some values of n maybe
 1000, 2000, and 4000 (I'd have to dig it up -- buried in my files), and perhaps I histogrammed g/n^(1/2) or g/n^(2/3) and found
 one lined up nice and the other did not.  See what you can find.
+
+### Generic LAPACK
+
+Over the years people have said that an LAPACK rewritten in Julia could have more interesting properties, and also have a smaller codebase
+if done carefully.   Find something in [Generic Linear Algebra.jl](https://github.com/JuliaLinearAlgebra/GenericLinearAlgebra.jl) that
+is not there currently and add to it, and check that it runs at least as fast as original LAPACK, but perhaps works on quaternions, or funny
+number fields, or matrices of matrices etc., and that you can run autodiff on these constructs.
+
