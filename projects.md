@@ -57,4 +57,12 @@ One of the main challenges of atomistic simulations is the acceleration of force
 A more detailed description of the project can be found [here](https://docs.google.com/document/d/1mcZlfOULcqglCNqnCJ-ya1E39CLUircjMhfBtQhXP0k/edit?usp=sharing). 
 Contact: Emmanuel Lujan (eljn AT mit DOT edu).
 
+# Projects (additional for 18.337)
 
+### Gaussian Elimination Growth
+
+In 1990 Trefethen and Schreiber produced an influential paper on the average case stability of Gaussian elimination with partial and
+complete pivoting: [paper link](https://people.maths.ox.ac.uk/trefethen/publication/PDF/1990_44.pdf). In Eq. (6.2) and Figure 6.2 they
+suggest (with a clear caveat)  that the growth is n^(2/3) and n^(1/2).  Some years later I histogrammed some values of n maybe
+1000, 2000, and 4000 (I'd have to dig it up -- buried in my files), and perhaps I histogrammed g/n^(1/2) or g/n^(2/3) and found
+one lined up nice and the other did not.  See what you can find.
