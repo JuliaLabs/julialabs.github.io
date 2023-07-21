@@ -57,6 +57,12 @@ One of the main challenges of atomistic simulations is the acceleration of force
 A more detailed description of the project can be found [here](https://docs.google.com/document/d/1mcZlfOULcqglCNqnCJ-ya1E39CLUircjMhfBtQhXP0k/edit?usp=sharing). 
 Contact: Emmanuel Lujan (eljn AT mit DOT edu).
 
+## Matrix decompositions for GPUs
+Mentor: Evelyne Ringoot
+
+We have a number of UROP projects in the implementation of matrix decompositions for GPUs in Julia Language. No experience needed, only an interest in numerical linear algebra, a desire to learn Julia and to contribute to the development of the next-generation GPU/HPC algorithms.
+Please contact Evelyne Ringoot before September 10 if interested.
+
 # Projects (additional for 18.337)
 
 ### Gaussian Elimination Growth
