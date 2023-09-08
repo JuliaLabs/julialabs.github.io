@@ -38,7 +38,8 @@ news = aux
 # Current members, alumni, and collaborators
 current_members = []
 alumni = []
-collaborators = []
+internal_collaborators = []
+external_collaborators = []
 for (name, position, website, role, photo) in eachrow(people)
         if photo == "Yes"
             photo_path = replace(name, r" " => s"_")
@@ -48,10 +49,12 @@ for (name, position, website, role, photo) in eachrow(people)
         data = [name, position, website, photo_path]
         if role == "Current Member"
             push!(current_members, data)
-        elseif role == "Alumni"
+        elseif role == "Internal Collaborator"
+            push!(internal_collaborators, data)
+        elseif role == "External Collaborator"
+            push!(external_collaborators, data)
+        else role == "Alumni"
             push!(alumni, data)
-        else
-            push!(collaborators, data)
         end
 end
 
