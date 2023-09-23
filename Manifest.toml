@@ -47,15 +47,15 @@ uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
 
 [[Franklin]]
 deps = ["Dates", "DelimitedFiles", "DocStringExtensions", "ExprTools", "FranklinTemplates", "HTTP", "Literate", "LiveServer", "Logging", "Markdown", "NodeJS", "OrderedCollections", "Pkg", "REPL", "Random", "TOML"]
-git-tree-sha1 = "d7c18e801b380eb04eec8aa64f97366c6e6e21c2"
+git-tree-sha1 = "a9dd685745912cbe1d8d9c5e3126ab1f885b94ee"
 uuid = "713c75ef-9fc9-4b05-94a9-213340da978e"
-version = "0.10.92"
+version = "0.10.93"
 
 [[FranklinTemplates]]
 deps = ["LiveServer"]
-git-tree-sha1 = "d246fed0d7de3846c78503a1e5709d2955ba0db8"
+git-tree-sha1 = "c01813a615149ddb3b3d133f33de29d642fbe57b"
 uuid = "3a985190-f512-4703-8d38-2a7944ed5916"
-version = "0.10.0"
+version = "0.10.2"
 
 [[HTTP]]
 deps = ["Base64", "Dates", "IniFile", "Logging", "MbedTLS", "NetworkOptions", "Sockets", "URIs"]
@@ -164,9 +164,9 @@ uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 
 [[Preferences]]
 deps = ["TOML"]
-git-tree-sha1 = "7eb1686b4f04b82f96ed7a4ea5890a4f0c7a09f1"
+git-tree-sha1 = "00805cd429dcb4870060ff49ef443486c262e38e"
 uuid = "21216c6a-2e73-6563-6e65-726566657250"
-version = "1.4.0"
+version = "1.4.1"
 
 [[Printf]]
 deps = ["Unicode"]
