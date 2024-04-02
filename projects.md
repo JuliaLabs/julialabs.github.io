@@ -6,19 +6,6 @@ If you are interested in any of these projects and are a current MIT student loo
 
 A large list of projects in scientific machine learning can be found [here](https://sciml.ai/dev/#projects_lists). Take that list as a set of ideas from which larger projects can be chosen.
 
-## Julia Compiler/Runtime for HPC
-Mentor: Valentin Churavy
-
-We have many projects for working on compiler or runtimes in the context of scientific computing, the topics below can serve as inspiration.
-
-
-### Accelerated computing
-- Caching for GPU kernel compilation
-
-#### KernelAbstractions.jl
-[KernelAbstractions.jl](https://github.com/JuliaGPU/KernelAbstractions.jl) provides a common interface for writing GPU kernels in Julia and executing them on multiple platforms.
-
-
 #### AMDGPU.jl
 Mentor: Julian Samaroo
 
@@ -44,6 +31,13 @@ Mentor: Julian Samaroo
 - Exploring profile-guided optimization
 
 ## CESMIX
+
+### Fast code, machine learning, or physics. Your choice.
+
+Graphics Processing Units (GPUs) are efficient computational devices for a variety of tasks, including gaming, AI, and large scale scientific computation. We are looking for an undergraduate student to help develop a performant molecular dynamics engine in Julia that works on the GPU. The student will have their choice to focus on software abstractions for the entire JuliaGPU ecosystem, machine learning and it's interface with physics, or methods to improve communication between atoms. This project will provide the student with key software development experience in Julia, GPU computing, supercomputing, etc.
+
+Contact: James Schloss (jars AT mit DOT edu)
+
 
 ### Accelerate learning by automatically reducing the size of the training dataset.
 
