@@ -51,11 +51,16 @@ One of the main challenges of atomistic simulations is the acceleration of force
 A more detailed description of the project can be found [here](https://docs.google.com/document/d/1mcZlfOULcqglCNqnCJ-ya1E39CLUircjMhfBtQhXP0k/edit?usp=sharing). 
 Contact: Emmanuel Lujan (eljn AT mit DOT edu).
 
-## Matrix decompositions for GPUs
+## Fall 2023 - Matrix decompositions for GPUs
 Mentor: Evelyne Ringoot
 
 We have a number of UROP projects in the implementation of matrix decompositions for GPUs in Julia Language. No experience needed, only an interest in numerical linear algebra, a desire to learn Julia and to contribute to the development of the next-generation GPU/HPC algorithms.
 Please contact Evelyne Ringoot before September 10 if interested.
+
+## Summer UROP 2024 - migration of CoreBLAS routines (C) to Julia language
+Mentor: Rabab Alomairy and Evelyne Ringoot
+
+We are looking to migrate some of the CoreBLAS PLASMA matrix operation routines (https://icl.utk.edu/plasma/docs/index.html and https://github.com/Rabab53/CoreBlas) to Julia-native version, in order to create efficient linear algebra HPC routines. Preference for students with experience in numerical linear algebra and coding in C and who are looking to get more programming experience, please reach out to Evelyne Ringoot if interested.
 
 # Projects (additional for 18.337)
 
