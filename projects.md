@@ -30,15 +30,6 @@ Mentor: Julian Samaroo
 - Debug-information on demand
 - Exploring profile-guided optimization
 
-## CESMIX
-
-### Fast code, machine learning, or physics. Your choice.
-
-Graphics Processing Units (GPUs) are efficient computational devices for a variety of tasks, including gaming, AI, and large scale scientific computation. We are looking for an undergraduate student to help develop a performant molecular dynamics engine in Julia that works on the GPU. The student will have their choice to focus on software abstractions for the entire JuliaGPU ecosystem, machine learning and it's interface with physics, or methods to improve communication between atoms. This project will provide the student with key software development experience in Julia, GPU computing, supercomputing, etc.
-
-Contact: James Schloss (jars AT mit DOT edu)
-
-
 ### Accelerate learning by automatically reducing the size of the training dataset.
 
 Feasibility study on reducing the size of an a-HfO2 dataset using a parallel method based on HDBSCAN and ACE. A parallel Julia implementation of a state of the art method will be required as well as the proposal of an improved version aligned to [CESMIX](https://computing.mit.edu/cesmix/) objectives.
