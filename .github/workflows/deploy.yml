@@ -14,8 +14,6 @@ jobs:
         persist-credentials: false
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
-      with:
-        version: 1.5
     - run: julia -e '
             using Pkg; Pkg.activate("."); Pkg.instantiate();
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);

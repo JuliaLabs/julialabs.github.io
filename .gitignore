@@ -1,4 +1,6 @@
 __site
+node_modules
+package*
 .DS_Store
 .sass-cache
 frankli*

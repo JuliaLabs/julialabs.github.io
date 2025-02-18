@@ -19,18 +19,28 @@ function ref_item(ref, infos)
             authors *= ", "
         end
     end
-    url = replace(infos["url"], " " => "")
-    write(io, "<li id=\"#$ref\">")
-    write(io, """<a href="$url" class="publicationlink">""")
-    write(io, """$(infos["title"])""")
-    write(io, "  </a><br>")
+    title = replace(infos["title"], "{" => "", "}" => "")
+    write(io, """<li class="publication-item" id=\"#$ref\">""")
+    if haskey(infos, "url")
+        url = replace(infos["url"], " " => "")
+        write(io, """<a href="$url" class="publication-link">""")
+        write(io, """$(title)""")
+        write(io, "  </a><br>")
+    else
+        write(io, """$title<br>""")
+    end
     write(io, """$authors<br>""")
-    write(io, """$(infos["journal"]) ($(infos["year"])). """)
+    if haskey(infos, "journal")
+        write(io, """$(infos["journal"]) ($(infos["year"])). """)
+    elseif haskey(infos, "publisher")
+        write(io, """$(infos["publisher"]) ($(infos["year"])). """)
+    else
+        write(io, """($(infos["year"])). """)
+    end
     if haskey(infos, "doi")
         write(io, """DOI:$(infos["doi"]). """)
     end
     write(io, "</li>")
-    write(io, "<br>")
     return String(take!(io))
 end
 
@@ -38,7 +48,7 @@ end
 function hfun_show_refs(refs)
     _, allrefs = parse_bibtex(read(joinpath("_assets", "julialab.bib"), String))
     out = IOBuffer()
-    write(out, "<ul>")
+    write(out, "<ul class=\"publication-list\">")
     for ref in refs
         infos = get(allrefs, ref, nothing)
         isnothing(infos) && continue

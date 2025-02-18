@@ -1,27 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{if hasmath}} {{insert head_katex.html }}     {{end}}
-    {{if hascode}} {{insert head_highlight.html }}   {{end}}
-    <link rel="stylesheet" href="/css/franklin.css">
-    <link rel="stylesheet" href="/css/JuliaLab.css">
-  
-    <link rel="stylesheet" type="text/css" href="/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <script type="text/javascript" src="/js/modernizr.custom.26633.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{if hasmath}} {{insert head_katex.html }} {{end}} {{if hascode}} {{insert
+    head_highlight.html }} {{end}}
+    <link rel="stylesheet" type="text/css" href="/css/franklin.css" />
+    <link rel="stylesheet" type="text/css" href="/css/JuliaLab.css" />
+    <link rel="stylesheet" type="text/css" href="/css/grid.css" />
     <noscript>
-        <link rel="stylesheet" type="text/css" href="/css/fallback.css" />
+      <link rel="stylesheet" type="text/css" href="/css/grid-fallback.css" />
     </noscript>
-    <!--[if lt IE 9]>
-        <link rel="stylesheet" type="text/css" href="/css/fallback.css" />
-    <![endif]-->
-    
-  <link rel="icon" href="/assets/images/logo.png">
-  {{isdef title}} <title>{{fill title}}</title>  {{end}}
-</head>
-<body>
-  {{insert header.html}}
-
-<!-- Content appended here -->
+    <script type="text/javascript" src="/js/modernizr.custom.26633.js"></script>
+    <link rel="icon" href="/assets/images/logo.png" />
+    {{isdef title}}
+    <title>{{fill title}}</title>
+    {{end}}
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/">
+          <img id="logo" src="/assets/images/julia-lab-logo.svg" alt="logo" />
+        </a>
+        <div class="julia-slogan-header">
+          <strong>Accelerating Computation</strong> through a marriage of
+          <strong>Computer Science</strong> &
+          <strong>Computational Science</strong>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/news/">News</a></li>
+            <li><a href="/research-grants/">Research/Grants</a></li>
+            <li><a href="/projects/">Project Ideas</a></li>
+            <li><a href="/publications/">Publications</a></li>
+            <li><a href="/people/">People</a></li>
+          </ul>
+          <img
+            id="menu-icon"
+            src="/assets/images/hamburger.svg"
+            alt="hamburger"
+          />
+        </nav>
+      </div>
+      <div class="julia-slogan-header-alt">
+        <strong>Accelerating Computation</strong> through a marriage of
+        <strong>Computer Science</strong> &
+        <strong>Computational Science</strong>
+      </div>
+    </header>
+    <!-- CONTENT STARTS HERE -->
