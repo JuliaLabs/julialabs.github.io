@@ -1,4 +1,72 @@
-# Projects (MEng/UROP)
+# Postdoc Projects
+
+## Postdoctoral Research Position: Scientific Machine Learning for Next-Generation QSP Models
+
+**MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)**  
+**Principal Investigators: Professor Alan Edelman & Dr. Chris Rackauckas**
+
+### Position Overview
+
+We are seeking a highly motivated postdoctoral researcher to join a collaborative research project between MIT and GSK, focusing on the integration of Scientific Machine Learning (SciML) with Quantitative Systems Pharmacology (QSP) models. This exciting opportunity combines cutting-edge computational methods with pharmaceutical research to develop next-generation high-fidelity predictive models.
+
+### Research Focus
+
+The successful candidate will work on developing and training advanced emulator models using stiff ODE QSP systems, with applications to HIV, HBV, and/or other disease models. The research will also explore automated discovery of missing elements of models using universal differential equations. The project aims to assess whether combining QSP model emulation with available data can produce superior predictive accuracy compared to traditional approaches.
+
+### Key Responsibilities
+
+- Develop and train state-of-the-art emulator models using stiff ODE QSP describing disease models (HIV, HBV, and/or others)
+- Build predictive ML models using preclinical and clinical training data
+- Create SciML models combining QSP/QST frameworks with clinical datasets
+- Integrate novel datasets (e.g., Omics data) with traditional QSP approaches
+- Develop open source Julia software packages for the research community
+- Collaborate closely with GSK researchers through regular meetings
+- Publish research findings in high-impact journals and present at conferences
+
+### Required Qualifications
+
+- PhD in Computer Science, Applied Mathematics, Computational Biology, Bioengineering, or related field
+- Strong programming experience in Julia (preferred) or willingness to learn
+- Experience with differential equations, particularly stiff ODEs
+- Background in machine learning and scientific computing
+- Knowledge of pharmacometrics, systems biology, or related fields
+- Strong publication record and communication skills
+
+### Preferred Qualifications
+
+- Experience with Scientific Machine Learning (SciML) frameworks
+- Background in pharmacokinetic/pharmacodynamic modeling
+- Familiarity with quantitative systems pharmacology
+- Experience with neural ODEs or physics-informed neural networks
+- Knowledge of pharmaceutical drug development processes
+
+### Position Details
+
+- **Duration:** 2 years with possibility of extension
+- **Start Date:** As soon as possible
+- **Location:** MIT CSAIL, Cambridge, MA
+- **Funding:** Fully funded position with competitive salary and benefits
+- **Travel:** Opportunities for conference travel and professional development
+
+### About the Environment
+
+This position offers a unique opportunity to work at the intersection of computational science and pharmaceutical research. You will be part of the vibrant Julia Lab at MIT while collaborating with industry partners at GSK. You will be integrated with the Kendall Square pharmaceutical community, which hosts many of the largest pharmaceutical firms in the world. The research will contribute to open source software development and aims to produce high-impact publications.
+
+Regular interactions with GSK researchers will provide valuable industry perspective and potential career networking opportunities. The successful candidate will have access to cutting-edge computational resources and will be encouraged to participate in the broader SciML and Julia communities.
+
+### Application Process
+
+Please submit the following materials:
+
+1. Cover letter describing research interests and relevant experience
+2. Current CV including publication list
+3. Contact information for three professional references
+4. Brief research statement (1-2 pages) outlining your vision for this project
+
+**Application Deadline:** Open until filled  
+**Contact:** Dr. Chris Rackauckas (crackauc@mit.edu)
+
+# Projects (PhD/MEng/UROP)
 
 If you are interested in any of these projects and are a current MIT student looking for a UROP or MEng please reach out to the mentor listed next to project.
 
