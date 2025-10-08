@@ -27,6 +27,7 @@ The successful candidate will work on developing and training advanced emulator 
 
 - PhD in Computer Science, Applied Mathematics, Computational Biology, Bioengineering, or related field
 - Strong programming experience in Julia (preferred) or willingness to learn
+- Demonstrated major contributions to open source libraries on the topic, in particular Julia open source libraries and those from the [SciML organization](https://sciml.ai/)
 - Experience with differential equations, particularly stiff ODEs
 - Background in machine learning and scientific computing
 - Knowledge of pharmacometrics, systems biology, or related fields
