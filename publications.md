@@ -9,9 +9,11 @@ Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many
 {{ show_refs
     <!-- 2025 -->
     alomairy_scalable_2025
+    ringoot2025gpuresidentmemoryawarealgorithmaccelerating
     carlson_c_2025
     bisain_new_2025
     tan_scalable_2025
+    ringoot2025performantUnified
 
     <!-- 2024 -->
     edelman_limit_2024
