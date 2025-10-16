@@ -10,6 +10,45 @@
 %    url={url to the journal/conference page of your article},
 %
 
+@misc{ringoot2025gpuresidentmemoryawarealgorithmaccelerating,
+      title={A GPU-resident Memory-Aware Algorithm for Accelerating Bidiagonalization of Banded Matrices}, 
+      author={Evelyne Ringoot and Rabab Alomairy and Alan Edelman},
+      year={2025},
+      eprint={2510.12705},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2510.12705}, 
+}
+@misc{ringoot2025performant Unified,
+      title={Performant Unified GPU Kernels for Portable Singular Value Computation Across Hardware and Precision}, 
+      author={Evelyne Ringoot and Rabab Alomairy and Valentin Churavy and Alan Edelman},
+      year={2025},
+      eprint={2508.06339},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2508.06339}, 
+}
+@InProceedings{10.1007/978-3-031-97196-9_13,
+author="Carric, Vicki
+and Onyango, Maxwell
+and Alomairy, Rabab
+and Ringoot, Evelyne
+and Schloss, James
+and Edelman, Alan",
+editor="Diehl, Patrick
+and Cao, Qinglei
+and Herault, Thomas
+and Bosilca, George",
+title="Toward Portable GPU Performance: Julia Recursive Implementation of TRMM and TRSM",
+booktitle="Asynchronous Many-Task Systems and Applications",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="154--164",
+abstract="This paper presents a performant and portable recursive implementation of triangular matrix-matrix multiplication (TRMM) and triangular solve (TRSM) operations in Julia for GPUs, which form the backbone of many other linear algebra algorithms. This work is based on an existing recursive implementation for TRMM and TRSM, which restructures the operations to include general matrix-matrix multiplication (GEMM) calls, facilitating better utilization of the GPU memory hierarchy, and reducing latency overhead. The unified implementation in Julia harnesses the language's multiple-dispatch and metaprogramming capabilities through the existing GPUArrays and KernelAbstractions frameworks, enabling performant hardware-agnostic execution across different GPU architectures. By supporting a consistent API, this implementation allows users to seamlessly switch between different GPU backends. The recursive hardware-agnostic implementation we present achieves performance comparable to vendor-optimized (cuBLAS/rocBLAS) libraries for larger matrix sizes and provides such methods for the first time to Apple Silicion hardware with only a few hundred lines of code, demonstrating the power of unified implementations.",
+isbn="978-3-031-97196-9"
+}
+
 
 @incollection{abdelrehim_active_nodate,
 	title = {Active {Learning} {Enhanced} {Surrogate} {Modeling} of {Jet} {Engines} in {JuliaSim}},
