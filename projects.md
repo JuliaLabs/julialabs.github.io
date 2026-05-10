@@ -75,46 +75,34 @@ If you are interested in any of these projects and are a current MIT student loo
 
 A large list of projects in scientific machine learning can be found [here](https://sciml.ai/dev/#projects_lists). Take that list as a set of ideas from which larger projects can be chosen.
 
-#### AMDGPU.jl
+### AMDGPU.jl
 Mentor: Julian Samaroo
 
-- Implement support for various ROCm libraries: rocSOLVER, rocSPARSE, MIOpen, etc.
-- Build ROCm libraries as JLLs
-- Explore integration with ROCm debugging and profiling tooling
+[AMDGPU.jl](https://github.com/JuliaGPU/AMDGPU.jl) brings ROCm-based GPU programming to Julia. Open project areas include:
 
-### Compiler based automatic-differentiation -- Enzyme.jl
+- Expanded support for ROCm libraries (rocSOLVER, rocSPARSE, MIOpen, etc.)
+- Integration with ROCm debugging and profiling tooling
+- Performance work on existing kernels and device-side abstractions
 
-[Enzyme.jl](https://github.com/EnzymeAD/Enzyme.jl) is the Julia frontend to the Enzyme automatic-differentiation engine.
+### Symbolic-numeric SciML
+Mentors: Bowen Zhu and Songchen Tan
 
-- Improved JIT compilation for Enzyme
-  - Compile on Demand / Parallel JIT
-  - Caching of Enzyme AD results
-  - Caching of inference results for reducing inital latency 
+Projects in the symbolic-numeric core of the SciML stack: hash-consing and term-graph optimizations in [Symbolics.jl](https://github.com/JuliaSymbolics/Symbolics.jl) and [SymbolicUtils.jl](https://github.com/JuliaSymbolics/SymbolicUtils.jl); higher-order automatic differentiation via Taylor-mode, and its use to build higher-order nonlinear solvers; symbolic simplification, code generation, and compilation for ModelingToolkit.jl. Interested students should be comfortable with Julia and have an interest in compilers, term rewriting, or numerical analysis.
 
-### General Julia compiler infrastructure
+### GPU acceleration of differential-equation solvers
+Mentor: Utkarsh
 
-- Improvements to Julia integration with native debuggers and profilers
-  - Better native debug-information (DWARF)
-  - Pretty-printers for GDB
-- Debug-information on demand
-- Exploring profile-guided optimization
+Projects in vendor-agnostic GPU acceleration of ODE/SDE/DAE solvers across NVIDIA, AMD, Intel, and Apple hardware via [DiffEqGPU.jl](https://github.com/SciML/DiffEqGPU.jl) and [KernelAbstractions.jl](https://github.com/JuliaGPU/KernelAbstractions.jl). Topics include kernel design for stiff solvers, distributed multi-GPU ensembles, event handling on GPU, and GPU-friendly automatic differentiation. Interested students should be comfortable with Julia and have some exposure to GPU programming.
 
-### Accelerate learning by automatically reducing the size of the training dataset.
+### Stochastic chemical reaction network discovery
+Joint with Sam Isaacson (Boston University), funded by NSF.
 
-Feasibility study on reducing the size of an a-HfO2 dataset using a parallel method based on HDBSCAN and ACE. A parallel Julia implementation of a state of the art method will be required as well as the proposal of an improved version aligned to [CESMIX](https://computing.mit.edu/cesmix/) objectives.
-Description [here](https://docs.google.com/document/d/1SWAanEWQkpsbr2lqetMO3uvdX_QK-Z7dwrgPaM1Dl0o/edit?usp=sharing). 
-Contact: Emmanuel Lujan (eljn AT mit DOT edu)
+Projects extending [Catalyst.jl](https://github.com/SciML/Catalyst.jl) and [JumpProcesses.jl](https://github.com/SciML/JumpProcesses.jl) for the discovery, simulation, and collaborative sharing of stochastic chemical reaction network models. Topics include scalable spatial SSAs, Bayesian inference of reaction networks from time-resolved concentration data (building on the recent CRNN/pSGLD work), and reproducible model-exchange formats for systems biology.
 
-### Accelerate interatomic force calculations by composing novel machine learning potentials in Julia.
-
-One of the main challenges of atomistic simulations is the acceleration of force calculations. Machine learning potentials promise the accuracy of first-principles methods at a lower computational cost.  Simplifying the creation of these potentials (composed of data, descriptors and learning methods) enables systematizing the search for those combinations that exceed the accuracy and performance of the state of the art. This requires the development of new software abstractions and parallel tools. 
-A more detailed description of the project can be found [here](https://docs.google.com/document/d/1mcZlfOULcqglCNqnCJ-ya1E39CLUircjMhfBtQhXP0k/edit?usp=sharing). 
-Contact: Emmanuel Lujan (eljn AT mit DOT edu).
-
-## Numerical linear algebra projects 
+## Numerical linear algebra projects
 Mentors: Rabab Alomairy and Evelyne Ringoot
 
-E.g. matrix decompositions algorithms for GPUS, migration of BLAS routines (C) to Julia language and other numerical linear algebra. Interested students who have taken 18.06 or equivalent, and have experience in either julia or C/C++, (great if experience with slurm/supercomputers), please reach out to Evelyne Ringoot and Rabab Alomairy with a resume and github profile link.
+E.g. matrix decompositions algorithms for GPUs, migration of BLAS routines (C) to Julia language and other numerical linear algebra. Interested students who have taken 18.06 or equivalent, and have experience in either Julia or C/C++, (great if experience with slurm/supercomputers), please reach out to Evelyne Ringoot and Rabab Alomairy with a resume and github profile link.
 
 # Projects (additional for 18.337)
 
