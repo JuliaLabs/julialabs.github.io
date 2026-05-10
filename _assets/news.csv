@@ -1,4 +1,25 @@
 date,title,link
+1/6/2026,"Avik Pal et al. present ""Physics-Informed Neural Surrogates for Mesh-Invariant Modeling of High-Speed Flows"" at AIAA SciTech 2026",https://www.aiaa.org/SciTech
+1/1/2026,"Avik Pal, Flemming Holtorf, Axel Larsson, Torkel Loman, Utkarsh, and Frank Schaefer publish NonlinearSolve.jl in ACM Transactions on Mathematical Software",https://arxiv.org/abs/2403.16341
+10/14/2025,"Evelyne Ringoot and Rabab Alomairy publish ""A GPU-resident Memory-Aware Algorithm for Accelerating Bidiagonalization of Banded Matrices""",https://arxiv.org/abs/2510.12705
+9/24/2025,"Bowen Zhu and Songchen Tan release ""Efficient Symbolic Computation via Hash Consing""",https://arxiv.org/abs/2509.20534
+8/8/2025,"Evelyne Ringoot, Rabab Alomairy, and Valentin Churavy publish ""Performant Unified GPU Kernels for Portable Singular Value Computation Across Hardware and Precision""",https://arxiv.org/abs/2508.06339
+7/4/2025,"Vaibhav Dixit and David Hofmann co-author ""Scientific machine learning of chaotic systems discovers governing equations for neural populations""",https://arxiv.org/abs/2507.03631
+6/4/2025,"Utkarsh et al. release ""Physics-Constrained Flow Matching: Sampling Generative Models with Hard Constraints"" (NeurIPS 2025)",https://arxiv.org/abs/2506.04171
+5/26/2025,"Avik Pal releases ""Semi-Explicit Neural DAEs: Learning Long-Horizon Dynamical Systems with Algebraic Constraints""",https://arxiv.org/abs/2505.20515
+1/28/2025,"Songchen Tan releases ""Scalable higher-order nonlinear solvers via higher-order automatic differentiation""",https://arxiv.org/abs/2501.16895
+7/1/2024,"Flemming Holtorf and Frank Schaefer publish ""Performance Bounds for Quantum Feedback Control"" in IEEE Transactions on Automatic Control",https://doi.org/10.1109/TAC.2024.3416008
+6/14/2024,"Avik Pal and Frank Schaefer co-author ""Differentiable Programming for Differential Equations: A Review""",https://arxiv.org/abs/2406.09699
+3/12/2024,"Avik Pal, Flemming Holtorf, Axel Larsson, Torkel Loman, Utkarsh, and Frank Schaefer release ""NonlinearSolve.jl: High-Performance and Robust Solvers for Systems of Nonlinear Equations in Julia""",https://arxiv.org/abs/2403.16341
+2/1/2024,"Utkarsh and Valentin Churavy co-author ""Automated translation and accelerated solving of differential equations on multiple GPU platforms"" in Computer Methods in Applied Mechanics and Engineering",https://www.sciencedirect.com/science/article/abs/pii/S0045782523007156
+1/29/2024,"Emily Nieves and Raj Dandekar publish ""Uncertainty Quantified Discovery of Chemical Reaction Systems via Bayesian Scientific Machine Learning"" in Frontiers in Systems Biology",https://www.frontiersin.org/journals/systems-biology/articles/10.3389/fsysb.2024.1338518/full
+12/1/2023,"Chris Rackauckas presents ""NonlinearSolve.jl: Efficient rootfinding and solving of algebraic equations in Julia"" at JuliaCon Local Eindhoven",https://www.youtube.com/watch?v=O-2F8fBuRRg
+11/13/2023,"Chris Rackauckas presents at the JuliaHEP 2023 Workshop in Erlangen on Automatic Differentiation, SciML, and maintaining large-scale Julia ecosystems",https://indico.cern.ch/event/1292759/
+10/20/2023,"Chris Rackauckas keynotes the LLNL Data-Driven Physical Simulations (DDPS) Seminar Series on ""Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models""",https://www.youtube.com/watch?v=16jtJDiJIuU
+8/29/2023,"Chris Rackauckas presents ""Improved Parallelism and Memory Performance Differentiating Stiff Differential Equations"" at ICIAM 2023",https://www.youtube.com/watch?v=5jat8moluUM
+7/27/2023,"Chris Rackauckas keynotes ASE60 (Synergistic Interactions Between Theory and Computation) at MIT on translating theory to differential-equation software",https://www.youtube.com/watch?v=s_t6dIKjUUc
+7/24/2023,"Chris Rackauckas keynotes JuliaCon 2023 with ""Scientific Machine Learning through Symbolic Numerics""",https://www.youtube.com/watch?v=tynmTkpdAME
+5/5/2023,"Chris Rackauckas presents ""Extending Scientific Machine Learning to Agent-Based Models"" at the ICLR 2023 AI4ABM Workshop",https://www.youtube.com/watch?v=fm277BM3Y8M
 4/11/2021,"MIT Julia Lab awarded a Climate Grand Challenge grant for briding computation with climate policymaking!",https://twitter.com/ChrisRackauckas/status/1513538343665029124
 3/9/2021,"MIT Julia Lab awarded Best Poster at the NeurIPS 2021 Differentiable Programming workshop for AbstractDifferentiation.jl!",https://twitter.com/ChrisRackauckas/status/1501533433138323465
 11/17/2021,"On 17th and 18th February 2022 there will be an introduction to Julia workshop at the Applied and Computational Mathematics (ACoM) laboratory, RWTH Aachen University.",https://michael-herbst.com/teaching/2022-rwth-julia-workshop/
