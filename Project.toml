@@ -1,4 +1,5 @@
 [deps]
 BibTeX = "7b0aa2c9-049f-5cec-894a-2b6b781bb25e"
 Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
+MbedTLS_jll = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
 NodeJS = "2bd173c7-0d6d-553b-b6af-13a54713934c"

@@ -31,7 +31,7 @@ website_url   = "https://julia.mit.edu/"
 prepath = ""
 
 # News, people, and grants
-news = readdlm("_assets/news.csv", ',', skipstart=1)
+news   = readdlm("_assets/news.csv", ',', skipstart=1)
 people = readdlm("_assets/people.csv", ',', skipstart=1)
 grants = readdlm("_assets/research-grants.csv", ',', skipstart=1)
 
