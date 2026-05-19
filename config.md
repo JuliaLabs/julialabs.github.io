@@ -137,6 +137,8 @@ for (name, position, website, role, photo) in eachrow(people)
             push!(alumni, data)
         end
 end
+sort!(alumni, by = entry -> lowercase(split(strip(entry[1]), " ")[end]))
+sort!(external_collaborators, by = entry -> lowercase(split(strip(entry[1]), " ")[end]))
 
 # Index photos and data
 index_photos = []
