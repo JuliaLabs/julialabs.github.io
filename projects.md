@@ -1,6 +1,9 @@
 # Postdoc Projects
 
-## Postdoctoral Research Position: Scientific Machine Learning for Next-Generation QSP Models
+~~~
+<div class="project-card">
+<h2 class="project-title">Postdoctoral Research Position: Scientific Machine Learning for Next-Generation QSP Models</h2>
+~~~
 
 **MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)**  
 **Principal Investigators: Professor Alan Edelman & Dr. Chris Rackauckas**
@@ -67,11 +70,15 @@ Please submit the following materials:
 **Application Deadline:** Open until filled  
 **Contact:** Dr. Chris Rackauckas (crackauc@mit.edu)
 
+~~~
+</div>
+~~~
+
 # Projects (PhD/MEng/UROP)
 
 If you are interested in any of these projects and are a current MIT student looking for a UROP or MEng please reach out to the mentor listed next to project.
 
-## Methods in Scientific Machine Learning
+### Methods in Scientific Machine Learning
 
 A large list of projects in scientific machine learning can be found [here](https://sciml.ai/dev/#projects_lists). Take that list as a set of ideas from which larger projects can be chosen.
 
@@ -111,7 +118,7 @@ One of the main challenges of atomistic simulations is the acceleration of force
 A more detailed description of the project can be found [here](https://docs.google.com/document/d/1mcZlfOULcqglCNqnCJ-ya1E39CLUircjMhfBtQhXP0k/edit?usp=sharing). 
 Contact: Emmanuel Lujan (eljn AT mit DOT edu).
 
-## Numerical linear algebra projects 
+### Numerical linear algebra projects 
 Mentors: Rabab Alomairy and Evelyne Ringoot
 
 E.g. matrix decompositions algorithms for GPUS, migration of BLAS routines (C) to Julia language and other numerical linear algebra. Interested students who have taken 18.06 or equivalent, and have experience in either julia or C/C++, (great if experience with slurm/supercomputers), please reach out to Evelyne Ringoot and Rabab Alomairy with a resume and github profile link.
@@ -133,3 +140,81 @@ if done carefully.   Find something in [Generic Linear Algebra.jl](https://githu
 is not there currently and add to it, and check that it runs at least as fast as original LAPACK, but perhaps works on quaternions, or funny
 number fields, or matrices of matrices etc., and that you can run autodiff on these constructs.
 
+~~~
+<style>
+  /* h1 = page section, h2 = subsection header (black), h3/h4 = project titles (black) */
+  .franklin-content .project-title,
+  .project-card .project-title {
+    color: var(--text-1) !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    letter-spacing: normal !important;
+    text-transform: none !important;
+    border-bottom: 0 !important;
+    padding-bottom: 6px !important;
+    margin-top: 0 !important;
+  }
+
+  .franklin-content h2 {
+    color: var(--text-1) !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: normal !important;
+    text-transform: none !important;
+  }
+
+  .project-card {
+    padding: 16px 14px;
+    margin: 4px -14px;
+    border-radius: 8px;
+    border-top: 1px solid var(--rule);
+    transition: background 0.15s;
+  }
+  .project-card:hover {
+    background: rgba(19, 69, 53, 0.06);
+  }
+  .project-card h3,
+  .project-card h4 {
+    color: var(--text-1) !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    letter-spacing: normal !important;
+    text-transform: none !important;
+    margin-top: 0 !important;
+    border-bottom: 0 !important;
+    padding-bottom: 4px !important;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var content = document.querySelector(".franklin-content");
+    if (!content) return;
+    var nodes = Array.from(content.childNodes);
+    var sections = [];
+    var current = null;
+    nodes.forEach(function (node) {
+      var tag = node.nodeName;
+      if (tag === "H3" || tag === "H4") {
+        if (current) sections.push(current);
+        current = { heading: node, children: [] };
+      } else if (current) {
+        /* stop collecting if we hit an H1 or H2 section boundary */
+        if (tag === "H1" || tag === "H2") {
+          sections.push(current);
+          current = null;
+        } else {
+          current.children.push(node);
+        }
+      }
+    });
+    if (current) sections.push(current);
+    sections.forEach(function (sec) {
+      var card = document.createElement("div");
+      card.className = "project-card";
+      sec.heading.parentNode.insertBefore(card, sec.heading);
+      card.appendChild(sec.heading);
+      sec.children.forEach(function (child) { card.appendChild(child); });
+    });
+  });
+</script>
+~~~

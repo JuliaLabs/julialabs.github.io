@@ -6,8 +6,8 @@
   --block-background: hsl(0, 0%, 94%);
   --output-background: hsl(0, 0%, 98%);
   --small: 14px;
-  --normal: 19px;
-  --text-color: hsv(0, 0%, 20%);
+  --normal: 15px;
+  --text-color: #1c2c28;
 }
 
 /* ==================================================================
@@ -15,7 +15,7 @@
 ================================================================== */
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Myriad Pro", "Trebuchet MS", sans-serif;
   font-size: var(--normal);
   color: var(--text-color);
 }
@@ -61,7 +61,7 @@ html {
 
 .page-foot {
   font-size: 80%;
-  font-family: Arial, serif;
+  font-family: "Lato", "Myriad Pro", "Trebuchet MS", sans-serif;
   color: #a6a2a0;
   text-align: center;
   margin-top: 6em;
@@ -82,27 +82,20 @@ html {
 
 .franklin-content {
   position: relative;
-  padding-left: 12.5%;
-  padding-right: 12.5%;
+  max-width: 1010px;
+  width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 48px;
   line-height: 1.35em;
-}
-
-/* On wide screens, fix content width to a max value. */
-@media (min-width: 940px) {
-  .franklin-content {
-    /*width: 705px;*/
-    /*width: 1300px;*/
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 /* On narrow device, reduce margins. */
 @media (max-width: 480px) {
   .franklin-content {
-    padding-left: 6%;
-    padding-right: 6%;
+    width: calc(100% - 32px);
   }
 }
 
@@ -110,9 +103,9 @@ html {
     TITLES
 ================================================================== */
 
-.franklin-content h1 { font-size: 24px; }
-.franklin-content h2 { font-size: 22px; }
-.franklin-content h3 { font-size: 20px; }
+.franklin-content h1 { font-size: 16px; font-weight: 700; }
+.franklin-content h2 { font-size: 10px; }
+.franklin-content h3 { font-size: 16px; font-weight: 700; }
 
 .franklin-content h1,
 h2,
@@ -124,16 +117,24 @@ h6 {
 }
 
 .franklin-content h1 {
+  color: #1c2c28;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   padding-bottom: 0.5em;
-  border-bottom: 3px double lightgrey;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
+  border-bottom: 1px solid #d6dbd8;
+  margin-top: 1.4em;
+  margin-bottom: 0.9em;
 }
 
 .franklin-content h2 {
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid lightgrey;
-  margin-top: 2em;
+  color: #8aa09a;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d6dbd8;
+  margin-top: 2.2em;
   margin-bottom: 1em;
 }
 
@@ -190,7 +191,7 @@ td {
 }
 
 .franklin-content a {
-  color: #6897b2;
+  color: #134535;
   text-decoration: none;
 }
 
