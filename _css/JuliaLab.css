@@ -521,3 +521,200 @@ table tbody tr td {
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
   }
 }
+
+/* Julia Lab mascot */
+
+.site-mascot {
+  --mascot-size: clamp(96px, 9vw, 150px);
+  position: fixed;
+  left: 0;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 14px);
+  z-index: 1000;
+  width: var(--mascot-size);
+  pointer-events: none;
+}
+
+.site-mascot[hidden] {
+  display: none;
+}
+
+.site-mascot__stage {
+  position: relative;
+  width: var(--mascot-size);
+  pointer-events: none;
+  transform: translateX(calc(100vw + var(--mascot-size)));
+  opacity: 0;
+}
+
+.site-mascot--active .site-mascot__stage {
+  animation: site-mascot-walk 30s cubic-bezier(0.42, 0, 0.2, 1) 0.15s 1 both;
+}
+
+.site-mascot--still .site-mascot__stage {
+  opacity: 1;
+  transform: translateX(calc(100vw - var(--mascot-size) - 24px));
+}
+
+.site-mascot__dog-wrap {
+  position: relative;
+  width: 100%;
+  filter: drop-shadow(0 10px 10px rgba(17, 36, 31, 0.18));
+  transform-origin: 48% 92%;
+}
+
+.site-mascot--active .site-mascot__dog-wrap {
+  animation: site-mascot-trot 0.46s ease-in-out 0.15s infinite alternate;
+}
+
+.site-mascot__dog {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.site-mascot__bubble {
+  position: absolute;
+  right: 2%;
+  top: -20%;
+  padding: 5px 8px;
+  border: 1px solid rgba(28, 44, 40, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #2b4a40;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 8px 18px rgba(17, 36, 31, 0.10);
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.site-mascot__bubble::before {
+  content: "sniff...";
+}
+
+.site-mascot--active .site-mascot__bubble {
+  animation: site-mascot-bubble 30s linear 0.15s 1 both;
+}
+
+.site-mascot__dismiss {
+  position: absolute;
+  right: -2px;
+  top: -28px;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid rgba(28, 44, 40, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2b4a40;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 18px;
+  opacity: 0.62;
+  pointer-events: auto;
+  transform: scale(0.92);
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.site-mascot__dismiss:focus {
+  opacity: 1;
+  transform: translateY(-2px) scale(1);
+}
+
+.site-mascot__dismiss:hover {
+  background: #fff;
+  opacity: 1;
+  transform: translateY(-2px) scale(1);
+}
+
+@keyframes site-mascot-walk {
+  0% {
+    opacity: 1;
+    transform: translateX(calc(100vw - var(--mascot-size) - 24px)) translateY(0) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(calc(100vw - var(--mascot-size) - 24px)) translateY(0) rotate(0deg);
+  }
+  22% {
+    transform: translateX(72vw) translateY(0) rotate(0deg);
+  }
+  31% {
+    transform: translateX(66vw) translateY(3px) rotate(-2deg);
+  }
+  38% {
+    transform: translateX(62vw) translateY(0) rotate(2deg);
+  }
+  53% {
+    transform: translateX(42vw) translateY(0) rotate(0deg);
+  }
+  60% {
+    transform: translateX(40vw) translateY(10px) scaleY(0.88) rotate(-1deg);
+  }
+  66% {
+    transform: translateX(38vw) translateY(0) scaleY(1) rotate(2deg);
+  }
+  82% {
+    opacity: 1;
+    transform: translateX(14vw) translateY(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(-1 * var(--mascot-size) - 48px)) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes site-mascot-trot {
+  0% {
+    transform: translateY(0) rotate(-0.8deg);
+  }
+  100% {
+    transform: translateY(-3px) rotate(0.8deg);
+  }
+}
+
+@keyframes site-mascot-bubble {
+  0%,
+  21%,
+  39%,
+  52%,
+  67%,
+  100% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  24%,
+  34% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  56%,
+  63% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .site-mascot {
+    --mascot-size: 88px;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 8px);
+  }
+
+  .site-mascot__bubble {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-mascot *,
+  .site-mascot *::before,
+  .site-mascot *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -163,6 +163,24 @@
       }
     </style>
 
+    <div class="site-mascot" id="site-mascot" hidden>
+      <div class="site-mascot__stage">
+        <button
+          type="button"
+          class="site-mascot__dismiss"
+          aria-label="Hide Julia Lab mascot animation"
+        >&times;</button>
+        <div class="site-mascot__bubble" aria-hidden="true"></div>
+        <div class="site-mascot__dog-wrap">
+          <img
+            class="site-mascot__dog"
+            src="/assets/images/julialab-corgi-mascot.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
     <footer class="site-footer">
       <div class="site-footer-inner">
         <div class="site-footer-main">
@@ -213,6 +231,45 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      (function () {
+        var mascot = document.getElementById("site-mascot");
+        if (!mascot) {
+          return;
+        }
+
+        var reduceMotion = window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (reduceMotion) {
+          mascot.removeAttribute("hidden");
+          mascot.classList.add("site-mascot--still");
+          return;
+        }
+
+        var dismiss = mascot.querySelector(".site-mascot__dismiss");
+        if (dismiss) {
+          dismiss.addEventListener("click", function () {
+            mascot.setAttribute("hidden", "");
+            mascot.classList.remove("site-mascot--active");
+            mascot.classList.remove("site-mascot--still");
+          });
+        }
+
+        mascot.removeAttribute("hidden");
+        window.setTimeout(function () {
+          mascot.classList.add("site-mascot--active");
+        }, 50);
+
+        mascot.addEventListener("animationend", function (event) {
+          if (event.animationName === "site-mascot-walk") {
+            mascot.setAttribute("hidden", "");
+            mascot.classList.remove("site-mascot--active");
+          }
+        });
+      })();
+    </script>
 
   </body>
 </html>
