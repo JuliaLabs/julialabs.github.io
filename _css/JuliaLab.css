@@ -390,6 +390,25 @@ a img {
   padding-bottom: 4px !important;
 }
 
+.pub-year-heading {
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+.pub-year-heading h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: var(--text-3) !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  padding-bottom: 12px !important;
+  border-bottom: 1px solid var(--rule) !important;
+}
+
 .publication-list {
   list-style-type: none;
   padding: 0;

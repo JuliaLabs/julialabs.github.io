@@ -7,7 +7,15 @@ Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many
 ## Selected publications
 
 {{ show_refs
+    <!-- 2026 -->
+    metcalfe2026arrays
+    wittenstein2026full
+
     <!-- 2025 -->
+    shah2025data
+    lujan2025structure
+    lujan2025smartsolve
+    ouko2025decision
     alomairy_scalable_2025
     ringoot2025gpuresidentmemoryawarealgorithmaccelerating
     carlson_c_2025
@@ -16,6 +24,7 @@ Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many
     ringoot2025performantUnified
 
     <!-- 2024 -->
+    alomairy2024accelerating
     edelman_limit_2024
     diamandis_solving_2024
     edelman_new_2024

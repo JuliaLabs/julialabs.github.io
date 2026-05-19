@@ -47,14 +47,27 @@ end
 
 function hfun_show_refs(refs)
     _, allrefs = parse_bibtex(read(joinpath("_assets", "julialab.bib"), String))
+    valid = [(ref, allrefs[ref]) for ref in refs if haskey(allrefs, ref)]
+    years = unique([get(infos, "year", "") for (_, infos) in valid])
+    show_year_headings = length(years) > 1
     out = IOBuffer()
-    write(out, "<ul class=\"publication-list\">")
-    for ref in refs
-        infos = get(allrefs, ref, nothing)
-        isnothing(infos) && continue
+    current_year = ""
+    in_list = false
+    for (ref, infos) in valid
+        year = get(infos, "year", "")
+        if show_year_headings && year != current_year
+            in_list && write(out, "</ul>")
+            current_year = year
+            write(out, """<div class="pub-year-heading"><h2>$year</h2></div>""")
+            write(out, """<ul class="publication-list">""")
+            in_list = true
+        elseif !in_list
+            write(out, """<ul class="publication-list">""")
+            in_list = true
+        end
         write(out, ref_item(ref, infos))
     end
-    write(out, "</ul>")
+    in_list && write(out, "</ul>")
     return String(take!(out))
 end
 
