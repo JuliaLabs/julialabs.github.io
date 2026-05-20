@@ -4,7 +4,6 @@
 <div class="grants-container">
         {{for (name, full_name, description, full_description, website, photo_path, links) in grants}}
             <div class="grants">
-                <center>
                 <img class="circle" src="/assets/{{fill photo_path}}"/><br>
                 <a href="#{{fill name}}">
                     {{fill description}}<br>
@@ -18,12 +17,9 @@
 {{for (name, full_name, description, full_description, website, photo_path, links) in grants}}
     <div class="grant-entry">
         <h2 id="{{fill name}}" class="header-anchor">{{fill full_name}}</h2>
-        <div>
-        <img style="margin-right:14px;margin-top:2px" align="left" class="circle" width="120" height="120" src="/assets/{{fill photo_path}}"/>
-        </div>
+        <img class="circle grant-entry-photo" width="120" height="120" src="/assets/{{fill photo_path}}"/>
         {{fill full_description}}
         <a href="{{fill website}}">Website</a>
-        <div style="clear:both"></div>
     </div>
 {{end}}
 ~~~

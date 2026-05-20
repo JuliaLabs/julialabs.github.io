@@ -4,12 +4,14 @@
    Matches the homepage palette so all pages feel unified.
 ──────────────────────────────────────────────────────── */
 :root {
-  --accent:   #134535;
-  --text-1:   #1c2c28;
-  --text-2:   #3c5050;
-  --text-3:   #8aa09a;
-  --rule:     #d6dbd8;
-  --bg:       #f3f4f2;
+  --accent:     #134535;
+  --text-1:     #1c2c28;
+  --text-2:     #3c5050;
+  --text-3:     #8aa09a;
+  --rule:       #d6dbd8;
+  --bg:         #f3f4f2;
+  --hover-bg:   rgba(27, 92, 72, 0.06);
+  --text-color: var(--text-1); /* alias used by franklin.css */
 }
 
 *,
@@ -163,46 +165,13 @@ a img {
   gap: 28px 16px;
 }
 
-.people {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: var(--text-1);
-  padding: 12px 8px;
-  border-radius: 8px;
-  transition: background 0.15s;
-}
-
-.people:hover {
-  background: rgba(27, 92, 72, 0.06);
-}
-
-.people img {
-  height: 100px;
-  width: 100px;
-  flex-shrink: 0;
-  margin-bottom: 10px;
-}
-
-.people a {
-  color: var(--text-2);
-  font-size: 13px;
-  line-height: 1.4;
-  word-break: break-word;
-}
-
-.people a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
 .grants-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 28px 16px;
 }
 
+.people,
 .grants {
   display: flex;
   flex-direction: column;
@@ -214,25 +183,54 @@ a img {
   transition: background 0.15s;
 }
 
+.people:hover,
 .grants:hover {
-  background: rgba(27, 92, 72, 0.06);
+  background: var(--hover-bg);
+}
+
+.people img,
+.grants img {
+  flex-shrink: 0;
+  margin-bottom: 10px;
+}
+
+.people img {
+  height: 100px;
+  width: 100px;
 }
 
 .grants img {
   height: 130px;
   width: 130px;
-  margin-bottom: 10px;
 }
 
+.people a,
 .grants a {
   color: var(--text-2);
   font-size: 13px;
   line-height: 1.4;
 }
 
+.people a {
+  word-break: break-word;
+}
+
+.people a:hover,
 .grants a:hover {
   color: var(--accent);
   text-decoration: underline;
+}
+
+.grant-entry-photo {
+  float: left;
+  margin-right: 14px;
+  margin-top: 2px;
+}
+
+.grant-entry::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .circle {
@@ -300,7 +298,7 @@ a img {
 }
 
 .news-entry:hover {
-  background: rgba(27, 92, 72, 0.06);
+  background: var(--hover-bg);
 }
 
 .news-list .news-entry:first-child {
@@ -369,7 +367,7 @@ a img {
 }
 
 .grant-entry:hover {
-  background: rgba(27, 92, 72, 0.06);
+  background: var(--hover-bg);
 }
 
 .grant-entry h2 {
@@ -419,7 +417,7 @@ a img {
 }
 
 .publication-item:hover {
-  background: rgba(27, 92, 72, 0.06);
+  background: var(--hover-bg);
 }
 
 .publication-link {
@@ -606,7 +604,7 @@ table tbody tr td {
 
 .site-mascot__bubble a {
   pointer-events: auto;
-  color: #134535 !important;
+  color: var(--accent) !important;
   text-decoration: none !important;
   cursor: pointer;
 }
@@ -1036,7 +1034,7 @@ table tbody tr td {
 }
 
 .hn13-news-list .home-next-4-news-entry:hover {
-  background: rgba(27, 92, 72, 0.06);
+  background: var(--hover-bg);
 }
 
 .hn13-news-list .home-next-4-news-entry:first-child {
@@ -1117,7 +1115,7 @@ table tbody tr td {
 }
 
 .project-card:hover {
-  background: rgba(27, 92, 72, 0.06);
+  background: var(--hover-bg);
 }
 
 .project-expand {
