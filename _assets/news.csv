@@ -1,12 +1,21 @@
 date,title,link
+2/10/2026,"Collin Wittenstein, Emmanuel Lujan, Andrew Inglis, Robert Metcalfe, Alan Edelman, and Hendrik Ranocha publish ""A Full Three-Dimensional GPU-Accelerated Model for Deep Borehole Heat Exchangers (DBHEs) Enabling Simulation of Well Arrays"" in the Proceedings of the 51st Workshop on Geothermal Reservoir Engineering",https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2026/Wittenstein.pdf
+2/10/2026,"Robert Metcalfe, Emmanuel Lujan, Collin Wittenstein, Andrew Inglis, and Alan Edelman publish ""Arrays of Networked Standard Geothermal Wells"" in the Proceedings of the 51st Workshop on Geothermal Reservoir Engineering",https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2026/Metcalfe.pdf
 1/6/2026,"Avik Pal et al. present ""Physics-Informed Neural Surrogates for Mesh-Invariant Modeling of High-Speed Flows"" at AIAA SciTech 2026",https://www.aiaa.org/SciTech
 1/1/2026,"Avik Pal, Flemming Holtorf, Axel Larsson, Torkel Loman, Utkarsh, and Frank Schaefer publish NonlinearSolve.jl in ACM Transactions on Mathematical Software",https://arxiv.org/abs/2403.16341
 10/14/2025,"Evelyne Ringoot and Rabab Alomairy publish ""A GPU-resident Memory-Aware Algorithm for Accelerating Bidiagonalization of Banded Matrices""",https://arxiv.org/abs/2510.12705
 9/24/2025,"Bowen Zhu and Songchen Tan release ""Efficient Symbolic Computation via Hash Consing""",https://arxiv.org/abs/2509.20534
+9/17/2025,"Emmanuel Lujan and Alan Edelman publish ""When Structure is Silent: Opportunities for Algorithmic Dispatch in Linear Algebra"" in the IEEE High Performance Extreme Computing Conference",https://doi.org/10.1109/HPEC67600.2025.11196484
+9/14/2025,"Rushil N. Shah, Emmanuel Lujan, Rabab Alomairy, and Alan Edelman publish ""Data-Driven Dynamic Algorithm Dispatch with Large Language Models"" in the IEEE High Performance Extreme Computing Virtual Conference, where it received an Outstanding Short Paper Award",https://ieee-hpec.org/wp-content/uploads/2026/01/120.pdf
+8/11/2025,"Emmanuel Lujan presents ""Fast density functional theory for training machine learning interatomic potentials via large-scale atomistic sampling"" at the IAIFI Summer Workshop, Harvard University, co-authored with Rabab Alomairy and Spencer Wyant",https://iaifi.org/past-workshops.html
 8/8/2025,"Evelyne Ringoot, Rabab Alomairy, and Valentin Churavy publish ""Performant Unified GPU Kernels for Portable Singular Value Computation Across Hardware and Precision""",https://arxiv.org/abs/2508.06339
+7/23/2025,"Rushil Shah presents ""Automated Algorithm Selection Discovery via LLMs"" at JuliaCon 2025 (Lightning Talk), co-authored with Emmanuel Lujan and Rabab Alomairy",https://pretalx.com/juliacon-2025/talk/DH7MKC/
 7/4/2025,"Vaibhav Dixit and David Hofmann co-author ""Scientific machine learning of chaotic systems discovers governing equations for neural populations""",https://arxiv.org/abs/2507.03631
+7/1/2025,"Emmanuel Lujan, Rushil N. Shah, Rabab Alomairy, and Alan Edelman release ""SmartSolve.jl: AI for Algorithmic Discovery"" on Zenodo",https://zenodo.org/records/15784217
 6/4/2025,"Utkarsh et al. release ""Physics-Constrained Flow Matching: Sampling Generative Models with Hard Constraints"" (NeurIPS 2025)",https://arxiv.org/abs/2506.04171
 5/26/2025,"Avik Pal releases ""Semi-Explicit Neural DAEs: Learning Long-Horizon Dynamical Systems with Algebraic Constraints""",https://arxiv.org/abs/2505.20515
+3/8/2025,"Rabab Alomairy presents ""Accelerating Neural Network Interatomic Potentials through Dimension Reduction Using Julia"" at Women in Data Science Cambridge, co-authored with Emmanuel Lujan, Spencer Wyant, Julian Samaroo, Joanna Zou, Ralf Meyer, and Alan Edelman",https://www.widscambridge.org/selected-posters-2024
+2/12/2025,"Edwin Ouko, Emmanuel Lujan, Alan Edelman, and Robert Metcalfe publish ""Decision-Support and Modeling with Large Language Models for Geothermal Well Arrays"" in the Proceedings of the 50th Workshop on Geothermal Reservoir Engineering",https://pangea.stanford.edu/ERE/pdf/IGAstandard/SGW/2025/Ouko.pdf
 1/28/2025,"Songchen Tan releases ""Scalable higher-order nonlinear solvers via higher-order automatic differentiation""",https://arxiv.org/abs/2501.16895
 7/1/2024,"Flemming Holtorf and Frank Schaefer publish ""Performance Bounds for Quantum Feedback Control"" in IEEE Transactions on Automatic Control",https://doi.org/10.1109/TAC.2024.3416008
 6/14/2024,"Avik Pal and Frank Schaefer co-author ""Differentiable Programming for Differential Equations: A Review""",https://arxiv.org/abs/2406.09699
@@ -17,9 +26,11 @@ date,title,link
 11/13/2023,"Chris Rackauckas presents at the JuliaHEP 2023 Workshop in Erlangen on Automatic Differentiation, SciML, and maintaining large-scale Julia ecosystems",https://indico.cern.ch/event/1292759/
 10/20/2023,"Chris Rackauckas keynotes the LLNL Data-Driven Physical Simulations (DDPS) Seminar Series on ""Generalizing Scientific Machine Learning and Differentiable Simulation Beyond Continuous Models""",https://www.youtube.com/watch?v=16jtJDiJIuU
 8/29/2023,"Chris Rackauckas presents ""Improved Parallelism and Memory Performance Differentiating Stiff Differential Equations"" at ICIAM 2023",https://www.youtube.com/watch?v=5jat8moluUM
+7/28/2023,"Emmanuel Lujan presents ""Automating the composition of ML interatomic potentials in Julia"" at JuliaCon 2023, Massachusetts Institute of Technology, Cambridge, MA",https://pretalx.com/juliacon2023/talk/GGEKXE/
 7/27/2023,"Chris Rackauckas keynotes ASE60 (Synergistic Interactions Between Theory and Computation) at MIT on translating theory to differential-equation software",https://www.youtube.com/watch?v=s_t6dIKjUUc
 7/24/2023,"Chris Rackauckas keynotes JuliaCon 2023 with ""Scientific Machine Learning through Symbolic Numerics""",https://www.youtube.com/watch?v=tynmTkpdAME
 5/5/2023,"Chris Rackauckas presents ""Extending Scientific Machine Learning to Agent-Based Models"" at the ICLR 2023 AI4ABM Workshop",https://www.youtube.com/watch?v=fm277BM3Y8M
+7/22/2022,"Emmanuel Lujan presents ""Atomistic suite for CESMIX in Julia"" in ""JuliaMolSim: Computation with Atoms"" at JuliaCon 2022 (Virtual)",https://juliamolsim.github.io/juliacon22/
 4/11/2021,"MIT Julia Lab awarded a Climate Grand Challenge grant for briding computation with climate policymaking!",https://twitter.com/ChrisRackauckas/status/1513538343665029124
 3/9/2021,"MIT Julia Lab awarded Best Poster at the NeurIPS 2021 Differentiable Programming workshop for AbstractDifferentiation.jl!",https://twitter.com/ChrisRackauckas/status/1501533433138323465
 11/17/2021,"On 17th and 18th February 2022 there will be an introduction to Julia workshop at the Applied and Computational Mathematics (ACoM) laboratory, RWTH Aachen University.",https://michael-herbst.com/teaching/2022-rwth-julia-workshop/
@@ -27,6 +38,7 @@ date,title,link
 8/31/2021,"SciML Receives Chan Zuckerberg Institute Funding: Spatial SSAs, Identifiability, and Compile Times",https://sciml.ai/news/2021/08/31/czi
 8/26/2021,SciML Common Interface Expansion,https://sciml.ai/news/2021/08/26/expansion
 8/16/2021,SciML at JuliaCon 2021,https://sciml.ai/news/2021/08/16/juliacon2021
+7/28/2021,"Emmanuel Lujan presents ""Towards MDP.jl: The Julia Library of MD Potentials"" at JuliaCon 2021 (Virtual), co-authored with N. C. Nguyen, W. S. Moses, A. Rohskopf, and V. Churavy",https://pretalx.com/juliacon2021/talk/review/GEUBKLALGYCVYE9NR7NKJ3ELFHAQU3UT
 5/24/2021,SciML Ecosystem Update: Improved QNDF Outperforms CVODE On SciMLBenchmarks,https://sciml.ai/news/2021/05/24/QNDF
 2/5/2021,"SciML Ecosystem Update: GalacticOptim, GlobalSensitivity, Tutorials, and Documentation",https://sciml.ai/news/2021/02/05/galacticoptim
 1/19/2021,"SciML Ecosystem Update: Bayesian Neural ODEs, Virtual Brownian Trees, Parallel Batching and More",https://sciml.ai/news/2021/01/19/bayesian_neural_ode
