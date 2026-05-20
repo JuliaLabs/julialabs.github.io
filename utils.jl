@@ -47,7 +47,8 @@ end
 
 function hfun_show_refs(refs)
     _, allrefs = parse_bibtex(read(joinpath("_assets", "julialab.bib"), String))
-    valid = [(ref, allrefs[ref]) for ref in refs if haskey(allrefs, ref)]
+    valid = sort([(ref, allrefs[ref]) for ref in refs if haskey(allrefs, ref)],
+                 by = x -> get(x[2], "year", ""), rev = true)
     years = unique([get(infos, "year", "") for (_, infos) in valid])
     show_year_headings = length(years) > 1
     out = IOBuffer()
