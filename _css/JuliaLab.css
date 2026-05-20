@@ -283,7 +283,6 @@ a img {
   margin: 0;
   padding: 0 0 12px;
   border: 0;
-  border-bottom: 1px solid var(--rule);
   color: var(--text-3);
   font-size: 10px;
   font-weight: 700;
