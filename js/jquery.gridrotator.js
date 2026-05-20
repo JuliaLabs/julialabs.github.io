@@ -718,7 +718,7 @@
 				
 				}
 				
-				if ( !$.isFunction( instance[options] ) || options.charAt(0) === "_" ) {
+				if ( typeof instance[options] !== "function" || options.charAt(0) === "_" ) {
 
 					logError( "no such method '" + options + "' for gridrotator instance" );
 					return;
