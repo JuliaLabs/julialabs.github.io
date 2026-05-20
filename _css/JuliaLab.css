@@ -54,6 +54,17 @@ footer {
   padding-bottom: 48px;
 }
 
+/* Tie franklin.css hardcoded heading colors to the design token system */
+.franklin-content h1 {
+  color: var(--text-1);
+  border-bottom-color: var(--rule);
+}
+
+.franklin-content h2 {
+  color: var(--text-3);
+  border-bottom-color: var(--rule);
+}
+
 /* ─── Header ─── */
 
 header {
@@ -267,18 +278,18 @@ a img {
   margin-bottom: 16px;
 }
 
-.news-year-heading h2 {
+.news-year-heading h2,
+.pub-year-heading h2 {
   margin: 0;
-  padding: 0;
+  padding: 0 0 12px;
   border: 0;
+  border-bottom: 1px solid var(--rule);
   color: var(--text-3);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   line-height: 1;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--rule);
 }
 
 .news-list {
@@ -371,14 +382,14 @@ a img {
 }
 
 .grant-entry h2 {
-  color: var(--text-1) !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  letter-spacing: normal !important;
-  text-transform: none !important;
-  margin-top: 0 !important;
-  border-bottom: 0 !important;
-  padding-bottom: 4px !important;
+  color: var(--text-1);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-top: 0;
+  border-bottom: 0;
+  padding-bottom: 4px;
 }
 
 .pub-year-heading {
@@ -386,18 +397,7 @@ a img {
   margin-bottom: 16px;
 }
 
-.pub-year-heading h2 {
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  color: var(--text-1) !important;
-  font-size: 10px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.18em !important;
-  text-transform: uppercase !important;
-  line-height: 1 !important;
-  padding-bottom: 12px !important;
-}
+/* .pub-year-heading h2 shares the rule with .news-year-heading h2 above */
 
 .publication-list {
   list-style-type: none;
