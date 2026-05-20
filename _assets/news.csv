@@ -39,6 +39,7 @@ date,title,link
 8/26/2021,SciML Common Interface Expansion,https://sciml.ai/news/2021/08/26/expansion
 8/16/2021,SciML at JuliaCon 2021,https://sciml.ai/news/2021/08/16/juliacon2021
 7/28/2021,"Emmanuel Lujan presents ""Towards MDP.jl: The Julia Library of MD Potentials"" at JuliaCon 2021 (Virtual), co-authored with N. C. Nguyen, W. S. Moses, A. Rohskopf, and V. Churavy",https://pretalx.com/juliacon2021/talk/review/GEUBKLALGYCVYE9NR7NKJ3ELFHAQU3UT
+7/19/2021,"Kirill Zubov, Zoe McCarthy, Yingbo Ma, Francesco Calisto, Valerio Pagliarino, Simone Azeglio, Luca Bottero, Emmanuel Luján, Valentin Sulzer, Ashutosh Bharambe, Nand Vinchhi, Kaushik Balakrishnan, Devesh Upadhyay, and Chris Rackauckas release ""NeuralPDE: Automating Physics-Informed Neural Networks (PINNs) with Error Approximations"" on arXiv",https://arxiv.org/abs/2107.09443
 5/24/2021,SciML Ecosystem Update: Improved QNDF Outperforms CVODE On SciMLBenchmarks,https://sciml.ai/news/2021/05/24/QNDF
 2/5/2021,"SciML Ecosystem Update: GalacticOptim, GlobalSensitivity, Tutorials, and Documentation",https://sciml.ai/news/2021/02/05/galacticoptim
 1/19/2021,"SciML Ecosystem Update: Bayesian Neural ODEs, Virtual Brownian Trees, Parallel Batching and More",https://sciml.ai/news/2021/01/19/bayesian_neural_ode
