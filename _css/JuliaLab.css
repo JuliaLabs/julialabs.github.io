@@ -581,24 +581,34 @@ table tbody tr td {
 
 .site-mascot__bubble {
   position: absolute;
-  right: 2%;
-  top: -20%;
-  padding: 5px 8px;
+  right: 0;
+  bottom: 105%;
+  z-index: 3;
+  padding: 8px 28px 8px 11px;
   border: 1px solid rgba(28, 44, 40, 0.14);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.96);
   color: #2b4a40;
   font-size: 11px;
-  font-weight: 700;
-  line-height: 1;
-  white-space: nowrap;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: normal;
+  max-width: 200px;
+  text-align: left;
   box-shadow: 0 8px 18px rgba(17, 36, 31, 0.10);
   opacity: 0;
   transform: translateY(4px);
 }
 
-.site-mascot__bubble::before {
-  content: "sniff...";
+.site-mascot__bubble a {
+  pointer-events: auto;
+  color: #134535 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.site-mascot__bubble a:hover {
+  color: #1a6b4a !important;
 }
 
 .site-mascot--active .site-mascot__bubble {
@@ -607,34 +617,26 @@ table tbody tr td {
 
 .site-mascot__dismiss {
   position: absolute;
-  right: -2px;
-  top: -28px;
-  z-index: 2;
+  bottom: 8%;
+  right: -10px;
   width: 22px;
   height: 22px;
   padding: 0;
-  border: 1px solid rgba(28, 44, 40, 0.18);
+  border: 1px solid rgba(43, 74, 64, 0.3);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.9);
-  color: #2b4a40;
+  background: rgba(255, 255, 255, 0.85);
+  color: rgba(43, 74, 64, 0.8);
   cursor: pointer;
   font-size: 16px;
-  line-height: 18px;
-  opacity: 0.62;
+  line-height: 20px;
+  text-align: center;
   pointer-events: auto;
-  transform: scale(0.92);
-  transition: opacity 0.15s, transform 0.15s;
-}
-
-.site-mascot__dismiss:focus {
-  opacity: 1;
-  transform: translateY(-2px) scale(1);
+  transition: background 0.15s, color 0.15s;
 }
 
 .site-mascot__dismiss:hover {
   background: #fff;
-  opacity: 1;
-  transform: translateY(-2px) scale(1);
+  color: #2b4a40;
 }
 
 @keyframes site-mascot-walk {

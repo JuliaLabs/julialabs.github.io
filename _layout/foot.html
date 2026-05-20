@@ -165,11 +165,6 @@
 
     <div class="site-mascot" id="site-mascot" hidden>
       <div class="site-mascot__stage">
-        <button
-          type="button"
-          class="site-mascot__dismiss"
-          aria-label="Hide Julia Lab mascot animation"
-        >&times;</button>
         <div class="site-mascot__bubble" aria-hidden="true"></div>
         <div class="site-mascot__dog-wrap">
           <img
@@ -177,6 +172,11 @@
             src="/assets/images/julialab-corgi-mascot.png"
             alt=""
           />
+          <button
+            type="button"
+            class="site-mascot__dismiss"
+            aria-label="Hide Julia Lab mascot animation"
+          >&times;</button>
         </div>
       </div>
     </div>
@@ -235,39 +235,84 @@
     <script>
       (function () {
         var mascot = document.getElementById("site-mascot");
-        if (!mascot) {
-          return;
+        if (!mascot) return;
+
+        function parseCSV(text) {
+          var tips = [];
+          var lines = text.trim().split("\n");
+          for (var i = 0; i < lines.length; i++) {
+            var line = lines[i].trim();
+            if (!line) continue;
+            var cols = [], cur = "", inQ = false;
+            for (var j = 0; j < line.length; j++) {
+              var c = line[j];
+              if (c === '"') {
+                if (inQ && line[j + 1] === '"') { cur += '"'; j++; }
+                else inQ = !inQ;
+              } else if (c === ',' && !inQ) {
+                cols.push(cur); cur = "";
+              } else {
+                cur += c;
+              }
+            }
+            cols.push(cur);
+            if (cols.length >= 2 && cols[0] && cols[1]) {
+              tips.push({ text: cols[0].trim(), url: cols[1].trim() });
+            }
+          }
+          return tips;
         }
 
-        var reduceMotion = window.matchMedia &&
-          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        function launch(tip) {
+          var bubble = mascot.querySelector(".site-mascot__bubble");
+          if (bubble && tip) {
+            var a = document.createElement("a");
+            a.href = tip.url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = "💡 " + tip.text;
+            bubble.appendChild(a);
+          }
 
-        if (reduceMotion) {
+          var reduceMotion = window.matchMedia &&
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+          if (reduceMotion) {
+            mascot.removeAttribute("hidden");
+            mascot.classList.add("site-mascot--still");
+            return;
+          }
+
+          var dismiss = mascot.querySelector(".site-mascot__dismiss");
+          if (dismiss) {
+            dismiss.addEventListener("click", function () {
+              mascot.setAttribute("hidden", "");
+              mascot.classList.remove("site-mascot--active");
+              mascot.classList.remove("site-mascot--still");
+            });
+          }
+
           mascot.removeAttribute("hidden");
-          mascot.classList.add("site-mascot--still");
-          return;
-        }
+          window.setTimeout(function () {
+            mascot.classList.add("site-mascot--active");
+          }, 50);
 
-        var dismiss = mascot.querySelector(".site-mascot__dismiss");
-        if (dismiss) {
-          dismiss.addEventListener("click", function () {
-            mascot.setAttribute("hidden", "");
-            mascot.classList.remove("site-mascot--active");
-            mascot.classList.remove("site-mascot--still");
+          mascot.addEventListener("animationend", function (event) {
+            if (event.animationName === "site-mascot-walk") {
+              mascot.setAttribute("hidden", "");
+              mascot.classList.remove("site-mascot--active");
+            }
           });
         }
 
-        mascot.removeAttribute("hidden");
-        window.setTimeout(function () {
-          mascot.classList.add("site-mascot--active");
-        }, 50);
-
-        mascot.addEventListener("animationend", function (event) {
-          if (event.animationName === "site-mascot-walk") {
-            mascot.setAttribute("hidden", "");
-            mascot.classList.remove("site-mascot--active");
-          }
-        });
+        fetch("/assets/philip-tips.csv")
+          .then(function (r) { return r.text(); })
+          .then(function (text) {
+            var tips = parseCSV(text);
+            var tip = tips.length ? tips[Math.floor(Math.random() * tips.length)] : null;
+            launch(tip);
+          })
+          .catch(function () { launch(null); });
       })();
     </script>
 
