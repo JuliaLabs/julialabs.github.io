@@ -1,0 +1,37 @@
+Performance critical code should be inside a function,https://docs.julialang.org/en/v1/manual/performance-tips/#Performance-critical-code-should-be-inside-a-function
+Avoid untyped global variables,https://docs.julialang.org/en/v1/manual/performance-tips/#Avoid-untyped-global-variables
+Measure performance with @time and pay attention to memory allocation,https://docs.julialang.org/en/v1/manual/performance-tips/#Measure-performance-with-@time-and-pay-attention-to-memory-allocation
+Break functions into multiple definitions,https://docs.julialang.org/en/v1/manual/performance-tips/#Break-functions-into-multiple-definitions
+Check Julia's Performance Tools,https://docs.julialang.org/en/v1/manual/performance-tips/#tools
+Avoid containers with abstract type parameters,https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-abstract-container
+Avoid fields with abstract type,https://docs.julialang.org/en/v1/manual/performance-tips/#Avoid-fields-with-abstract-type
+Avoid fields with abstract containers,https://docs.julialang.org/en/v1/manual/performance-tips/#Avoid-fields-with-abstract-containers
+Annotate values taken from untyped locations,https://docs.julialang.org/en/v1/manual/performance-tips/#Annotate-values-taken-from-untyped-locations
+Be aware of when Julia avoids specializing,https://docs.julialang.org/en/v1/manual/performance-tips/#Be-aware-of-when-Julia-avoids-specializing
+"Write ""type-stable"" functions",https://docs.julialang.org/en/v1/manual/performance-tips/#Write-%22type-stable%22-functions
+Avoid changing the type of a variable,https://docs.julialang.org/en/v1/manual/performance-tips/#Avoid-changing-the-type-of-a-variable
+"Separate kernel functions (aka, function barriers)",https://docs.julialang.org/en/v1/manual/performance-tips/#kernel-functions
+Check Julia's @code_warntype,https://docs.julialang.org/en/v1/manual/performance-tips/#man-code-warntype
+Check performance of captured variable,https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-captured
+Types with values-as-parameters,https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-value-type
+The dangers of abusing multiple dispatch,"https://docs.julialang.org/en/v1/manual/performance-tips/#The-dangers-of-abusing-multiple-dispatch-(aka,-more-on-types-with-values-as-parameters)"
+Pre-allocate outputs,https://docs.julialang.org/en/v1/manual/performance-tips/#Pre-allocate-outputs
+Consider using views for slices,https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-views
+Consider StaticArrays.jl for small fixed-size vector/matrix operations,https://docs.julialang.org/en/v1/manual/performance-tips/#Consider-StaticArrays.jl-for-small-fixed-size-vector/matrix-operations
+More dots: Fuse vectorized operations,https://docs.julialang.org/en/v1/manual/performance-tips/#More-dots:-Fuse-vectorized-operations
+Fewer dots: Unfuse certain intermediate broadcasts,https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-unfuse
+"Access arrays in memory order, along columns",https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-column-major
+Copying data is not always bad,https://docs.julialang.org/en/v1/manual/performance-tips/#Copying-data-is-not-always-bad
+Multithreading and linear algebra,https://docs.julialang.org/en/v1/manual/performance-tips/#man-multithreading-linear-algebra
+Alternative linear algebra backends,https://docs.julialang.org/en/v1/manual/performance-tips/#Alternative-linear-algebra-backends
+Reducing time to first plot etc.,https://docs.julialang.org/en/v1/manual/performance-tips/#Reducing-time-to-first-plot-etc.
+Reducing package loading time,https://docs.julialang.org/en/v1/manual/performance-tips/#Reducing-package-loading-time
+Reducing precompilation time,https://docs.julialang.org/en/v1/manual/performance-tips/#Reducing-precompilation-time
+Check this tweaks,https://docs.julialang.org/en/v1/manual/performance-tips/#Tweaks
+Fix deprecation warnings,https://docs.julialang.org/en/v1/manual/performance-tips/#Fix-deprecation-warnings
+Check performance annotations,https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-annotations
+Treat Subnormal Numbers as Zeros,https://docs.julialang.org/en/v1/manual/performance-tips/#Treat-Subnormal-Numbers-as-Zeros
+Avoid string interpolation for I/O,https://docs.julialang.org/en/v1/manual/performance-tips/#Avoid-string-interpolation-for-I/O
+Avoid eager string materialization,https://docs.julialang.org/en/v1/manual/performance-tips/#Avoid-eager-string-materialization
+Optimize network I/O during parallel execution,https://docs.julialang.org/en/v1/manual/performance-tips/#Optimize-network-I/O-during-parallel-execution
+Use MutableArithmetics for more control over allocation for mutable arithmetic types,https://docs.julialang.org/en/v1/manual/performance-tips/#man-perftips-mutablearithmetics
