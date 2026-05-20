@@ -1,6 +1,6 @@
 Performance critical code should be inside a function,https://docs.julialang.org/en/v1/manual/performance-tips/#Performance-critical-code-should-be-inside-a-function
 Avoid untyped global variables,https://docs.julialang.org/en/v1/manual/performance-tips/#Avoid-untyped-global-variables
-Measure performance with @time and pay attention to memory allocation,https://docs.julialang.org/en/v1/manual/performance-tips/#Measure-performance-with-@time-and-pay-attention-to-memory-allocation
+Measure performance with @time and pay attention to memory allocation,https://docs.julialang.org/en/v1/manual/performance-tips/#Measure-performance-with-[@time](@ref)-and-pay-attention-to-memory-allocation
 Break functions into multiple definitions,https://docs.julialang.org/en/v1/manual/performance-tips/#Break-functions-into-multiple-definitions
 Check Julia's Performance Tools,https://docs.julialang.org/en/v1/manual/performance-tips/#tools
 Avoid containers with abstract type parameters,https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-abstract-container
@@ -23,7 +23,7 @@ Fewer dots: Unfuse certain intermediate broadcasts,https://docs.julialang.org/en
 "Access arrays in memory order, along columns",https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-column-major
 Copying data is not always bad,https://docs.julialang.org/en/v1/manual/performance-tips/#Copying-data-is-not-always-bad
 Multithreading and linear algebra,https://docs.julialang.org/en/v1/manual/performance-tips/#man-multithreading-linear-algebra
-Alternative linear algebra backends,https://docs.julialang.org/en/v1/manual/performance-tips/#Alternative-linear-algebra-backends
+Alternative linear algebra backends,https://docs.julialang.org/en/v1/manual/performance-tips/#man-backends-linear-algebra
 Reducing time to first plot etc.,https://docs.julialang.org/en/v1/manual/performance-tips/#Reducing-time-to-first-plot-etc.
 Reducing package loading time,https://docs.julialang.org/en/v1/manual/performance-tips/#Reducing-package-loading-time
 Reducing precompilation time,https://docs.julialang.org/en/v1/manual/performance-tips/#Reducing-precompilation-time
