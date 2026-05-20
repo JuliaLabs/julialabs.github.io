@@ -1,3 +1,4 @@
+tip,url
 Performance critical code should be inside a function,https://docs.julialang.org/en/v1/manual/performance-tips/#Performance-critical-code-should-be-inside-a-function
 Avoid untyped global variables,https://docs.julialang.org/en/v1/manual/performance-tips/#Avoid-untyped-global-variables
 Measure performance with @time and pay attention to memory allocation,https://docs.julialang.org/en/v1/manual/performance-tips/#Measure-performance-with-[@time](@ref)-and-pay-attention-to-memory-allocation

@@ -7,162 +7,6 @@
         {{ insert foot_highlight.html }}
     {{ end }}
 
-    <style>
-      .site-footer {
-        display: block;
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-        background: #c2d8d0 url("/assets/images/footer.png") center / cover no-repeat;
-        border-top: 1px solid #a8c4ba;
-        margin-top: 0;
-      }
-      .site-footer-inner {
-        max-width: 1010px;
-        width: calc(100% - 48px);
-        margin: 0 auto;
-        padding: 22px 0 0;
-      }
-      .site-footer-main {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        gap: 32px;
-        align-items: start;
-        padding-bottom: 6px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-      }
-      .site-footer-brand {
-        border-right: 1px solid rgba(0, 0, 0, 0.12);
-        padding-right: 32px;
-      }
-      .site-footer-brand > img {
-        display: block;
-        width: 110px;
-        max-width: 100%;
-        margin-bottom: 12px;
-      }
-      .site-footer-brand > p {
-        max-width: 28ch;
-        margin: 0;
-        color: #3a5a50;
-        font-size: 13px;
-        line-height: 1.6;
-      }
-      .site-footer-col {
-        display: block;
-      }
-      .site-footer-col h3 {
-        margin: 0 0 10px;
-        color: #162820;
-        font-size: 9px;
-        font-weight: 700;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        padding-bottom: 8px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-      }
-      .site-footer-col ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-      .site-footer-col li {
-        display: block;
-        margin-bottom: 7px;
-        font-size: 13px;
-        line-height: 1.45;
-        color: #3a5a50;
-      }
-      .site-footer-col a {
-        color: #2a4a40 !important;
-        text-decoration: none !important;
-        transition: color 0.15s;
-      }
-      .site-footer-col a:hover {
-        color: #162820 !important;
-        text-decoration: underline !important;
-      }
-      .site-footer-affiliations {
-        display: flex;
-        align-items: center;
-        gap: 28px;
-        padding: 16px 0;
-      }
-      .site-footer-affiliations-label {
-        flex-shrink: 0;
-        color: rgba(0, 0, 0, 0.28);
-        font-size: 9px;
-        font-weight: 700;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-      }
-      .site-footer-affiliations-logos {
-        display: flex;
-        align-items: center;
-        gap: 28px;
-        flex-wrap: wrap;
-      }
-      .site-footer-affiliations-logos a {
-        display: inline-flex;
-        align-items: center;
-        opacity: 0.6;
-        transition: opacity 0.2s;
-      }
-      .site-footer-affiliations-logos a:hover {
-        opacity: 1;
-      }
-      .site-footer-affiliations-logos img {
-        display: block;
-        max-height: 26px;
-        max-width: 100px;
-        width: auto;
-        filter: brightness(0) opacity(0.7);
-      }
-      .site-footer-affiliations-logos a:hover img {
-        filter: brightness(0) opacity(1);
-      }
-      .site-footer-bottom {
-        display: flex;
-        justify-content: space-between;
-        gap: 24px;
-        align-items: center;
-        padding: 14px 0 20px;
-        color: rgba(0, 0, 0, 0.32);
-        font-size: 12px;
-        letter-spacing: 0.02em;
-      }
-      @media (max-width: 900px) {
-        .site-footer-main {
-          grid-template-columns: 1fr 1fr;
-          gap: 32px;
-        }
-      }
-      @media (max-width: 620px) {
-        .site-footer-inner {
-          width: calc(100% - 32px);
-        }
-        .site-footer-main {
-          grid-template-columns: 1fr;
-          gap: 28px;
-        }
-        .site-footer-brand {
-          border-right: 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          padding-right: 0;
-          padding-bottom: 28px;
-        }
-        .site-footer-affiliations {
-          flex-wrap: wrap;
-          gap: 16px;
-        }
-        .site-footer-bottom {
-          display: block;
-        }
-        .site-footer-bottom div + div {
-          margin-top: 8px;
-        }
-      }
-    </style>
-
     <div class="site-mascot" id="site-mascot" hidden>
       <div class="site-mascot__stage">
         <div class="site-mascot__bubble" aria-hidden="true"></div>
@@ -226,7 +70,7 @@
         </div>
 
         <div class="site-footer-bottom">
-          <div>&copy; 2026 Massachusetts Institute of Technology</div>
+          <div>&copy; {{fill copyright_year}} Massachusetts Institute of Technology</div>
           <div>Cambridge, Massachusetts</div>
         </div>
       </div>
@@ -240,7 +84,7 @@
         function parseCSV(text) {
           var tips = [];
           var lines = text.trim().split("\n");
-          for (var i = 0; i < lines.length; i++) {
+          for (var i = 1; i < lines.length; i++) { /* skip header row */
             var line = lines[i].trim();
             if (!line) continue;
             var cols = [], cur = "", inQ = false;
@@ -313,6 +157,33 @@
             launch(tip);
           })
           .catch(function () { launch(null); });
+      })();
+    </script>
+
+    <script>
+      (function () {
+        var nav = document.querySelector("nav");
+        var icon = document.getElementById("menu-icon");
+        if (!nav || !icon) return;
+
+        function setOpen(open) {
+          nav.classList.toggle("open", open);
+          icon.setAttribute("aria-expanded", open ? "true" : "false");
+          icon.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+        }
+
+        icon.addEventListener("click", function (e) {
+          e.stopPropagation();
+          setOpen(!nav.classList.contains("open"));
+        });
+
+        document.addEventListener("click", function (e) {
+          if (!nav.contains(e.target)) setOpen(false);
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") setOpen(false);
+        });
       })();
     </script>
 

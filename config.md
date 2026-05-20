@@ -5,6 +5,8 @@ Add here global page variables to use throughout your website.
 +++
 using Dates, DelimitedFiles, Random
 
+copyright_year = string(year(today()))
+
 author = "Julia Lab"
 mintoclevel = 2
 
@@ -90,7 +92,7 @@ for (entry_year, year_entries) in news_by_year
         <section class="news-year-group">
             <div class="news-year-heading">
                 <h2>$(html_escape(entry_year))</h2>
-                <div class="news-year-rule"></div>
+
             </div>
             <div class="news-list">
                 $(join(entry_html, "\n"))
@@ -133,7 +135,7 @@ for (name, position, website, role, photo) in eachrow(people)
             push!(internal_collaborators, data)
         elseif role == "External Collaborator"
             push!(external_collaborators, data)
-        else role == "Alumni"
+        elseif role == "Alumni"
             push!(alumni, data)
         end
 end

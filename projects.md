@@ -130,10 +130,10 @@ number fields, or matrices of matrices etc., and that you can run autodiff on th
 
 ~~~
 <style>
-  /* h1 = page section dividers, aligned with other site section titles */
+  /* Page-specific overrides: h1/h2 sizes differ from other pages */
   .franklin-content h1 {
     font-size: 16px !important;
-    color: var(--text-1, #1c2c28) !important;
+    color: var(--text-1) !important;
     font-weight: 700 !important;
     letter-spacing: -0.01em !important;
     text-transform: none !important;
@@ -142,16 +142,13 @@ number fields, or matrices of matrices etc., and that you can run autodiff on th
     margin-top: 2.4em !important;
     margin-bottom: 1em !important;
   }
-  /* suppress double rule when project-card immediately follows h1 */
   .franklin-content h1 + .project-card {
     border-top: none;
     margin-top: 0;
   }
-
-  /* project title (h2 inside .project-card) — subordinate */
   .franklin-content .project-title,
   .project-card .project-title {
-    color: var(--text-2, #3c5050) !important;
+    color: var(--text-2) !important;
     font-size: 15px !important;
     font-weight: 700 !important;
     letter-spacing: normal !important;
@@ -160,62 +157,12 @@ number fields, or matrices of matrices etc., and that you can run autodiff on th
     padding-bottom: 6px !important;
     margin-top: 0 !important;
   }
-
   .franklin-content h2 {
     color: var(--text-1) !important;
     font-size: 14px !important;
     font-weight: 700 !important;
     letter-spacing: normal !important;
     text-transform: none !important;
-  }
-
-  .project-card {
-    padding: 14px 10px;
-    margin: 0 -10px;
-    border-top: 1px solid var(--rule);
-    border-radius: 6px;
-    transition: background 0.15s;
-  }
-  .project-card:hover {
-    background: rgba(27, 92, 72, 0.06);
-  }
-  .project-expand {
-    margin-top: 10px;
-  }
-  .project-expand > summary {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--accent, #134535);
-    list-style: none;
-    user-select: none;
-  }
-  .project-expand > summary::-webkit-details-marker { display: none; }
-  .project-expand > summary::after {
-    content: "›";
-    font-size: 15px;
-    transition: transform 0.2s;
-    display: inline-block;
-  }
-  .project-expand[open] > summary::after {
-    transform: rotate(90deg);
-  }
-  .project-expand > summary:hover {
-    color: var(--text-1, #1c2c28);
-  }
-  .project-card h3,
-  .project-card h4 {
-    color: var(--text-2, #3c5050) !important;
-    font-size: 15px !important;
-    font-weight: 700 !important;
-    letter-spacing: normal !important;
-    text-transform: none !important;
-    margin-top: 0 !important;
-    border-bottom: 0 !important;
-    padding-bottom: 4px !important;
   }
 </style>
 <script>
