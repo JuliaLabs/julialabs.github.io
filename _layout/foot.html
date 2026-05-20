@@ -306,7 +306,7 @@
         }
 
         fetch("/assets/philip-tips.csv")
-          .then(function (r) { return r.text(); })
+          .then(function (r) { if (!r.ok) throw new Error("not found"); return r.text(); })
           .then(function (text) {
             var tips = parseCSV(text);
             var tip = tips.length ? tips[Math.floor(Math.random() * tips.length)] : null;
