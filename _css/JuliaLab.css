@@ -399,14 +399,13 @@ a img {
   margin: 0 !important;
   padding: 0 !important;
   border: 0 !important;
-  color: var(--text-3) !important;
+  color: var(--text-1) !important;
   font-size: 10px !important;
   font-weight: 700 !important;
   letter-spacing: 0.18em !important;
   text-transform: uppercase !important;
   line-height: 1 !important;
   padding-bottom: 12px !important;
-  border-bottom: 1px solid var(--rule) !important;
 }
 
 .publication-list {
@@ -420,7 +419,8 @@ a img {
   border-top: 1px solid var(--rule);
   border-radius: 6px;
   font-size: 15px;
-  line-height: 1.6;
+  font-weight: 300;
+  line-height: 1.55;
   color: var(--text-2);
   transition: background 0.15s;
 }
@@ -430,8 +430,14 @@ a img {
 }
 
 .publication-link {
-  color: var(--accent) !important;
+  color: var(--text-1) !important;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-link:hover {
+  color: var(--accent) !important;
+  text-decoration: underline !important;
 }
 
 table {

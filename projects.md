@@ -8,9 +8,14 @@
 **MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)**  
 **Principal Investigators: Professor Alan Edelman & Dr. Chris Rackauckas**
 
-### Position Overview
-
 We are seeking a highly motivated postdoctoral researcher to join a collaborative research project between MIT and GSK, focusing on the integration of Scientific Machine Learning (SciML) with Quantitative Systems Pharmacology (QSP) models. This exciting opportunity combines cutting-edge computational methods with pharmaceutical research to develop next-generation high-fidelity predictive models.
+
+**Duration:** 2 years · **Location:** MIT CSAIL, Cambridge, MA · **Contact:** crackauc@mit.edu
+
+~~~
+<details class="project-expand">
+<summary>Read more</summary>
+~~~
 
 ### Research Focus
 
@@ -44,33 +49,16 @@ The successful candidate will work on developing and training advanced emulator 
 - Experience with neural ODEs or physics-informed neural networks
 - Knowledge of pharmaceutical drug development processes
 
-### Position Details
-
-- **Duration:** 2 years with possibility of extension
-- **Start Date:** As soon as possible
-- **Location:** MIT CSAIL, Cambridge, MA
-- **Funding:** Fully funded position with competitive salary and benefits
-- **Travel:** Opportunities for conference travel and professional development
-
 ### About the Environment
 
 This position offers a unique opportunity to work at the intersection of computational science and pharmaceutical research. You will be part of the vibrant Julia Lab at MIT while collaborating with industry partners at GSK. You will be integrated with the Kendall Square pharmaceutical community, which hosts many of the largest pharmaceutical firms in the world. The research will contribute to open source software development and aims to produce high-impact publications.
 
-Regular interactions with GSK researchers will provide valuable industry perspective and potential career networking opportunities. The successful candidate will have access to cutting-edge computational resources and will be encouraged to participate in the broader SciML and Julia communities.
-
 ### Application Process
 
-Please submit the following materials:
-
-1. Cover letter describing research interests and relevant experience
-2. Current CV including publication list
-3. Contact information for three professional references
-4. Brief research statement (1-2 pages) outlining your vision for this project
-
-**Application Deadline:** Open until filled  
-**Contact:** Dr. Chris Rackauckas (crackauc@mit.edu)
+Please submit a cover letter, CV with publication list, contact information for three references, and a brief research statement (1–2 pages). **Application Deadline:** Open until filled.
 
 ~~~
+</details>
 </div>
 ~~~
 
@@ -142,11 +130,29 @@ number fields, or matrices of matrices etc., and that you can run autodiff on th
 
 ~~~
 <style>
-  /* h1 = page section, h2 = subsection header (black), h3/h4 = project titles (black) */
+  /* h1 = page section dividers, aligned with other site section titles */
+  .franklin-content h1 {
+    font-size: 16px !important;
+    color: var(--text-1, #1c2c28) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+    text-transform: none !important;
+    border-bottom: none !important;
+    padding-bottom: 0.4em !important;
+    margin-top: 2.4em !important;
+    margin-bottom: 1em !important;
+  }
+  /* suppress double rule when project-card immediately follows h1 */
+  .franklin-content h1 + .project-card {
+    border-top: none;
+    margin-top: 0;
+  }
+
+  /* project title (h2 inside .project-card) — subordinate */
   .franklin-content .project-title,
   .project-card .project-title {
-    color: var(--text-1) !important;
-    font-size: 17px !important;
+    color: var(--text-2, #3c5050) !important;
+    font-size: 15px !important;
     font-weight: 700 !important;
     letter-spacing: normal !important;
     text-transform: none !important;
@@ -164,18 +170,45 @@ number fields, or matrices of matrices etc., and that you can run autodiff on th
   }
 
   .project-card {
-    padding: 16px 14px;
-    margin: 4px -14px;
-    border-radius: 8px;
+    padding: 14px 10px;
+    margin: 0 -10px;
     border-top: 1px solid var(--rule);
+    border-radius: 6px;
     transition: background 0.15s;
   }
   .project-card:hover {
-    background: rgba(19, 69, 53, 0.06);
+    background: rgba(27, 92, 72, 0.06);
+  }
+  .project-expand {
+    margin-top: 10px;
+  }
+  .project-expand > summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent, #134535);
+    list-style: none;
+    user-select: none;
+  }
+  .project-expand > summary::-webkit-details-marker { display: none; }
+  .project-expand > summary::after {
+    content: "›";
+    font-size: 15px;
+    transition: transform 0.2s;
+    display: inline-block;
+  }
+  .project-expand[open] > summary::after {
+    transform: rotate(90deg);
+  }
+  .project-expand > summary:hover {
+    color: var(--text-1, #1c2c28);
   }
   .project-card h3,
   .project-card h4 {
-    color: var(--text-1) !important;
+    color: var(--text-2, #3c5050) !important;
     font-size: 15px !important;
     font-weight: 700 !important;
     letter-spacing: normal !important;
@@ -192,14 +225,21 @@ number fields, or matrices of matrices etc., and that you can run autodiff on th
     var nodes = Array.from(content.childNodes);
     var sections = [];
     var current = null;
+    var activeSectionTitle = "";
     nodes.forEach(function (node) {
       var tag = node.nodeName;
+      if (tag === "H1") {
+        if (current) sections.push(current);
+        current = null;
+        activeSectionTitle = node.textContent.trim();
+        return;
+      }
       if (tag === "H3" || tag === "H4") {
         if (current) sections.push(current);
-        current = { heading: node, children: [] };
+        current = { heading: node, children: [], sectionTitle: activeSectionTitle };
       } else if (current) {
         /* stop collecting if we hit an H1 or H2 section boundary */
-        if (tag === "H1" || tag === "H2") {
+        if (tag === "H2") {
           sections.push(current);
           current = null;
         } else {
@@ -211,6 +251,9 @@ number fields, or matrices of matrices etc., and that you can run autodiff on th
     sections.forEach(function (sec) {
       var card = document.createElement("div");
       card.className = "project-card";
+      if (sec.sectionTitle === "Projects (PhD/MEng/UROP)") {
+        card.className += " project-card--student";
+      }
       sec.heading.parentNode.insertBefore(card, sec.heading);
       card.appendChild(sec.heading);
       sec.children.forEach(function (child) { card.appendChild(child); });
