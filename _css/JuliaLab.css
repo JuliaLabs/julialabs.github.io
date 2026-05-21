@@ -446,7 +446,7 @@ a img {
 
 .publication-link {
   color: var(--text-1) !important;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
 }
 

@@ -6,6 +6,12 @@ Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many
 
 ## Selected publications
 
+~~~
+<div class="pub-years-nav-wrap">
+{{pub_years_nav_html}}
+</div>
+~~~
+
 {{ show_refs
     <!-- 2026 -->
     metcalfe2026arrays

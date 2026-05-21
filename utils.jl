@@ -116,6 +116,32 @@ function hfun_show_news_year()
     return String(take!(io))
 end
 
+function hfun_pub_years_nav_html()
+    _, allrefs = parse_bibtex(read(joinpath("_assets", "julialab.bib"), String))
+    years = sort(unique([get(infos, "year", "") for (_, infos) in allrefs
+                         if get(infos, "year", "") >= "2016"]), rev=true)
+    return """<nav class="news-years-nav" aria-label="Publications by year">""" *
+        join(["""<a href="/publications/$yr/" class="news-year-pill">$yr</a>""" for yr in years], "\n") *
+        """</nav>"""
+end
+
+function hfun_show_pub_year()
+    yr_raw = locvar(:page_year)
+    isnothing(yr_raw) && return ""
+    yr = string(yr_raw)
+    _, allrefs = parse_bibtex(read(joinpath("_assets", "julialab.bib"), String))
+    year_refs = sort([(ref, infos) for (ref, infos) in allrefs if get(infos, "year", "") == yr],
+                     by = x -> get(x[2], "title", ""))
+    isempty(year_refs) && return "<p>No publications for $yr.</p>"
+    out = IOBuffer()
+    write(out, """<ul class="publication-list">""")
+    for (ref, infos) in year_refs
+        write(out, ref_item(ref, infos))
+    end
+    write(out, "</ul>")
+    return String(take!(out))
+end
+
 function hfun_bar(vname)
   val = Meta.parse(vname[1])
   return round(sqrt(val), digits=2)

@@ -5,8 +5,8 @@
 <h2 class="project-title">Postdoctoral Research Position: Scientific Machine Learning for Next-Generation QSP Models</h2>
 ~~~
 
-**MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)**  
-**Principal Investigators: Professor Alan Edelman & Dr. Chris Rackauckas**
+MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)  
+Principal Investigators: Professor Alan Edelman & Dr. Chris Rackauckas
 
 We are seeking a highly motivated postdoctoral researcher to join a collaborative research project between MIT and GSK, focusing on the integration of Scientific Machine Learning (SciML) with Quantitative Systems Pharmacology (QSP) models. This exciting opportunity combines cutting-edge computational methods with pharmaceutical research to develop next-generation high-fidelity predictive models.
 
@@ -150,7 +150,7 @@ number fields, or matrices of matrices etc., and that you can run autodiff on th
   .project-card .project-title {
     color: var(--text-2) !important;
     font-size: 15px !important;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
     letter-spacing: normal !important;
     text-transform: none !important;
     border-bottom: 0 !important;
@@ -163,6 +163,10 @@ number fields, or matrices of matrices etc., and that you can run autodiff on th
     font-weight: 700 !important;
     letter-spacing: normal !important;
     text-transform: none !important;
+  }
+  .franklin-content h3,
+  .franklin-content h4 {
+    font-weight: 400 !important;
   }
 </style>
 <script>
