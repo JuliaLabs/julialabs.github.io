@@ -16,11 +16,20 @@ jobs:
       uses: julia-actions/setup-julia@v2
       with:
         version: '1.12'
-    - run: julia -e '
-            using Pkg; Pkg.activate("."); Pkg.instantiate();
-            using NodeJS; run(`$(npm_cmd()) install highlight.js`);
-            using Franklin;
-            optimize()'
+    - name: Install packages
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.instantiate()'
+    - name: Patch Franklin world-age bug in mddefs.jl
+      run: |
+        MDDEFS=$(find ~/.julia/packages/Franklin -name "mddefs.jl" -path "*/markdown/*" | head -1)
+        echo "Patching: $MDDEFS"
+        sed -i 's/value  = getproperty(mdl, vname)/value  = Base.invokelatest(getproperty, mdl, vname)/' "$MDDEFS"
+        grep -q "invokelatest" "$MDDEFS" && echo "Patch applied successfully" || { echo "Patch failed - pattern not found"; exit 1; }
+    - name: Build site
+      run: julia -e '
+              using Pkg; Pkg.activate(".");
+              using NodeJS; run(`$(npm_cmd()) install highlight.js`);
+              using Franklin;
+              optimize()'
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:

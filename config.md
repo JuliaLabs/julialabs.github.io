@@ -3,7 +3,9 @@ Add here global page variables to use throughout your website.
 -->
 
 +++
-copyright_year = string(Dates.year(Dates.today()))
+using Dates, DelimitedFiles, Random
+
+copyright_year = string(year(today()))
 
 author = "Julia Lab"
 mintoclevel = 2
@@ -31,24 +33,24 @@ website_url   = "https://julia.mit.edu/"
 prepath = ""
 
 # News, people, and grants
-news   = DelimitedFiles.readdlm("_assets/news.csv", ',', skipstart=1)
-people = DelimitedFiles.readdlm("_assets/people.csv", ',', skipstart=1)
-grants = DelimitedFiles.readdlm("_assets/research-grants.csv", ',', skipstart=1)
+news   = readdlm("_assets/news.csv", ',', skipstart=1)
+people = readdlm("_assets/people.csv", ',', skipstart=1)
+grants = readdlm("_assets/research-grants.csv", ',', skipstart=1)
 
 
 # News
 news_entries = []
 for (date, title, link) in eachrow(news)
-    parsed_date = Dates.Date(date, Dates.DateFormat("m/d/y"))
+    parsed_date = Date(date, dateformat"m/d/y")
     data = [
         parsed_date,
-        Dates.format(parsed_date, Dates.DateFormat("U d, yyyy")),
-        Dates.monthabbr(parsed_date),
-        string(Dates.day(parsed_date)),
+        Dates.format(parsed_date, dateformat"U d, yyyy"),
+        monthabbr(parsed_date),
+        string(day(parsed_date)),
         title,
         link,
-        Dates.format(parsed_date, Dates.DateFormat("yyyy-mm-dd")),
-        string(Dates.year(parsed_date))
+        Dates.format(parsed_date, dateformat"yyyy-mm-dd"),
+        string(year(parsed_date))
     ]
     push!(news_entries, data)
 end
@@ -164,7 +166,7 @@ for (name, full_name, description, full_description, website, photo, links) in e
         push!(index_photos, data)
     end
 end
-index_photos = index_photos[Random.shuffle(1:end)]
+index_photos = index_photos[shuffle(1:end)]
 
 
 # Adding photo paths to grants 
