@@ -102,6 +102,14 @@ for (entry_year, year_entries) in news_by_year
     )
 end
 news_archive_html = join(news_archive_sections, "\n")
+# Hub page shows only the 2 most recent years
+news_recent_html = join(news_archive_sections[1:min(2, length(news_archive_sections))], "\n")
+
+news_years = [yr for (yr, _) in news_by_year]  # newest first
+
+news_years_nav_html = """<nav class="news-years-nav" aria-label="News by year">""" *
+    join(["""<a href="/news/$yr/" class="news-year-pill">$yr</a>""" for yr in news_years], "\n") *
+    """</nav>"""
 
 homepage_news_preview = news_entries[1:min(6, length(news_entries))]
 homepage_news_preview_html = join([

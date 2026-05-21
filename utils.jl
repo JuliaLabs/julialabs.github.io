@@ -1,4 +1,4 @@
-using BibTeX
+using BibTeX, Dates, DelimitedFiles
 
 function ref_item(ref, infos)
     io = IOBuffer()
@@ -19,7 +19,8 @@ function ref_item(ref, infos)
             authors *= ", "
         end
     end
-    title = replace(infos["title"], "{" => "", "}" => "")
+    title = replace(infos["title"], r"\\[a-zA-Z]+" => "", r"\{|\}" => "")
+    title = strip(replace(title, r"\s{2,}" => " "))
     write(io, """<li class="publication-item" id=\"#$ref\">""")
     if haskey(infos, "url")
         url = replace(infos["url"], " " => "")
@@ -70,6 +71,49 @@ function hfun_show_refs(refs)
     end
     in_list && write(out, "</ul>")
     return String(take!(out))
+end
+
+function hfun_show_news_year()
+    yr_raw = locvar(:page_year)
+    isnothing(yr_raw) && return ""
+    yr = string(yr_raw)
+
+    news = readdlm(joinpath("_assets", "news.csv"), ',', skipstart=1)
+
+    esc(s) = replace(string(s),
+        "&" => "&amp;", "<" => "&lt;", ">" => "&gt;",
+        "\"" => "&quot;", "'" => "&#39;")
+
+    io = IOBuffer()
+    write(io, """<div class="news-list">""")
+    first_entry = true
+    for row in eachrow(news)
+        date_str = strip(string(row[1]))
+        title    = strip(string(row[2]))
+        link     = strip(string(row[3]))
+        isempty(date_str) && continue
+        parsed   = Date(date_str, dateformat"m/d/y")
+        string(year(parsed)) == yr || continue
+        iso      = Dates.format(parsed, dateformat"yyyy-mm-dd")
+        disp     = Dates.format(parsed, dateformat"U d, yyyy")
+        mon      = monthabbr(parsed)
+        dy       = string(day(parsed))
+        write(io, """<article class="news-entry">""")
+        write(io, """<time class="news-date" datetime="$(esc(iso))" aria-label="$(esc(disp))">""")
+        write(io, """<span class="news-date-month">$(esc(mon))</span>""")
+        write(io, """<span class="news-date-day">$(esc(dy))</span>""")
+        write(io, """</time><div class="news-entry-body"><p class="news-entry-title">""")
+        if isempty(link)
+            write(io, esc(title))
+        else
+            write(io, """<a href="$(esc(link))">$(esc(title))</a>""")
+        end
+        write(io, """</p></div></article>""")
+        first_entry = false
+    end
+    first_entry && write(io, """<p>No news entries for $yr.</p>""")
+    write(io, """</div>""")
+    return String(take!(io))
 end
 
 function hfun_bar(vname)

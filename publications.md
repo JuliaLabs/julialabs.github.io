@@ -136,7 +136,6 @@ Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many
     Rackauckas20191
     Dickson2019239
     Yang20191
-    Besard201929
     Gowda2019Sparsity
 
     <!-- 2018 -->

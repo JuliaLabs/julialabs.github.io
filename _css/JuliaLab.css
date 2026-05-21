@@ -261,6 +261,31 @@ a img {
   line-height: 1.7;
 }
 
+.news-years-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 4px;
+  margin: 0 0 32px;
+}
+
+.news-year-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  color: var(--text-2);
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.news-year-pill:hover {
+  background: var(--hover-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .news-archive {
   margin: 0;
 }
@@ -870,6 +895,10 @@ table tbody tr td {
   color: rgba(0, 0, 0, 0.32);
   font-size: 12px;
   letter-spacing: 0.02em;
+}
+
+.site-footer-ai-disclaimer {
+  font-style: italic;
 }
 
 @media (max-width: 900px) {
