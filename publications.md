@@ -14,10 +14,13 @@ Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many
 
 {{ show_refs
     <!-- 2026 -->
+    utkarsh2026endtoend
+    murgai2026developing
     metcalfe2026arrays
     wittenstein2026full
 
     <!-- 2025 -->
+    utkarsh2025pcfm
     shah2025data
     lujan2025structure
     lujan2025smartsolve
@@ -39,6 +42,7 @@ Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many
     diamandis_convex_2024
     edelman_backpropagation_2024
     pal_nonlinearsolvejl_2024
+    utkarsh2024efficient
     utkarsh_automated_2024
     utkarsh_automating_2024
     holtorf_performance_2024
