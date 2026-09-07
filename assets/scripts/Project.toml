@@ -1,0 +1,8 @@
+[deps]
+BibTeX = "7b0aa2c9-049f-5cec-894a-2b6b781bb25e"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+
+[compat]
+HTTP = "1"
+JSON3 = "1"
