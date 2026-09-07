@@ -14,6 +14,13 @@ Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many
 
 {{ show_refs
     <!-- 2026 -->
+    accelerating_bidiagonalization_banded_2026
+    portable_efficient_autotuning_2026
+    crossmodel_crosslanguage_ai_2026
+    hierarchical_recursive_precision_2026
+    largest_5th_pivot_2026
+    sampling_pfaffian_point_2026
+    jordan_algebras_hemiplex_2026
     utkarsh2026endtoend
     murgai2026developing
     metcalfe2026arrays
@@ -26,7 +33,6 @@ Research on **Julia** is carried out at the **Julia Lab** at **MIT** and at many
     lujan2025smartsolve
     ouko2025decision
     alomairy_scalable_2025
-    ringoot2025gpuresidentmemoryawarealgorithmaccelerating
     carlson_c_2025
     bisain_new_2025
     tan_scalable_2025
